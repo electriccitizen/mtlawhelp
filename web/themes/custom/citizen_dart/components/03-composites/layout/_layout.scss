@@ -1,0 +1,21 @@
+/* ===============
+   LAYOUT
+=================== */
+
+/* LAYOUT INDEX
+------------------- */
+@forward 'footer/footer';
+@forward 'header/header';
+@forward 'layouts/layouts';
+
+@use '../../00-base/base' as *;
+@use '../../01-parts/buttons/button-mixins' as *;
+@use '../../01-parts/forms/elements/form-mixins' as *;
+
+/* LAYOUT BUILDER FORM CUSTOMIZATIONS
+---------------------------------- */
+
+//hide the builder label and only show it later when in layout builder
+.builder-label{
+	display: none;
+}
