@@ -154,6 +154,8 @@ third_party_settings:
           - 'menu_block:support-book'
         System:
           - system_breadcrumb_block
+_core:
+  default_config_hash: xzVmltBUGdq4FEMfIc3fmgthZNMnXxoWrSU51Hs71EA
 id: node.support_book.default
 targetEntityType: node
 bundle: support_book

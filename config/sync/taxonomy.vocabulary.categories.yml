@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 89KJDQM0dJhZXM7AqAgSBU8TMOnE6u58lW7p4ZQNwDY
+  default_config_hash: Fwdr1ObKsSkDu_loiH6banYPEesubq0Y1aMcUlYGvYw
 name: Categories
 vid: categories
 description: 'General content categories.'

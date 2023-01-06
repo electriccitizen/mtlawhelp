@@ -5,7 +5,7 @@ dependencies:
   theme:
     - stable
 _core:
-  default_config_hash: T-tTXea_J6FAvPxrIBPpMCPM75QjFV2WFHeUVhQVdjI
+  default_config_hash: VkDEijoBC57V3PN5LdIbVA0VobNv1S0d-54CS1st-rs
 id: stable_aboutsomestuff
 theme: stable
 region: sidebar_first

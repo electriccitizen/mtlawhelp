@@ -5,7 +5,7 @@ dependencies:
   theme:
     - seven
 _core:
-  default_config_hash: kpHOyEWvqVx_mMbgg0rPauKOhxKgbj7IMLlMqBizbAU
+  default_config_hash: kxRH4Qzb4vs5vA_Vpn_5Mw15QD2S9YLpJx2y866cr24
 id: seven_primary_local_tasks
 theme: seven
 region: header

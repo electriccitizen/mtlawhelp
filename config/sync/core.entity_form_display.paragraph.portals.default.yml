@@ -9,7 +9,7 @@ dependencies:
   module:
     - paragraphs
 _core:
-  default_config_hash: 6EXjuTHsSDHaktYI_mAQXp2oyiG7GrVRoTzJw9CDzQA
+  default_config_hash: O1Skokizu4UUsyJtnHHOxiTqEf7Rh_yAYrYPwbdxR_A
 id: paragraph.portals.default
 targetEntityType: paragraph
 bundle: portals

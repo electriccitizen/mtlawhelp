@@ -40,7 +40,7 @@ third_party_settings:
         description: ''
         required_fields: true
 _core:
-  default_config_hash: NpmOzu3DgPhN9hlQ5tgPOfPCjULJaR49VMx4p5HaF2Y
+  default_config_hash: GZgtdenQrzIiDGTmaI1NzsLOQXsScUn28bL7QnEwfDQ
 id: node.event.default
 targetEntityType: node
 bundle: event

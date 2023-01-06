@@ -12,7 +12,7 @@ dependencies:
     - geolocation_address
     - geolocation_google_maps
 _core:
-  default_config_hash: cJ0YAPxCUuYF885R3oqw4omWDUJ3VSDL-qU6okEiQgs
+  default_config_hash: 4qdu9r80JdDUkAnQ93W-trxot3UTmoJ9iDbC5XWNNZM
 id: paragraph.map.default
 targetEntityType: paragraph
 bundle: map

@@ -5,7 +5,7 @@ dependencies:
   theme:
     - stable
 _core:
-  default_config_hash: G5K27sdcR6jXjE5dUxT533NqthMpsMD5wuTH8ma4UDc
+  default_config_hash: aoQY4Q8s1t-z1sIsWxeRotxOfMDd7AjeDq-JCOTJ8Q8
 id: stable_connect
 theme: stable
 region: footer

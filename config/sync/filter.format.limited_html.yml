@@ -9,7 +9,7 @@ dependencies:
     - media
     - pathologic
 _core:
-  default_config_hash: Pq_8XHXSdl1Vp8_mvUJSXvPH7PRIOMaLwk_GGm2cH-c
+  default_config_hash: Me5D9VkLJcnelYuAYAUpRf1ZN25oAHi7bZpLLKngzCg
 name: 'Limited HTML'
 format: limited_html
 weight: 0

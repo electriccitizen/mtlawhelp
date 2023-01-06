@@ -15,7 +15,6 @@ dependencies:
   module:
     - addanother
     - filter
-    - layout_paragraphs
     - media
     - node
     - path
@@ -25,7 +24,7 @@ dependencies:
     - toolbar
     - webform
 _core:
-  default_config_hash: Ll59o8IA_l1l0OGl1kaVGXZB6aWUYs9gxEck7J5Q4us
+  default_config_hash: sZJZB8fi69UvU3JHtx2JUENmzwui4anCRSXkJvRlxRc
 id: editor
 label: Editor
 weight: 4

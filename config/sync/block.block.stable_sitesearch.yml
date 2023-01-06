@@ -3,11 +3,12 @@ langcode: en
 status: true
 dependencies:
   module:
+    - citizen_custom
     - system
   theme:
     - stable
 _core:
-  default_config_hash: Ojd5y7OqaHPGS1SoaqqTeCPo-1PINgrfQ1L1SY_gxHM
+  default_config_hash: gEGd8o1eSwYHHOzVGaHh7tQ_mDgLysKzSz92BhLIBwU
 id: stable_sitesearch
 theme: stable
 region: header

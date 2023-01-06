@@ -1,11 +1,11 @@
-uuid: c66daeac-4037-499d-a447-8bbad749f161
+uuid: 824cd937-3478-430d-86d9-b0118feb30a4
 langcode: en
 status: true
 dependencies:
   theme:
     - gin
 _core:
-  default_config_hash: Hh01DLj9k7UnNdPpOQXHZHW7GHf2OPNDQyCJF7_R9ac
+  default_config_hash: '-cr7CGKtDIWX8T6KvAXMreV0CGKvi8xSAj94gsG58Ys'
 id: gin_primary_local_tasks
 theme: gin
 region: header

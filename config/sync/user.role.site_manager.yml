@@ -20,19 +20,17 @@ dependencies:
     - contextual
     - filter
     - layout_builder
-    - layout_paragraphs
     - media
     - node
     - path
     - redirect
     - responsive_preview
-    - role_delegation
     - shortcut
     - system
     - taxonomy
     - webform
 _core:
-  default_config_hash: JotecaDH6FqenwPpGTB370LYSGcRJAdLfXPZkjhsM64
+  default_config_hash: Xn9jsJnHBc9d64JC3NsEqEDSxkP1uh1qQfsFbwamhTw
 id: site_manager
 label: 'Site Manager'
 weight: 5

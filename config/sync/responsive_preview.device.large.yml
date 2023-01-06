@@ -1,9 +1,9 @@
-uuid: ce0be7f6-c908-4b79-8e0a-fd2d6ed53a5d
+uuid: 20b99285-a820-4585-af85-5a345d97ebf0
 langcode: en
 status: 0
 dependencies: {  }
 _core:
-  default_config_hash: tCy5kFu4qPenetsjahPF0zbVJd2AtvvzLk3blVF1ynk
+  default_config_hash: ywSr9g7UXBCxuDjWeFhsHX9tedxn5n1sjvN8aBVgRJI
 id: large
 label: 'Typical desktop'
 weight: 0
