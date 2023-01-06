@@ -1,15 +1,15 @@
-EC-Upstream Local Development
+MT Lawhelp Local Development
 =============================
-Reviewed by Wilbur, 2022-10-21
+Created by broeker, 2022-01-06
 
 # Project Details
-- **NAME:** ec-upstream 
-- **URL:** http://dev-ec-upstream.pantheonsite.io/
-- **LOCAL URL:** http://ec-upstream.docksal.site
+- **NAME:** mtlawhelp 
+- **URL:** http://dev-mtlawhelp.pantheonsite.io/
+- **LOCAL URL:** http://mtlawhelp.docksal.site
 - **BRANCH:** main
-- **HOSTING:** [Pantheon Dashboard](https://dashboard.pantheon.io/sites/b043b678-2567-403a-aafc-947c7d9a76de#dev/code)
+- **HOSTING:** [Pantheon Dashboard](https://dashboard.pantheon.io/sites/44069bf2-3b6d-41a2-80a6-6f9df1bb35c1)
 )
-- **CIRCLE CI:** [Logs](https://app.circleci.com/pipelines/github/electriccitizen/ec-upstream)
+- **CIRCLE CI:** [Logs](https://app.circleci.com/pipelines/github/electriccitizen/mtlawhelp)
 
 ## Requirements and platform docs
 
@@ -22,9 +22,9 @@ Follow these steps to install a local development environment.
 
 `cd ~/Projects`
 
-`git clone git@github.com:electriccitizen/ec-upstream.git ec-upstream`
+`git clone git@github.com:electriccitizen/mtlawhelp.git mtlawhelp`
 
-`cd ec-upstream`
+`cd mtlawhelp`
 
 `composer install`
 
@@ -34,7 +34,7 @@ Follow these steps to install a local development environment.
 
 ## Download and import the database
 
-`fin drush @ec-upstream.dev sql-dump > database.sql`
+`fin drush @mtlawhelp.dev sql-dump > database.sql`
 
 `fin db import database.sql`
 
@@ -53,7 +53,7 @@ Open the generated login URL and you should be set to go.
 # Refreshing your local environment
 Whenever you start a new task, you'll want to refresh your local environment to pull in the latest changes from other developers.
 
-`cd ~/Projects/ec-upstream`
+`cd ~/Projects/mtlawhelp`
 
 `git checkout main`
 
@@ -64,7 +64,7 @@ Whenever you start a new task, you'll want to refresh your local environment to 
 `composer install`
 
 DB Pull - Optional
-`fin drush @ec-upstream.dev sql-dump > database.sql`
+`fin drush @mtlawhelp.dev sql-dump > database.sql`
 `fin db import database.sql`
 End DB Pull
 
@@ -78,7 +78,7 @@ Open the generated login URL and you should be set to go.
 
 # Theming
 The active theme for this project is **citizen_patterns**:
-`~/Projects/ec-upstream/web/themes/citizen_patterns`
+`~/Projects/mtlawhelp/web/themes/citizen_patterns`
 
 See the THEME-INSTALL.md file inside of the theme root for install instructions.
 [THEME-INSTALL.md](/web/themes/citizen_patterns/THEME-INSTALL.md)
@@ -89,13 +89,14 @@ To interact with Pantheon via drush, you can use the Drush aliases that are auto
 
 **DEV, TEST**
 
-* There is no LIVE environment for the EC-Upstream site.
+* There is no LIVE environment for the mtlawhelp site.
 
 These aliases are always available via:
 
 ```
-@ec-upstream.dev
-@ec-upstream.test
+@mtlawhelp.dev
+@mtlawhelp.test
+@mtlawhelp.live
 ```
 Note that not all projects will have all environments enabled.
 
@@ -104,7 +105,7 @@ Note that not all projects will have all environments enabled.
 Whenever you create a Github pull request, a new Pantheon multidev is created in the format `PR-NNN`  (e.g. PR-123) You can interact with this environment via:
 
 ```
-@ec-upstream.pr-123
+@mtlawhelp.pr-123
 ```
 
 # Project Legend
@@ -114,7 +115,7 @@ Whenever you create a Github pull request, a new Pantheon multidev is created in
 - CLI - docksal/cli:stable-php7.4
 - SOLR - docksal/solr:1.0-solr3
 
-See `~/Projects/ec-upstream/.docksal/docksal.yml`
+See `~/Projects/mtlawhelp/.docksal/docksal.yml`
 
 ## settings.docksal.php
 - database connection
@@ -128,7 +129,7 @@ See `~/Projects/ec-upstream/.docksal/docksal.yml`
 - trusted_host_pattern
 - file paths
 
-See `/Projects/ec-upstream/web/sites/default/settings.docksal.php`
+See `/Projects/mtlawhelp/web/sites/default/settings.docksal.php`
 
 # Enabling Xdebug
 

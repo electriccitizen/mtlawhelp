@@ -1,0 +1,10 @@
+'*':
+  host: appserver.${env-name}.44069bf2-3b6d-41a2-80a6-6f9df1bb35c1.drush.in
+  paths:
+    files: files
+  uri: ${env-name}-mtlawhelp.pantheonsite.io
+  user: ${env-name}.44069bf2-3b6d-41a2-80a6-6f9df1bb35c1
+  ssh:
+    options: '-p 2222 -o "AddressFamily inet"'
+    tty: false
+
