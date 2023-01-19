@@ -4,7 +4,6 @@
 
 /* VIEWS INDEX
 ------------------- */
-@forward 'events/event-views';
 @forward 'news/news-views';
 
 @use '../../00-base/base' as *;
