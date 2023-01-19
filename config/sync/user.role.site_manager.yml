@@ -3,12 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.node.landing_page.default
     - filter.format.limited_html
     - media.type.document
     - media.type.image
     - media.type.remote_video
-    - node.type.landing_page
     - node.type.page
     - taxonomy.vocabulary.categories
   module:
@@ -16,7 +14,6 @@ dependencies:
     - block
     - contextual
     - filter
-    - layout_builder
     - media
     - node
     - path
@@ -54,10 +51,8 @@ permissions:
   - 'assign site_manager role'
   - 'cancel account'
   - 'change own username'
-  - 'configure editable landing_page node layout overrides'
   - 'create document media'
   - 'create image media'
-  - 'create landing_page content'
   - 'create media'
   - 'create page content'
   - 'create remote_video media'
@@ -68,17 +63,14 @@ permissions:
   - 'delete all revisions'
   - 'delete any document media'
   - 'delete any image media'
-  - 'delete any landing_page content'
   - 'delete any media'
   - 'delete any page content'
   - 'delete any remote_video media'
   - 'delete any webform'
   - 'delete any webform submission'
-  - 'delete landing_page revisions'
   - 'delete media'
   - 'delete own document media'
   - 'delete own image media'
-  - 'delete own landing_page content'
   - 'delete own page content'
   - 'delete own remote_video media'
   - 'delete own webform'
@@ -87,7 +79,6 @@ permissions:
   - 'delete terms in categories'
   - 'edit any document media'
   - 'edit any image media'
-  - 'edit any landing_page content'
   - 'edit any page content'
   - 'edit any remote_video media'
   - 'edit any webform'
@@ -95,14 +86,12 @@ permissions:
   - 'edit layout paragraphs plugin config'
   - 'edit own document media'
   - 'edit own image media'
-  - 'edit own landing_page content'
   - 'edit own page content'
   - 'edit own remote_video media'
   - 'edit own webform'
   - 'edit own webform submission'
   - 'edit terms in categories'
   - 'revert all revisions'
-  - 'revert landing_page revisions'
   - 'revert page revisions'
   - 'switch shortcut sets'
   - 'update any media'
@@ -112,7 +101,6 @@ permissions:
   - 'view all media revisions'
   - 'view all revisions'
   - 'view any webform submission'
-  - 'view landing_page revisions'
   - 'view own unpublished content'
   - 'view own webform submission'
   - 'view page revisions'

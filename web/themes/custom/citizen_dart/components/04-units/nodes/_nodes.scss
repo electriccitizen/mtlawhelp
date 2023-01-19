@@ -5,7 +5,6 @@
 /* NODES INDEX
 ------------------- */
 @forward 'basic-page/basic-page';
-@forward 'landing-page/landing-page';
 @forward 'support-book/support-book';
 @use '../../00-base/base' as *;
 @use 'node-mixins' as *;
