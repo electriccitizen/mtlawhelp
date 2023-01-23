@@ -15,6 +15,7 @@ dependencies:
     - node.type.news
     - node.type.page
     - node.type.provider
+    - node.type.resource
     - taxonomy.vocabulary.categories
   module:
     - addanother
@@ -71,6 +72,7 @@ permissions:
   - 'create page content'
   - 'create provider content'
   - 'create remote_video media'
+  - 'create resource content'
   - 'create terms in categories'
   - 'create url aliases'
   - 'create webform'
@@ -87,6 +89,7 @@ permissions:
   - 'delete any page content'
   - 'delete any provider content'
   - 'delete any remote_video media'
+  - 'delete any resource content'
   - 'delete any webform'
   - 'delete any webform submission'
   - 'delete bios revisions'
@@ -105,10 +108,12 @@ permissions:
   - 'delete own page content'
   - 'delete own provider content'
   - 'delete own remote_video media'
+  - 'delete own resource content'
   - 'delete own webform'
   - 'delete own webform submission'
   - 'delete page revisions'
   - 'delete provider revisions'
+  - 'delete resource revisions'
   - 'delete terms in categories'
   - 'edit any bios content'
   - 'edit any clinic content'
@@ -120,6 +125,7 @@ permissions:
   - 'edit any page content'
   - 'edit any provider content'
   - 'edit any remote_video media'
+  - 'edit any resource content'
   - 'edit any webform'
   - 'edit any webform submission'
   - 'edit layout paragraphs plugin config'
@@ -133,6 +139,7 @@ permissions:
   - 'edit own page content'
   - 'edit own provider content'
   - 'edit own remote_video media'
+  - 'edit own resource content'
   - 'edit own webform'
   - 'edit own webform submission'
   - 'edit terms in categories'
@@ -144,6 +151,7 @@ permissions:
   - 'revert news revisions'
   - 'revert page revisions'
   - 'revert provider revisions'
+  - 'revert resource revisions'
   - 'switch shortcut sets'
   - 'update any media'
   - 'update media'
@@ -161,4 +169,5 @@ permissions:
   - 'view own webform submission'
   - 'view page revisions'
   - 'view provider revisions'
+  - 'view resource revisions'
   - 'view the administration theme'

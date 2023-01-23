@@ -16,6 +16,7 @@ button:
   bios: false
   clinic: false
   provider: false
+  resource: false
 message:
   page: false
   event: false
@@ -28,6 +29,7 @@ message:
   bios: false
   clinic: false
   provider: false
+  resource: false
 tab:
   page: true
   event: true
@@ -40,6 +42,7 @@ tab:
   bios: true
   clinic: true
   provider: true
+  resource: true
 tab_edit:
   page: false
   event: false
@@ -52,3 +55,4 @@ tab_edit:
   bios: false
   clinic: false
   provider: false
+  resource: false

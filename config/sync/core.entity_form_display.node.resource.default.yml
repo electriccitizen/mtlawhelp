@@ -1,17 +1,17 @@
-uuid: 4b0b13bb-49a5-407f-84e0-b3be23f1d73e
+uuid: db0938ae-20b0-49e5-aab9-880162700d59
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.clinic.body
-    - field.field.node.clinic.field_metatags
-    - node.type.clinic
+    - field.field.node.resource.body
+    - field.field.node.resource.field_metatags
+    - node.type.resource
   module:
     - metatag
     - text
-id: node.clinic.default
+id: node.resource.default
 targetEntityType: node
-bundle: clinic
+bundle: resource
 mode: default
 content:
   body:
@@ -32,9 +32,16 @@ content:
       sidebar: true
       use_details: true
     third_party_settings: {  }
-  status:
+  promote:
     type: boolean_checkbox
     weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
     region: content
     settings:
       display_label: true
@@ -50,7 +57,6 @@ content:
 hidden:
   created: true
   path: true
-  promote: true
   sticky: true
   uid: true
   url_redirects: true

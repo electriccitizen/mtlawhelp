@@ -1,0 +1,17 @@
+uuid: 67a1e8e8-beb1-4aee-8c82-9ee382396251
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Resource
+type: resource
+description: 'Add a resource used in the guide and DIY-library.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

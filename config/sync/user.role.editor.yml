@@ -14,6 +14,7 @@ dependencies:
     - node.type.news
     - node.type.page
     - node.type.provider
+    - node.type.resource
   module:
     - addanother
     - filter
@@ -52,6 +53,7 @@ permissions:
   - 'create page content'
   - 'create provider content'
   - 'create remote_video media'
+  - 'create resource content'
   - 'create url aliases'
   - 'create webform'
   - 'delete all revisions'
@@ -62,6 +64,7 @@ permissions:
   - 'delete any news content'
   - 'delete any page content'
   - 'delete any provider content'
+  - 'delete any resource content'
   - 'delete bios revisions'
   - 'delete clinic revisions'
   - 'delete event revisions'
@@ -78,10 +81,12 @@ permissions:
   - 'delete own page content'
   - 'delete own provider content'
   - 'delete own remote_video media'
+  - 'delete own resource content'
   - 'delete own webform'
   - 'delete own webform submission'
   - 'delete page revisions'
   - 'delete provider revisions'
+  - 'delete resource revisions'
   - 'edit any bios content'
   - 'edit any clinic content'
   - 'edit any document media'
@@ -92,6 +97,7 @@ permissions:
   - 'edit any page content'
   - 'edit any provider content'
   - 'edit any remote_video media'
+  - 'edit any resource content'
   - 'edit any webform'
   - 'edit layout paragraphs plugin config'
   - 'edit own bios content'
@@ -104,6 +110,7 @@ permissions:
   - 'edit own page content'
   - 'edit own provider content'
   - 'edit own remote_video media'
+  - 'edit own resource content'
   - 'edit own webform submission'
   - 'revert all revisions'
   - 'revert bios revisions'
@@ -113,6 +120,7 @@ permissions:
   - 'revert news revisions'
   - 'revert page revisions'
   - 'revert provider revisions'
+  - 'revert resource revisions'
   - 'switch shortcut sets'
   - 'update any media'
   - 'update media'
@@ -129,4 +137,5 @@ permissions:
   - 'view own webform submission'
   - 'view page revisions'
   - 'view provider revisions'
+  - 'view resource revisions'
   - 'view the administration theme'
