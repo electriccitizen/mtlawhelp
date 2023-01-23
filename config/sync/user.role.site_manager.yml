@@ -9,6 +9,7 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.bios
+    - node.type.clinic
     - node.type.event
     - node.type.landing_page
     - node.type.news
@@ -25,6 +26,7 @@ dependencies:
     - path
     - redirect
     - responsive_preview
+    - role_delegation
     - shortcut
     - system
     - taxonomy
@@ -58,6 +60,7 @@ permissions:
   - 'change own username'
   - 'configure editable landing_page node layout overrides'
   - 'create bios content'
+  - 'create clinic content'
   - 'create document media'
   - 'create event content'
   - 'create image media'
@@ -72,6 +75,7 @@ permissions:
   - 'customize shortcut links'
   - 'delete all revisions'
   - 'delete any bios content'
+  - 'delete any clinic content'
   - 'delete any document media'
   - 'delete any event content'
   - 'delete any image media'
@@ -83,11 +87,13 @@ permissions:
   - 'delete any webform'
   - 'delete any webform submission'
   - 'delete bios revisions'
+  - 'delete clinic revisions'
   - 'delete event revisions'
   - 'delete landing_page revisions'
   - 'delete media'
   - 'delete news revisions'
   - 'delete own bios content'
+  - 'delete own clinic content'
   - 'delete own document media'
   - 'delete own event content'
   - 'delete own image media'
@@ -100,6 +106,7 @@ permissions:
   - 'delete page revisions'
   - 'delete terms in categories'
   - 'edit any bios content'
+  - 'edit any clinic content'
   - 'edit any document media'
   - 'edit any event content'
   - 'edit any image media'
@@ -111,6 +118,7 @@ permissions:
   - 'edit any webform submission'
   - 'edit layout paragraphs plugin config'
   - 'edit own bios content'
+  - 'edit own clinic content'
   - 'edit own document media'
   - 'edit own event content'
   - 'edit own image media'
@@ -123,6 +131,7 @@ permissions:
   - 'edit terms in categories'
   - 'revert all revisions'
   - 'revert bios revisions'
+  - 'revert clinic revisions'
   - 'revert event revisions'
   - 'revert landing_page revisions'
   - 'revert news revisions'
@@ -136,6 +145,7 @@ permissions:
   - 'view all revisions'
   - 'view any webform submission'
   - 'view bios revisions'
+  - 'view clinic revisions'
   - 'view event revisions'
   - 'view landing_page revisions'
   - 'view news revisions'
