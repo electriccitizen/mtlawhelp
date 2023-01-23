@@ -13,6 +13,7 @@ dependencies:
     - node.type.landing_page
     - node.type.news
     - node.type.page
+    - node.type.provider
   module:
     - addanother
     - filter
@@ -49,6 +50,7 @@ permissions:
   - 'create media'
   - 'create news content'
   - 'create page content'
+  - 'create provider content'
   - 'create remote_video media'
   - 'create url aliases'
   - 'create webform'
@@ -59,6 +61,7 @@ permissions:
   - 'delete any landing_page content'
   - 'delete any news content'
   - 'delete any page content'
+  - 'delete any provider content'
   - 'delete bios revisions'
   - 'delete clinic revisions'
   - 'delete event revisions'
@@ -73,10 +76,12 @@ permissions:
   - 'delete own landing_page content'
   - 'delete own news content'
   - 'delete own page content'
+  - 'delete own provider content'
   - 'delete own remote_video media'
   - 'delete own webform'
   - 'delete own webform submission'
   - 'delete page revisions'
+  - 'delete provider revisions'
   - 'edit any bios content'
   - 'edit any clinic content'
   - 'edit any document media'
@@ -85,6 +90,7 @@ permissions:
   - 'edit any landing_page content'
   - 'edit any news content'
   - 'edit any page content'
+  - 'edit any provider content'
   - 'edit any remote_video media'
   - 'edit any webform'
   - 'edit layout paragraphs plugin config'
@@ -96,6 +102,7 @@ permissions:
   - 'edit own landing_page content'
   - 'edit own news content'
   - 'edit own page content'
+  - 'edit own provider content'
   - 'edit own remote_video media'
   - 'edit own webform submission'
   - 'revert all revisions'
@@ -105,6 +112,7 @@ permissions:
   - 'revert landing_page revisions'
   - 'revert news revisions'
   - 'revert page revisions'
+  - 'revert provider revisions'
   - 'switch shortcut sets'
   - 'update any media'
   - 'update media'
@@ -120,4 +128,5 @@ permissions:
   - 'view own unpublished content'
   - 'view own webform submission'
   - 'view page revisions'
+  - 'view provider revisions'
   - 'view the administration theme'
