@@ -1,0 +1,22 @@
+uuid: f8d00c58-0c00-4e9e-8d7a-351f15ce726b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: clinic
+label: Clinic
+type: 'canonical_entities:node'
+pattern: 'clinics/[node:title]'
+selection_criteria:
+  700dc547-6856-4725-9f0b-604e20cdf862:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 700dc547-6856-4725-9f0b-604e20cdf862
+    context_mapping:
+      node: node
+    bundles:
+      clinic: clinic
+selection_logic: and
+weight: -5
+relationships: {  }

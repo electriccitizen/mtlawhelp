@@ -26,7 +26,7 @@ message:
   landing_page: false
   gather_content_node: true
   bios: false
-  clinic: true
+  clinic: false
   provider: false
 tab:
   page: true
@@ -38,7 +38,7 @@ tab:
   landing_page: true
   gather_content_node: false
   bios: true
-  clinic: false
+  clinic: true
   provider: true
 tab_edit:
   page: false
