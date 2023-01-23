@@ -16,7 +16,11 @@ dependencies:
     - node.type.page
     - node.type.provider
     - node.type.resource
-    - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.legal_topics
+    - taxonomy.vocabulary.phone_type
+    - taxonomy.vocabulary.resource_categories
+    - taxonomy.vocabulary.service_areas
+    - taxonomy.vocabulary.service_types
   module:
     - addanother
     - block
@@ -73,7 +77,11 @@ permissions:
   - 'create provider content'
   - 'create remote_video media'
   - 'create resource content'
-  - 'create terms in categories'
+  - 'create terms in legal_topics'
+  - 'create terms in phone_type'
+  - 'create terms in resource_categories'
+  - 'create terms in service_areas'
+  - 'create terms in service_types'
   - 'create url aliases'
   - 'create webform'
   - 'customize shortcut links'
@@ -114,7 +122,11 @@ permissions:
   - 'delete page revisions'
   - 'delete provider revisions'
   - 'delete resource revisions'
-  - 'delete terms in categories'
+  - 'delete terms in legal_topics'
+  - 'delete terms in phone_type'
+  - 'delete terms in resource_categories'
+  - 'delete terms in service_areas'
+  - 'delete terms in service_types'
   - 'edit any bios content'
   - 'edit any clinic content'
   - 'edit any document media'
@@ -142,7 +154,11 @@ permissions:
   - 'edit own resource content'
   - 'edit own webform'
   - 'edit own webform submission'
-  - 'edit terms in categories'
+  - 'edit terms in legal_topics'
+  - 'edit terms in phone_type'
+  - 'edit terms in resource_categories'
+  - 'edit terms in service_areas'
+  - 'edit terms in service_types'
   - 'revert all revisions'
   - 'revert bios revisions'
   - 'revert clinic revisions'

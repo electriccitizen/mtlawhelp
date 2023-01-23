@@ -1,0 +1,8 @@
+uuid: 5a26c28d-5291-4d3e-b1cc-c9c08aa2f0f2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Categories'
+vid: resource_categories
+description: 'Categories for DIY resources.'
+weight: 0

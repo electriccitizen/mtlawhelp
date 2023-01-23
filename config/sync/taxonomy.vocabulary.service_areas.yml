@@ -1,0 +1,8 @@
+uuid: 70a9901e-88f1-4f8c-8161-18689e26fba8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Service Areas'
+vid: service_areas
+description: 'Areas that have legal provider services.'
+weight: 0
