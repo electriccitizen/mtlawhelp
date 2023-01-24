@@ -1,0 +1,8 @@
+uuid: 8b4543c2-457c-4c82-8d22-7cdfd4e781fc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Service Types'
+vid: service_types
+description: 'Types of services legal providers offer.'
+weight: 0

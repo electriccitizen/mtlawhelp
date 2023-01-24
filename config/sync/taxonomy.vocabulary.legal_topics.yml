@@ -1,0 +1,8 @@
+uuid: b9b447cf-c24b-4845-b0d1-b292d800c106
+langcode: en
+status: true
+dependencies: {  }
+name: 'Legal Topics'
+vid: legal_topics
+description: 'Legal topics for use in the guide and DIY library.'
+weight: 0

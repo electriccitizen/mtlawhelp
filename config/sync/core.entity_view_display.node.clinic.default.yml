@@ -1,0 +1,121 @@
+uuid: 4c16a68e-99ed-4e14-8775-7497346bea22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.clinic.body
+    - field.field.node.clinic.field_metatags
+    - node.type.clinic
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_discovery
+    - metatag
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          ca10eb45-4484-4aa5-a2b6-2bdaac1ce239:
+            uuid: ca10eb45-4484-4aa5-a2b6-2bdaac1ce239
+            region: content
+            configuration:
+              id: 'field_block:node:clinic:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          fc86d083-2c56-4a87-886e-9a47bbff7a68:
+            uuid: fc86d083-2c56-4a87-886e-9a47bbff7a68
+            region: content
+            configuration:
+              id: 'field_block:node:clinic:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts:
+        - layout_onecol
+      denylisted_blocks: {  }
+      allowlisted_blocks: {  }
+      restricted_categories:
+        - '@entity'
+        - 'Chaos Tools'
+        - 'Custom block types'
+        - Devel
+        - Forms
+        - Geolocation
+        - Help
+        - 'Inline blocks'
+        - 'Lists (Views)'
+        - Menus
+        - 'Responsive Preview'
+        - 'Site Search'
+        - 'Social Share'
+        - Superfish
+        - User
+        - Webform
+        - core
+id: node.clinic.default
+targetEntityType: node
+bundle: clinic
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  search_api_excerpt: true

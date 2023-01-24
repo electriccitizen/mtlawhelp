@@ -1,0 +1,8 @@
+uuid: 93bd653d-e01e-44b2-8ff7-a95b9ec6acc4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Phone Type'
+vid: phone_type
+description: 'Types of phone numbers for service providers.'
+weight: 0

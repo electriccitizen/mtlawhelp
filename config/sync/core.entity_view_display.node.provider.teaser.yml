@@ -1,0 +1,33 @@
+uuid: 6ca68ac1-1c94-4c0b-8f3b-8aa8785c46a6
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.provider.body
+    - field.field.node.provider.field_metatags
+    - node.type.provider
+  module:
+    - text
+    - user
+id: node.provider.teaser
+targetEntityType: node
+bundle: provider
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_metatags: true
+  search_api_excerpt: true

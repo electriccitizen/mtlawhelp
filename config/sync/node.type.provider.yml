@@ -1,0 +1,17 @@
+uuid: 6cc771b6-86f1-4fe4-b023-b56f3d0c572c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Provider
+type: provider
+description: 'Add information for a legal help provider.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
