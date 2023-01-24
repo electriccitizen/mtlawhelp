@@ -27,7 +27,7 @@ entity_type: node
 bundle: page
 label: 'Add Sections'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -82,6 +82,9 @@ settings:
       layout_section_single:
         weight: 29
         enabled: true
+      link_file_item:
+        weight: 32
+        enabled: false
       links_files:
         weight: -27
         enabled: true
