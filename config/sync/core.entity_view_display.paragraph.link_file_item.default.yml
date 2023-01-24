@@ -1,0 +1,46 @@
+uuid: 4ef95241-e440-4ca3-911b-6ded3c0f9b0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_file_item.field_file
+    - field.field.paragraph.link_file_item.field_link
+    - field.field.paragraph.link_file_item.field_plain_text
+    - paragraphs.paragraphs_type.link_file_item
+  module:
+    - link
+id: paragraph.link_file_item.default
+targetEntityType: paragraph
+bundle: link_file_item
+mode: default
+content:
+  field_file:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_plain_text:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true
