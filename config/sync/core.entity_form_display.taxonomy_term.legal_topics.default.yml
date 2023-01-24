@@ -1,14 +1,12 @@
-uuid: dd15b3bf-2b56-4b41-8f59-e3928b6e3e1e
+uuid: d9e09a6b-be4a-44ad-9b66-85eb452b152a
 langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.event_categories
-_core:
-  default_config_hash: YNuKIABwKJsUZZSzeNOIoQf9jNRK_OHCWtF-DMe026c
-id: taxonomy_term.event_categories.default
+    - taxonomy.vocabulary.legal_topics
+id: taxonomy_term.legal_topics.default
 targetEntityType: taxonomy_term
-bundle: event_categories
+bundle: legal_topics
 mode: default
 content:
   name:

@@ -1,14 +1,12 @@
-uuid: 22f61fa7-cdac-4745-97f0-c49be78ca253
+uuid: b5cb7022-b309-4007-bf26-137adf01b030
 langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.news_categories
-_core:
-  default_config_hash: bkrId3x5aNzwSPRr4pVHyd9wTglUBgvxDZJyH7tRCus
-id: taxonomy_term.news_categories.default
+    - taxonomy.vocabulary.phone_type
+id: taxonomy_term.phone_type.default
 targetEntityType: taxonomy_term
-bundle: news_categories
+bundle: phone_type
 mode: default
 content:
   name:

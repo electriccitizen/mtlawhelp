@@ -1,0 +1,22 @@
+uuid: a09964f5-6ac1-4105-82ba-3fad493ce147
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: provider
+label: Provider
+type: 'canonical_entities:node'
+pattern: 'providers/[node:title]'
+selection_criteria:
+  9c21d305-481c-408c-85a7-ed84e4ddb851:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 9c21d305-481c-408c-85a7-ed84e4ddb851
+    context_mapping:
+      node: node
+    bundles:
+      provider: provider
+selection_logic: and
+weight: -5
+relationships: {  }
