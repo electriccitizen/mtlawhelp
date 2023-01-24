@@ -45,21 +45,6 @@
 					width: 33.333%;
 				}
 			}
-			//newsletter
-			.block-newsletter{
-				width: 100%;
-				@include tab{
-					width: 33.33%;
-				}
-				.field.body{
-					a{
-						color: $prefooterLink;
-						&:hover,&:focus{
-							color: $prefooterLinkHover;
-						}
-					}
-				}
-			}
 			//menu
 			.block-footer-menu{
 				width: 100%;
