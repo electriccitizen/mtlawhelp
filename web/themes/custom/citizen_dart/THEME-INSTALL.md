@@ -32,3 +32,14 @@ Working:
 (a) cd into the Citizen Dart folder
 (b) run whichever theme command you prefer from above.
 
+## PHPStorm IDE FileWatcher setup
+1. In the citizen_dart theme, open the `components/style.scss` file.
+2. Open the Preferences pane and go to Tools > FileWatchers.
+3. Create a new SCSS watcher.
+4. Complete the fields as follows:
+   ```
+   Scope: Project Files
+   Program: sass
+   Arguments: --style=compressed $FileDir$/$FileName$:$FileParentDir$/dist/$FileNameWithoutExtension$.css
+   Output paths to refresh: $FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map
+   ```
