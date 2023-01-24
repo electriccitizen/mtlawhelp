@@ -1,18 +1,16 @@
-uuid: 7f8af6a3-af53-41a7-b489-d5df94204a0c
+uuid: 8f76a460-9945-4310-bdd7-2ba59f34871f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_file_multi
+    - field.storage.paragraph.field_file
     - media.type.document
-    - paragraphs.paragraphs_type.links_files
-_core:
-  default_config_hash: TCbaNKeX_Qk8TvuUuMu9y6tJfZtpouODhcR26s-KROg
-id: paragraph.links_files.field_file_multi
-field_name: field_file_multi
+    - paragraphs.paragraphs_type.link_file_item
+id: paragraph.link_file_item.field_file
+field_name: field_file
 entity_type: paragraph
-bundle: links_files
-label: Files
+bundle: link_file_item
+label: File
 description: ''
 required: false
 translatable: false
@@ -25,6 +23,7 @@ settings:
       document: document
     sort:
       field: _none
+      direction: ASC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

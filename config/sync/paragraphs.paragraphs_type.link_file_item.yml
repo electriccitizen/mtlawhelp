@@ -1,0 +1,10 @@
+uuid: 5f4a01bd-fb71-4044-953e-c7a1e12d2f61
+langcode: en
+status: true
+dependencies: {  }
+id: link_file_item
+label: Link/File
+icon_uuid: null
+icon_default: null
+description: 'Add a link or file with descriptive text to the links & files widget.'
+behavior_plugins: {  }

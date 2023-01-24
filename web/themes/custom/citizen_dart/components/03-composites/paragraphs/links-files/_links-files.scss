@@ -6,19 +6,26 @@
 
 .paragraph--type--links-files{
 	@include textConstrain;
-	//set margins for links and files lists
 	.links-files{
-		margin-top: 2.5rem;
+		margin-bottom: -$spaceSm;
 		&.multi-col{
-			@include smallTab{
-				.node-section > .layout.one-column &,.widget-section > .layout--onecol &{
-					@include cssColumns(2,4rem,nobreak);
+			.field-links-files{
+				@include smallTab{
+					.node-section > .layout.one-column &,.node-section > .layout--twocol-sideleft &,.widget-section > .layout--onecol &{
+						@include cssColumns(2,4rem,nobreak);
+					}
+				}
+			}
+		}//end multi column
+		.field-links-files{
+			& > div{
+				margin-bottom: $spaceSm;
+				.field-link,.field-file{
+					font-weight: $heavy;
+					margin-bottom: $spaceXxs;
 				}
 			}
 		}
-		& > div{
-			margin-bottom: 1rem;
-		}
-	}
+	}//end links files
 }//end links-files widget
 

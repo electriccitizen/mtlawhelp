@@ -4,13 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
-    - field.field.paragraph.links_files.field_file_multi
-    - field.field.paragraph.links_files.field_link_multi
+    - field.field.paragraph.links_files.field_links_files
     - field.field.paragraph.links_files.field_widget_title
     - paragraphs.paragraphs_type.links_files
   module:
+    - entity_reference_revisions
     - layout_builder
-    - link
 third_party_settings:
   layout_builder:
     enabled: false
@@ -22,24 +21,12 @@ targetEntityType: paragraph
 bundle: links_files
 mode: preview
 content:
-  field_file_multi:
-    type: entity_reference_entity_view
-    label: inline
+  field_links_files:
+    type: entity_reference_revisions_entity_view
+    label: hidden
     settings:
-      view_mode: default
-      link: true
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_link_multi:
-    type: link
-    label: inline
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      view_mode: preview
+      link: ''
     third_party_settings: {  }
     weight: 0
     region: content
