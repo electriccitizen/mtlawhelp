@@ -1,0 +1,14 @@
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        components:
+          103eb759-3d3a-4322-927c-8caea613c448:
+            configuration:
+              label: Roles
+          6834419a-b02b-4dd4-b6d1-f218738f89ff:
+            configuration:
+              label: 'ID de Usuario'
+          d7abd6a3-7a97-4d6f-ba9d-939ac08d4d43:
+            configuration:
+              label: Nombre

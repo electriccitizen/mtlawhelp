@@ -1,0 +1,22 @@
+uuid: 9facecc6-ac68-45ff-841e-b11279e6968b
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.custom_embed
+id: paragraph.custom_embed.status
+field_name: status
+entity_type: paragraph
+bundle: custom_embed
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

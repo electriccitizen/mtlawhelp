@@ -41,6 +41,7 @@ hidden:
   addtoany: true
   created: true
   field_caption: true
+  langcode: true
   name: true
   search_api_excerpt: true
   thumbnail: true

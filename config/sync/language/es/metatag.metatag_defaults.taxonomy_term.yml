@@ -1,0 +1,4 @@
+label: 'Término de la taxonomía'
+tags:
+  title: '[term:name] | [site:name]'
+  description: '[term:description]'

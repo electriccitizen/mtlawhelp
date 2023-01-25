@@ -1,0 +1,22 @@
+uuid: 4edc40ee-a319-48e9-8c8f-c3850f7e195d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.portal
+id: paragraph.portal.status
+field_name: status
+entity_type: paragraph
+bundle: portal
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

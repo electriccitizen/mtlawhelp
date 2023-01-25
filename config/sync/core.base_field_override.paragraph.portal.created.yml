@@ -1,0 +1,18 @@
+uuid: f86ed861-2020-4466-9f53-36986630aa97
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.portal
+id: paragraph.portal.created
+field_name: created
+entity_type: paragraph
+bundle: portal
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

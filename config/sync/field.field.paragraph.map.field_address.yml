@@ -16,7 +16,7 @@ bundle: map
 label: Address
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     langcode: ''

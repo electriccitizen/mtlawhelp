@@ -1,0 +1,51 @@
+display:
+  default:
+    display_title: Máster
+    display_options:
+      fields:
+        title:
+          label: Título
+          separator: ', '
+        changed:
+          separator: ', '
+        operations:
+          label: Acciones
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      arguments:
+        uid:
+          exception:
+            title: Todo(s)
+  all_recent_content:
+    display_options:
+      fields:
+        title:
+          label: Título
+          separator: ', '
+        type:
+          label: Tipo
+          separator: ', '
+        uid:
+          separator: ', '
+        changed:
+          separator: ', '
+        operations:
+          label: Acciones
+  my_content:
+    display_options:
+      fields:
+        title:
+          label: Título
+          separator: ', '
+        type:
+          label: Tipo
+          separator: ', '
+        changed:
+          separator: ', '
+        operations:
+          label: Acciones

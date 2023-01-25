@@ -1,0 +1,22 @@
+uuid: 78c4b2d9-406a-48ac-bd81-b0d5185b19fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.horizontal_rule
+id: paragraph.horizontal_rule.status
+field_name: status
+entity_type: paragraph
+bundle: horizontal_rule
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

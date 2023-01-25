@@ -1,0 +1,20 @@
+uuid: 4abc63d0-06c0-4b25-9c0c-44121a050b65
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.clinic
+  module:
+    - path
+id: node.clinic.path
+field_name: path
+entity_type: node
+bundle: clinic
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
