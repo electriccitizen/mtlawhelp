@@ -2,6 +2,47 @@
   ADMIN CSS
 =========================*/
 
+/* ADMIN LANGUAGE SWITCHER */
+.block-language-blocklanguage-interface{
+	background: #fcd105;
+	padding: .5rem;
+	border-radius: .5rem;
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+.block-language-blocklanguage-interface .links{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.block-language-blocklanguage-interface .links li{
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+.block-language-blocklanguage-interface .links li:first-child:after{
+	content: '|';
+	position: relative;
+	top: -1px;
+	right: -0.5rem;
+}
+.block-language-blocklanguage-interface .links li a:not(.is-active){
+	font-weight: 700;
+	text-decoration: underline;
+	color: #232323;
+}
+.block-language-blocklanguage-interface .links li a:not(.is-active):hover{
+	color: #1548bd;
+	text-decoration: none;
+}
+.block-language-blocklanguage-interface .links li a.is-active{
+	pointer-events: none;
+	opacity: .4;
+}
+
+
 /* show field label on layout paragraphs fields */
 .field--name-field-paragraphs > fieldset.layout-paragraphs-field > legend {
   display: block;

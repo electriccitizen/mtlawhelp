@@ -1,0 +1,20 @@
+uuid: d82a289c-78b4-43cc-87d4-5c20356ae3ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.resource_categories
+  module:
+    - text
+id: taxonomy_term.resource_categories.description
+field_name: description
+entity_type: taxonomy_term
+bundle: resource_categories
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: 39f67d68-bd22-404c-ba50-aaf1106fce8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.legal_topics
+  module:
+    - path
+id: taxonomy_term.legal_topics.path
+field_name: path
+entity_type: taxonomy_term
+bundle: legal_topics
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

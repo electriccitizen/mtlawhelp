@@ -1,0 +1,13 @@
+content:
+  field_location:
+    settings:
+      google_map_settings:
+        map_features:
+          control_geocoder:
+            settings:
+              settings:
+                label: Dirección
+    third_party_settings:
+      geolocation_address:
+        settings:
+          label: Dirección

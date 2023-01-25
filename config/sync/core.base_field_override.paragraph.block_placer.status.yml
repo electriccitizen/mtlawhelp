@@ -1,0 +1,22 @@
+uuid: 04378f36-57cb-468d-be61-758623f84d42
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.block_placer
+id: paragraph.block_placer.status
+field_name: status
+entity_type: paragraph
+bundle: block_placer
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

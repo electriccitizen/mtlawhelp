@@ -1,0 +1,4 @@
+label: '404 página no encontrada'
+tags:
+  shortlink: '[site:url]'
+  canonical_url: '[site:url]'

@@ -1,0 +1,33 @@
+uuid: fce422d4-029c-43fa-b63c-f217e09af5de
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: provider_spanish
+label: 'Provider - Spanish'
+type: 'canonical_entities:node'
+pattern: 'proveedores/[node:title]'
+selection_criteria:
+  531e0212-2df9-452c-be99-ebed10ff54cf:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 531e0212-2df9-452c-be99-ebed10ff54cf
+    context_mapping:
+      node: node
+    bundles:
+      provider: provider
+  d4c0aeb3-11ac-415d-bfe0-ae66acc1b296:
+    id: language
+    negate: false
+    uuid: d4c0aeb3-11ac-415d-bfe0-ae66acc1b296
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -2
+relationships:
+  'node:langcode:language':
+    label: Language

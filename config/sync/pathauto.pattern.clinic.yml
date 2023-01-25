@@ -3,20 +3,31 @@ langcode: en
 status: true
 dependencies:
   module:
+    - language
     - node
 id: clinic
 label: Clinic
 type: 'canonical_entities:node'
 pattern: 'clinics/[node:title]'
 selection_criteria:
-  700dc547-6856-4725-9f0b-604e20cdf862:
+  fe9bd395-8ced-4a1a-83b8-5e432ddc0857:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 700dc547-6856-4725-9f0b-604e20cdf862
+    uuid: fe9bd395-8ced-4a1a-83b8-5e432ddc0857
     context_mapping:
       node: node
     bundles:
       clinic: clinic
+  2c9325a5-b013-41f3-b17d-d3813fd1adc3:
+    id: language
+    negate: false
+    uuid: 2c9325a5-b013-41f3-b17d-d3813fd1adc3
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
 selection_logic: and
-weight: -5
-relationships: {  }
+weight: -8
+relationships:
+  'node:langcode:language':
+    label: Language

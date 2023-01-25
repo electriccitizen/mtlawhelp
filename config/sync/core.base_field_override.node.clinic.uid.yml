@@ -1,0 +1,20 @@
+uuid: d99dcc11-48a8-44be-b4e1-fa5637ea3245
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.clinic
+id: node.clinic.uid
+field_name: uid
+entity_type: node
+bundle: clinic
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

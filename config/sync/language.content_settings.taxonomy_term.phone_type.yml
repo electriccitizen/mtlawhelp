@@ -1,0 +1,18 @@
+uuid: 83bba7e2-3cee-4dcb-8206-275d543fbef8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.phone_type
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.phone_type
+target_entity_type_id: taxonomy_term
+target_bundle: phone_type
+default_langcode: site_default
+language_alterable: false

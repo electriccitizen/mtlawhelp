@@ -1,0 +1,10 @@
+settings:
+  allowed_values:
+    1:
+      label: Pequeño
+    2:
+      label: Medio
+    3:
+      label: Grande
+    4:
+      label: Completo

@@ -1,0 +1,33 @@
+uuid: ca949db8-b45a-43e2-8ca2-e9051b905348
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: resource_spanish
+label: 'Resource - Spanish'
+type: 'canonical_entities:node'
+pattern: 'recursos/[node:title]'
+selection_criteria:
+  b0455b90-ccb6-4420-a69c-a8bbee83aacc:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b0455b90-ccb6-4420-a69c-a8bbee83aacc
+    context_mapping:
+      node: node
+    bundles:
+      resource: resource
+  f280c889-405e-4f4f-89e5-fe309662c168:
+    id: language
+    negate: false
+    uuid: f280c889-405e-4f4f-89e5-fe309662c168
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: 0
+relationships:
+  'node:langcode:language':
+    label: Language

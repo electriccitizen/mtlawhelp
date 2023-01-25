@@ -113,7 +113,9 @@
     },
     "patches": {
       "drupal/core": {
-        "Update module can get 'stuck' with 'no releases available', https://www.drupal.org/project/drupal/issues/2920285": "https://www.drupal.org/files/issues/2920285-update-status.patch"
+        "Update module can get 'stuck' with 'no releases available', https://www.drupal.org/project/drupal/issues/2920285": "https://www.drupal.org/files/issues/2920285-update-status.patch",
+        "Fix invalid/cannot access node error when translating nodes when the URl alias tab is displayed":"https://www.drupal.org/files/issues/2021-03-01/3101344-drupal-core-fix-permissions-checking-while-node-translating-64.patch",
+        "Fix AccessAwareRouter MethodNotAllowedException": "https://www.drupal.org/files/issues/2021-10-22/2706241-59.patch"
       },
       "drupal/entity_embed": {
         "Array to string conversion for Media Image": "https://www.drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch"

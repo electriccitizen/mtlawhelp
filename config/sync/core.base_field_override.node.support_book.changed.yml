@@ -1,0 +1,18 @@
+uuid: 56d0eb85-b101-45b1-b4be-881ed58a87fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.support_book
+id: node.support_book.changed
+field_name: changed
+entity_type: node
+bundle: support_book
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

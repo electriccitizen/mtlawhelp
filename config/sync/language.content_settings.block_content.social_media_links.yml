@@ -1,0 +1,18 @@
+uuid: d5e34b98-2247-48a3-8833-4a08b1f2381d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_media_links
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: block_content.social_media_links
+target_entity_type_id: block_content
+target_bundle: social_media_links
+default_langcode: site_default
+language_alterable: false

@@ -14,7 +14,7 @@ bundle: image
 label: Caption
 description: '<strong>NOTE:</strong> Captions may not be displayed in all places this media is used.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

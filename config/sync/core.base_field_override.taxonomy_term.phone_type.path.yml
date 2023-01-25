@@ -1,0 +1,20 @@
+uuid: 9a2c70d0-a227-4fb9-a643-bf56e0ee306b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.phone_type
+  module:
+    - path
+id: taxonomy_term.phone_type.path
+field_name: path
+entity_type: taxonomy_term
+bundle: phone_type
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
