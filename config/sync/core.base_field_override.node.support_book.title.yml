@@ -1,0 +1,18 @@
+uuid: a72ac598-2ab9-4ab7-9815-1258cb480da0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.support_book
+id: node.support_book.title
+field_name: title
+entity_type: node
+bundle: support_book
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

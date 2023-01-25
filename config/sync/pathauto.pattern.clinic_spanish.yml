@@ -1,0 +1,33 @@
+uuid: 7a213925-3bf6-40b4-bed9-99fcb363ef2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: clinic_spanish
+label: 'Clinic - Spanish'
+type: 'canonical_entities:node'
+pattern: 'clínicas/[node:title]'
+selection_criteria:
+  a27cd725-766e-442a-a42f-424ca74e3e80:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a27cd725-766e-442a-a42f-424ca74e3e80
+    context_mapping:
+      node: node
+    bundles:
+      clinic: clinic
+  1ef96757-3f21-4507-a587-d913881573e1:
+    id: language
+    negate: false
+    uuid: 1ef96757-3f21-4507-a587-d913881573e1
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -7
+relationships:
+  'node:langcode:language':
+    label: Language

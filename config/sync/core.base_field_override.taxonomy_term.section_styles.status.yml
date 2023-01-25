@@ -1,0 +1,22 @@
+uuid: 6a6ee26b-bfff-47a4-ba15-4a442b26196e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.section_styles
+id: taxonomy_term.section_styles.status
+field_name: status
+entity_type: taxonomy_term
+bundle: section_styles
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,16 @@
+third_party_settings:
+  layout_builder:
+    sections:
+      -
+        components:
+          4e781ed5-235d-4ca6-bb14-f31ab6fd65cb:
+            configuration:
+              label: 'Enlaces de ayuda a la navegación'
+      -
+        components:
+          6613ea32-be87-42cb-af4b-ecfadae7fb05:
+            configuration:
+              label: Título
+          d0512849-05a1-481a-ac50-b13b6d91f769:
+            configuration:
+              label: Cuerpo

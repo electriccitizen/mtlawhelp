@@ -1,0 +1,5 @@
+label: '403 acceso denegado'
+tags:
+  shortlink: '[site:url]'
+  title: '[current-page:title] | [site:name]'
+  canonical_url: '[site:url]'

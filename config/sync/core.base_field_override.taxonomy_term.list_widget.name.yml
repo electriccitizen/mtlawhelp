@@ -1,0 +1,18 @@
+uuid: ca576f5b-5c2d-43d6-b1b5-050fad3619c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.list_widget
+id: taxonomy_term.list_widget.name
+field_name: name
+entity_type: taxonomy_term
+bundle: list_widget
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

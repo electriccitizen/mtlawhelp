@@ -1,0 +1,22 @@
+uuid: caf57a32-b844-4ada-8b94-7e66f2b46904
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.legal_topics
+id: taxonomy_term.legal_topics.status
+field_name: status
+entity_type: taxonomy_term
+bundle: legal_topics
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

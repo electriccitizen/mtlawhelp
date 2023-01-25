@@ -1,0 +1,18 @@
+uuid: 1898dc8b-8626-464b-957d-f34ea05dc773
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_media_links
+id: block_content.social_media_links.metatag
+field_name: metatag
+entity_type: block_content
+bundle: social_media_links
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

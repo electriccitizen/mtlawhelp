@@ -17,6 +17,8 @@ function citizen_dart_preprocess_html(&$variables) {
   if(isset($node_revision)){
     $vid = $node_revision->getRevisionId();
   }
+  $language = str_replace(' ','-',strtolower(\Drupal::languageManager()->getCurrentLanguage()->getName()));
+  $variables['attributes']['class'][] = $language;
   if ($node) {
     if ((!$node instanceof NodeInterface) && (isset($vid))) {
       $node = \Drupal::entityTypeManager()->getStorage('node')->loadRevision($vid);
@@ -56,6 +58,26 @@ function citizen_dart_preprocess_paragraph__form_placer(&$variables) {
     $webform = $variables['elements']['field_form'][0]['#webform'];
     $webform->set('webform_placer', TRUE);
     $webform->set('show_placer_title', $form_title);
+  }
+}
+
+/**
+ * Implements hook_preprocess links to pass translation information to the language switcher.
+ */
+function citizen_dart_preprocess_links(&$variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  $node_revision = \Drupal::routeMatch()->getParameter('node_revision');
+  if(isset($node_revision)){
+    $vid = $node_revision->getRevisionId();
+  }
+  if ($node) {
+    if ((!$node instanceof NodeInterface) && (isset($vid))) {
+      $node = \Drupal::entityTypeManager()->getStorage('node')->loadRevision($vid);
+    }
+    if($variables['theme_hook_original'] == 'links__language_block'){
+      //check for translations of the node and pass existing ones as twig variable
+      $variables['transInfo'] = $node->getTranslationLanguages();
+    }
   }
 }
 

@@ -1,0 +1,20 @@
+uuid: 2969bbfb-c83c-4857-98f6-16ca675ed85a
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - citizen_dart
+id: languageswitchercontent
+theme: citizen_dart
+region: header
+weight: -3
+provider: null
+plugin: 'language_block:language_content'
+settings:
+  id: 'language_block:language_content'
+  label: 'Language switcher (Content)'
+  label_display: '0'
+  provider: language
+visibility: {  }

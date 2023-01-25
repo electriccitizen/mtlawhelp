@@ -15,7 +15,7 @@ bundle: page
 label: 'Featured Image'
 description: '<strong>Optimal image size:</strong> 1600x912px'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,18 @@
+uuid: 913e5d36-2066-4f64-bc80-76e6d56242c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.clinic
+id: node.clinic.created
+field_name: created
+entity_type: node
+bundle: clinic
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

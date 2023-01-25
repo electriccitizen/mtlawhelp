@@ -20,5 +20,5 @@ selection_criteria:
     bundles:
       support_book: support_book
 selection_logic: and
-weight: -5
+weight: 1
 relationships: {  }

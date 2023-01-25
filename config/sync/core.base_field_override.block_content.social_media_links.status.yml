@@ -1,0 +1,22 @@
+uuid: a74d527e-0185-43d6-8173-31c0e5a72a63
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_media_links
+id: block_content.social_media_links.status
+field_name: status
+entity_type: block_content
+bundle: social_media_links
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
