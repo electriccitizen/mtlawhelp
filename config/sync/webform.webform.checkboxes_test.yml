@@ -4,9 +4,9 @@ status: open
 dependencies: {  }
 _core:
   default_config_hash: FW-Fd3TCFp5D5FqRE7GgeZuydWN5BbyXPEZMUwYmDKg
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 8
 template: false
 archive: false
