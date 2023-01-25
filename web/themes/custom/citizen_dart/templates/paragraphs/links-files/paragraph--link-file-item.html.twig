@@ -37,14 +37,11 @@
  */
 #}
 
-{% extends 'paragraph.html.twig' %}
-	
-{% block widgetContent %}
-	{% set count = content.field_links_files['#items']|length %}
+{{ content.field_link }}
+{% if not content.field_link.0 %}
+	{{ content.field_file }}
+{% endif %}
+{{ content.field_plain_text }}
 
-	<div class="field links-files{% if count > 4 %} multi-col{% endif %}">
-		{{ content.field_links_files }}
-	</div>
 
-{% endblock %}
 
