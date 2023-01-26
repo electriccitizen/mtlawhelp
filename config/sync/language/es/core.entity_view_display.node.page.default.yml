@@ -9,8 +9,3 @@ third_party_settings:
           87ff3b06-0381-47f3-b30d-0b8168ef1dd5:
             configuration:
               label: 'Enlaces de ayuda a la navegación'
-      -
-        components:
-          b7b7e9c4-781b-42a6-be8f-ccf4b34e3d04:
-            configuration:
-              label: Cuerpo

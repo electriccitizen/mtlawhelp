@@ -5,19 +5,16 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_image
+    - field.field.node.page.field_keywords
     - field.field.node.page.field_metatags
     - field.field.node.page.field_paragraphs
     - node.type.page
-    - system.menu.main
   module:
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
-    - menu_block
     - system
     - user
-  theme:
-    - citizen_dart
 third_party_settings:
   layout_builder:
     enabled: true
@@ -78,33 +75,6 @@ third_party_settings:
               context_mapping: {  }
             weight: 2
             additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: two_column_sidebar_left
-        layout_settings:
-          label: ''
-          context_mapping: {  }
-        components:
-          658bbdf5-c0cd-44dd-b4ad-93218db95b1b:
-            uuid: 658bbdf5-c0cd-44dd-b4ad-93218db95b1b
-            region: first
-            configuration:
-              id: 'menu_block:main'
-              label: 'In This Section'
-              label_display: visible
-              provider: menu_block
-              context_mapping: {  }
-              follow: true
-              follow_parent: active
-              label_link: true
-              label_type: root
-              level: 2
-              depth: 3
-              expand_all_items: true
-              parent: 'main:'
-              suggestion: section_menu
-            weight: 0
-            additional: {  }
           b7b7e9c4-781b-42a6-be8f-ccf4b34e3d04:
             uuid: b7b7e9c4-781b-42a6-be8f-ccf4b34e3d04
             region: content
@@ -121,7 +91,7 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 0
+            weight: 4
             additional: {  }
           604d500d-e75b-408b-a64a-406868772fe3:
             uuid: 604d500d-e75b-408b-a64a-406868772fe3
@@ -140,7 +110,7 @@ third_party_settings:
                 settings:
                   view_mode: default
                 third_party_settings: {  }
-            weight: 1
+            weight: 5
             additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
@@ -182,6 +152,14 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_keywords:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
