@@ -1,0 +1,19 @@
+uuid: 95e83950-36d2-4c06-a38e-4da60d140e9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keywords
+    - node.type.page
+id: node.page.field_keywords
+field_name: field_keywords
+entity_type: node
+bundle: page
+label: Keywords
+description: 'If a user''s site search exactly matches one of the keywords (or phrases) entered here, then this result will be promoted to the top of the search results. This field should be used sparingly and only for the most ''universal'' content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
