@@ -45,9 +45,6 @@ settings:
       from_library:
         weight: 20
         enabled: false
-      gallery:
-        weight: 21
-        enabled: false
       horizontal_rule:
         weight: 22
         enabled: false

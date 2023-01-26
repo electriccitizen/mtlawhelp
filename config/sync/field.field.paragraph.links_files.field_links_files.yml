@@ -43,9 +43,6 @@ settings:
       form_placer:
         weight: 26
         enabled: false
-      gallery:
-        weight: 27
-        enabled: false
       horizontal_rule:
         weight: 28
         enabled: false

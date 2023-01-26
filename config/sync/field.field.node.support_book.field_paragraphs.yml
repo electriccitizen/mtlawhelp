@@ -9,7 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.block_placer
     - paragraphs.paragraphs_type.custom_embed
     - paragraphs.paragraphs_type.form_placer
-    - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.horizontal_rule
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.layout_section
@@ -41,7 +40,6 @@ settings:
       accordions: accordions
       custom_embed: custom_embed
       form_placer: form_placer
-      gallery: gallery
       horizontal_rule: horizontal_rule
       image: image
       layout_section: layout_section
@@ -70,9 +68,6 @@ settings:
         enabled: true
       form_placer:
         weight: -34
-        enabled: true
-      gallery:
-        weight: -33
         enabled: true
       horizontal_rule:
         weight: -32

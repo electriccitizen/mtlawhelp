@@ -28,10 +28,8 @@ featherlight:
   css:
     theme:
       components-addons/featherlight/featherlight.css: {}
-      components-addons/featherlight/featherlight.gallery.css: {}
   js:
     components-addons/featherlight/featherlight.min.js: { minified: true }
-    components-addons/featherlight/featherlight.gallery.min.js: { minified: true }
 fonts:
   css:
     theme:
@@ -40,10 +38,6 @@ forms:
   version: 1.0
   js:
     components/01-parts/forms/forms.js: {}
-galleries:
-  version: 1.0
-  js:
-    components/03-composites/paragraphs/gallery/gallery.js: {}
 layout:
   version: 1.0
   js:
