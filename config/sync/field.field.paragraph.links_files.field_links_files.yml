@@ -55,9 +55,6 @@ settings:
       layout_section:
         weight: 30
         enabled: false
-      layout_section_single:
-        weight: 31
-        enabled: false
       link_file_item:
         weight: 20
         enabled: true
