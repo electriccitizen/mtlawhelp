@@ -98,7 +98,6 @@ permissions:
   - 'delete own webform'
   - 'delete own webform submission'
   - 'delete page revisions'
-  - 'delete terms in categories'
   - 'delete provider revisions'
   - 'delete resource revisions'
   - 'delete terms in legal_topics'

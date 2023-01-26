@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - block_content.type.basic
-    - block_content.type.newsletter
     - block_content.type.social_media_links
     - field.storage.paragraph.field_block
     - paragraphs.paragraphs_type.block_placer
@@ -25,7 +24,6 @@ settings:
   handler_settings:
     target_bundles:
       basic: basic
-      newsletter: newsletter
       social_media_links: social_media_links
     sort:
       field: _none
