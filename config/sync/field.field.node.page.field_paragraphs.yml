@@ -8,12 +8,10 @@ dependencies:
     - paragraphs.paragraphs_type.accordions
     - paragraphs.paragraphs_type.custom_embed
     - paragraphs.paragraphs_type.form_placer
-    - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.horizontal_rule
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.links_files
     - paragraphs.paragraphs_type.map
-    - paragraphs.paragraphs_type.quote
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.video
   module:
@@ -37,12 +35,10 @@ settings:
       accordions: accordions
       custom_embed: custom_embed
       form_placer: form_placer
-      gallery: gallery
       horizontal_rule: horizontal_rule
       image: image
       links_files: links_files
       map: map
-      quote: quote
       text: text
       video: video
     negate: 0
