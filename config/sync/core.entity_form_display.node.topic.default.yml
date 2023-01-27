@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.topic.body
     - field.field.node.topic.field_metatags
+    - field.field.node.topic.field_parent_topic
     - node.type.topic
   module:
     - metatag
@@ -31,6 +32,16 @@ content:
     settings:
       sidebar: true
       use_details: true
+    third_party_settings: {  }
+  field_parent_topic:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select
