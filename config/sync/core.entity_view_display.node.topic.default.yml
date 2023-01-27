@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.topic.body
     - field.field.node.topic.field_metatags
+    - field.field.node.topic.field_parent_topic
     - node.type.topic
   module:
     - layout_builder
@@ -68,6 +69,22 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
+          2ac7abf0-0541-40a7-a573-e026cde5b2ef:
+            uuid: 2ac7abf0-0541-40a7-a573-e026cde5b2ef
+            region: content
+            configuration:
+              id: 'field_block:node:topic:field_parent_topic'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
         third_party_settings: {  }
 id: node.topic.default
 targetEntityType: node
@@ -87,6 +104,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_parent_topic:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
     region: content
   links:
     settings: {  }

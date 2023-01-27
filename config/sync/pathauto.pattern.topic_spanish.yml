@@ -1,0 +1,33 @@
+uuid: ca926e13-4116-458c-9f9c-ea6084226ee3
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: topic_spanish
+label: 'Topic - Spanish'
+type: 'canonical_entities:node'
+pattern: 'temas/[node:field_parent_topic]/[node:title]'
+selection_criteria:
+  c1b33754-c06e-41c7-b8d5-5c2675f7c5dd:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c1b33754-c06e-41c7-b8d5-5c2675f7c5dd
+    context_mapping:
+      node: node
+    bundles:
+      topic: topic
+  2a32ef21-ca8a-4c8f-b98f-fbd24c8636ad:
+    id: language
+    negate: false
+    uuid: 2a32ef21-ca8a-4c8f-b98f-fbd24c8636ad
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -5
+relationships:
+  'node:langcode:language':
+    label: Language
