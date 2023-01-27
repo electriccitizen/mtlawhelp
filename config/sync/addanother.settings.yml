@@ -17,6 +17,7 @@ button:
   clinic: false
   provider: false
   resource: false
+  topic: false
 message:
   page: false
   event: false
@@ -30,6 +31,7 @@ message:
   clinic: false
   provider: false
   resource: false
+  topic: false
 tab:
   page: true
   event: true
@@ -43,6 +45,7 @@ tab:
   clinic: true
   provider: true
   resource: true
+  topic: true
 tab_edit:
   page: false
   event: false
@@ -56,3 +59,4 @@ tab_edit:
   clinic: false
   provider: false
   resource: false
+  topic: false
