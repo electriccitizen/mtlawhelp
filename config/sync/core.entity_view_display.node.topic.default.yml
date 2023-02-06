@@ -9,6 +9,7 @@ dependencies:
     - node.type.topic
   module:
     - layout_builder
+    - layout_builder_restrictions
     - layout_discovery
     - metatag
     - system
@@ -70,6 +71,31 @@ third_party_settings:
             weight: 2
             additional: {  }
         third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts:
+        - layout_onecol
+        - two_column_sidebar_left
+      denylisted_blocks: {  }
+      allowlisted_blocks: {  }
+      restricted_categories:
+        - '@entity'
+        - 'Chaos Tools'
+        - 'Custom block types'
+        - Devel
+        - Forms
+        - Geolocation
+        - Help
+        - 'Inline blocks'
+        - 'Lists (Views)'
+        - 'Responsive Preview'
+        - 'Site Search'
+        - 'Social Share'
+        - Superfish
+        - User
+        - Webform
+        - core
 id: node.topic.default
 targetEntityType: node
 bundle: topic
