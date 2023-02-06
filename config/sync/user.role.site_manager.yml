@@ -20,10 +20,14 @@ dependencies:
   module:
     - addanother
     - block
+    - block_content
+    - content_translation
     - contextual
     - filter
     - media
+    - menu_link_content
     - node
+    - paragraphs
     - path
     - redirect
     - responsive_preview
@@ -60,6 +64,7 @@ permissions:
   - 'cancel account'
   - 'change own username'
   - 'create clinic content'
+  - 'create content translations'
   - 'create document media'
   - 'create image media'
   - 'create media'
@@ -89,6 +94,7 @@ permissions:
   - 'delete any webform'
   - 'delete any webform submission'
   - 'delete clinic revisions'
+  - 'delete content translations'
   - 'delete media'
   - 'delete media'
   - 'delete own clinic content'
@@ -143,7 +149,26 @@ permissions:
   - 'revert resource revisions'
   - 'revert topic revisions'
   - 'switch shortcut sets'
+  - 'translate any entity'
+  - 'translate block_content'
+  - 'translate clinic node'
+  - 'translate document media'
+  - 'translate editable entities'
+  - 'translate image media'
+  - 'translate legal_topics taxonomy_term'
+  - 'translate menu_link_content'
+  - 'translate page node'
+  - 'translate paragraph'
+  - 'translate phone_type taxonomy_term'
+  - 'translate provider node'
+  - 'translate remote_video media'
+  - 'translate resource node'
+  - 'translate resource_categories taxonomy_term'
+  - 'translate service_areas taxonomy_term'
+  - 'translate service_types taxonomy_term'
+  - 'translate topic node'
   - 'update any media'
+  - 'update content translations'
   - 'update media'
   - 'use add another'
   - 'use text format limited_html'
