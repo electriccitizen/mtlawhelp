@@ -1,0 +1,23 @@
+uuid: 4e13167d-5538-49c1-a267-1cddd7fcce5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_is_form
+    - media.type.document
+id: media.document.field_is_form
+field_name: field_is_form
+entity_type: media
+bundle: document
+label: 'Is Form'
+description: 'Check this box if this document is going to be added to a DIY form resource.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

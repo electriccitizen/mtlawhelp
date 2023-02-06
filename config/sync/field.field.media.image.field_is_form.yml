@@ -1,0 +1,23 @@
+uuid: 3f686ea7-a509-492f-9c80-2f8adf5fa92d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_is_form
+    - media.type.image
+id: media.image.field_is_form
+field_name: field_is_form
+entity_type: media
+bundle: image
+label: 'Is Form'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

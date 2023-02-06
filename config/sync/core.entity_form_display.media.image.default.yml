@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.media.image.field_caption
+    - field.field.media.image.field_is_form
     - field.field.media.image.field_media_image
     - image.style.thumbnail
     - media.type.image
@@ -41,8 +42,14 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
+  field_is_form: true
   name: true
   path: true
   status: true

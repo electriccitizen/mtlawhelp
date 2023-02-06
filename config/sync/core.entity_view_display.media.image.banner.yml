@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.media.banner
     - field.field.media.image.field_caption
+    - field.field.media.image.field_is_form
     - field.field.media.image.field_media_image
     - media.type.image
     - responsive_image.styles.banner
@@ -34,6 +35,7 @@ content:
 hidden:
   created: true
   field_caption: true
+  field_is_form: true
   langcode: true
   name: true
   search_api_excerpt: true

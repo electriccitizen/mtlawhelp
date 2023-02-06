@@ -42,6 +42,11 @@
 	opacity: .4;
 }
 
+/* HIDE IS FORM MEDIA LIBRARY FILTER FROM NON-DOCUMENT LIBRARIES */
+.js-media-library-view .views-exposed-form:not([action="/admin/content/media-widget/document"]) .form-item--field-is-form-value{
+	display: none;
+}
+
 /* ADJUST UI DIALOG CLOSE X */
 .ui-dialog.ui-widget .ui-dialog-titlebar-close.ui-button-icon-only{
 	top: 13px;
