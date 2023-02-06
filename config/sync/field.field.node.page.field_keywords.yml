@@ -12,7 +12,7 @@ bundle: page
 label: Keywords
 description: 'If a user''s site search exactly matches one of the keywords (or phrases) entered here, then this result will be promoted to the top of the search results. This field should be used sparingly and only for the most ''universal'' content.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.form_placer
     - paragraphs.paragraphs_type.horizontal_rule
     - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.layout_section
     - paragraphs.paragraphs_type.links_files
     - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.text
@@ -41,6 +42,7 @@ settings:
       map: map
       text: text
       video: video
+      layout_section: layout_section
     negate: 0
     target_bundles_drag_drop:
       accordion_item:
@@ -69,7 +71,7 @@ settings:
         enabled: true
       layout_section:
         weight: 29
-        enabled: false
+        enabled: true
       link_file_item:
         weight: 32
         enabled: false
@@ -85,9 +87,6 @@ settings:
       portals:
         weight: 34
         enabled: false
-      quote:
-        weight: -24
-        enabled: true
       text:
         weight: -23
         enabled: true
