@@ -23,13 +23,6 @@ drawers:
   version: 1.0
   js:
     components/02-chunks/drawers/drawers.js: {}
-featherlight:
-  version: 1.7.13
-  css:
-    theme:
-      components-addons/featherlight/featherlight.css: {}
-  js:
-    components-addons/featherlight/featherlight.min.js: { minified: true }
 fonts:
   css:
     theme:
@@ -72,14 +65,6 @@ select:
   js:
     components-addons/select2/select2.min.js: { minified: true }
     components/01-parts/forms/forms.js: {}
-slick:
-  version: 1.8.1
-  css:
-    theme:
-      components-addons/slick/slick.css: {}
-      components-addons/slick/slick-theme.css: {}
-  js:
-    components-addons/slick/slick.min.js: { minified: true }
 table:
   version: 1.0
   css:
