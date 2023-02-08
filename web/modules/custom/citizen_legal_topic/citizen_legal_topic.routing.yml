@@ -1,0 +1,19 @@
+citizen_legal_topic.subtopic.autocomplete:
+  path: '/citizen-legal-topic/autocomplete/subtopic/{parent_topic}'
+  defaults:
+    _controller: '\Drupal\citizen_legal_topic\Controller\CitizenLegalTopicController::legalTermAutocomplete'
+    _format: json
+  options:
+    parameters:
+      parent_tid: b
+  requirements:
+    _permission: 'access content'
+
+citizen_legal_topic.parent_topic.set:
+  path: '/citizen-legal-topic/parent/set/{nid}'
+  defaults:
+    _controller: '\Drupal\citizen_legal_topic\Controller\CitizenLegalTopicController::setParentTerm'
+    nid: 0
+  requirements:
+    _permission: 'access content'
+
