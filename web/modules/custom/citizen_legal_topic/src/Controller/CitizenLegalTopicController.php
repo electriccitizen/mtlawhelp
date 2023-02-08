@@ -2,14 +2,9 @@
 
 namespace Drupal\citizen_legal_topic\Controller;
 
-use Drupal\Component\Utility\Xss;
-use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\Core\Entity\EntityTypeManager;
-use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\Entity\Node;
 use Laminas\Diactoros\Response\JsonResponse;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

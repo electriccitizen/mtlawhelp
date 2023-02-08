@@ -4,12 +4,36 @@ status: true
 dependencies:
   config:
     - field.field.node.topic.body
+    - field.field.node.topic.field_legal_topic
     - field.field.node.topic.field_metatags
     - field.field.node.topic.field_parent_topic
+    - field.field.node.topic.field_topic_type
     - node.type.topic
   module:
+    - citizen_legal_topic
+    - conditional_fields
+    - field_group
     - metatag
     - text
+third_party_settings:
+  field_group:
+    group_classification:
+      children:
+        - field_topic_type
+        - field_parent_topic
+        - field_legal_topic
+      label: Classification
+      region: content
+      parent_name: ''
+      weight: 6
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: classification
+        open: false
+        description: ''
+        required_fields: true
 id: node.topic.default
 targetEntityType: node
 bundle: topic
@@ -25,6 +49,47 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+  field_legal_topic:
+    type: citizen_legal_topic_field
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        b1e296d4-bced-4de4-b415-53dcce37933d:
+          entity_type: node
+          bundle: topic
+          dependee: field_parent_topic
+          settings:
+            state: disabled
+            condition: empty
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: null
+            effect: show
+            effect_options: {  }
+            selector: ''
+        654a28ec-986f-4d96-b1df-cce4272661de:
+          entity_type: node
+          bundle: topic
+          dependee: field_topic_type
+          settings:
+            state: disabled
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: subtopic
+            effect: show
+            effect_options: {  }
+            selector: ''
   field_metatags:
     type: metatag_firehose
     weight: 3
@@ -35,13 +100,41 @@ content:
     third_party_settings: {  }
   field_parent_topic:
     type: entity_reference_autocomplete
-    weight: 26
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        4ee964f8-0858-4034-ab43-f69021dfe09e:
+          entity_type: node
+          bundle: topic
+          dependee: field_topic_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: subtopic
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+  field_topic_type:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -71,7 +164,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 6
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }

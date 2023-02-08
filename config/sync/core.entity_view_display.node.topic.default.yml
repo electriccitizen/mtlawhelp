@@ -4,14 +4,18 @@ status: true
 dependencies:
   config:
     - field.field.node.topic.body
+    - field.field.node.topic.field_legal_topic
     - field.field.node.topic.field_metatags
     - field.field.node.topic.field_parent_topic
+    - field.field.node.topic.field_topic_type
     - node.type.topic
   module:
+    - citizen_legal_topic
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
     - metatag
+    - options
     - system
     - text
     - user
@@ -70,13 +74,42 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
+          7c07f9e8-9371-414f-9faf-c50868399932:
+            uuid: 7c07f9e8-9371-414f-9faf-c50868399932
+            region: content
+            configuration:
+              id: 'field_block:node:topic:field_topic_type'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          cdc02aee-5fa4-463e-af4d-21b3f8ba4b9c:
+            uuid: cdc02aee-5fa4-463e-af4d-21b3f8ba4b9c
+            region: content
+            configuration:
+              id: 'field_block:node:topic:field_legal_topic'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: citizen_legal_topic_field_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories: {  }
     entity_view_mode_restriction:
       allowed_layouts:
         - layout_onecol
-        - two_column_sidebar_left
       denylisted_blocks: {  }
       allowlisted_blocks: {  }
       restricted_categories:
@@ -108,6 +141,13 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_legal_topic:
+    type: citizen_legal_topic_field_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
   field_metatags:
     type: metatag_empty_formatter
     label: above
@@ -122,6 +162,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_topic_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
     region: content
   links:
     settings: {  }
