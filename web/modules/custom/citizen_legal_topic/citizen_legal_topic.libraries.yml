@@ -1,0 +1,8 @@
+citizen_legal_topic_field:
+
+  js:
+    js/citizen_legal_topic.js: {}
+  dependencies:
+    - core/drupal.ajax
+
+
