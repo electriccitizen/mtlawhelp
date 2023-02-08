@@ -6,12 +6,14 @@ dependencies:
     - field.field.node.topic.body
     - field.field.node.topic.field_metatags
     - field.field.node.topic.field_parent_topic
+    - field.field.node.topic.field_topic_type
     - node.type.topic
   module:
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
     - metatag
+    - options
     - system
     - text
     - user
@@ -70,6 +72,21 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
+          7c07f9e8-9371-414f-9faf-c50868399932:
+            uuid: 7c07f9e8-9371-414f-9faf-c50868399932
+            region: content
+            configuration:
+              id: 'field_block:node:topic:field_topic_type'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories: {  }
@@ -122,6 +139,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_topic_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
     region: content
   links:
     settings: {  }

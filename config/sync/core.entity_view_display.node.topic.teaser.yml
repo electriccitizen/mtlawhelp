@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.topic.body
     - field.field.node.topic.field_metatags
     - field.field.node.topic.field_parent_topic
+    - field.field.node.topic.field_topic_type
     - node.type.topic
   module:
     - text
@@ -32,5 +33,6 @@ content:
 hidden:
   field_metatags: true
   field_parent_topic: true
+  field_topic_type: true
   langcode: true
   search_api_excerpt: true
