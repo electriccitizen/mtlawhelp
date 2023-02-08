@@ -25,7 +25,7 @@ class LegalTopicWidget extends WidgetBase {
 
     $element['citizen_legal_topic_target_id'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Legal Topic'),
+//      '#title' => $this->t('Legal Topic'),
       '#default_value' => isset($items[$delta]->citizen_legal_topic_target_id) ? $items[$delta]->citizen_legal_topic_target_id : NULL,
       '#autocomplete_route_name' => 'citizen_legal_topic.subtopic.autocomplete',
       '#autocomplete_route_parameters' => ['parent_topic' => 0],

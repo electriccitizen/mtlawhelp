@@ -11,6 +11,7 @@ use Drupal\node\Entity\Node;
 use Laminas\Diactoros\Response\JsonResponse;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Returns responses for Citizen Legal Topic routes.
@@ -22,9 +23,9 @@ class CitizenLegalTopicController extends ControllerBase {
    */
   public function legalTermAutocomplete(Request $request) {
     $tempStore = \Drupal::service('tempstore.private')->get('legal_topic');
-    $parent = $tempStore->get('parent');
+    $parent = $tempStore->get('parent') ?? 0;
     $node = Node::load($parent);
-    $parent_term = $node->get('field_legal_topic')->getValue()[0]['target_id'] ?? 0;
+    $parent_term = $node ? $node->get('field_legal_topic')->getValue()[0]['citizen_legal_topic_target_id'] : 0;
     $terms = [];
       $tree = $this->entityTypeManager()->getStorage('taxonomy_term')->loadTree('legal_topics', $parent_term, 1);
       foreach ($tree as $term) {
@@ -48,6 +49,7 @@ class CitizenLegalTopicController extends ControllerBase {
   public function setParentTerm(Request $request, $nid) {
     $tempStore = \Drupal::service('tempstore.private')->get('legal_topic');
     $tempStore->set('parent', $nid);
+    return new Response();
   }
 
 }
