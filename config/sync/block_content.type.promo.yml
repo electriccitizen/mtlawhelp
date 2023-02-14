@@ -1,0 +1,8 @@
+uuid: d8fc5bbc-bc5f-4b64-b2a8-52e3b7b4246b
+langcode: en
+status: true
+dependencies: {  }
+id: promo
+label: Promo
+revision: 0
+description: 'Used to add a group of promotional callouts.'

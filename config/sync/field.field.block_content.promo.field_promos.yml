@@ -1,0 +1,76 @@
+uuid: 0096f6c4-48af-4948-b275-4b4c17a7b46d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.promo
+    - field.storage.block_content.field_promos
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: block_content.promo.field_promos
+field_name: field_promos
+entity_type: block_content
+bundle: promo
+label: Promos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text: text
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: 18
+        enabled: false
+      accordions:
+        weight: 17
+        enabled: false
+      block_placer:
+        weight: 19
+        enabled: false
+      content_placer:
+        weight: 20
+        enabled: false
+      custom_embed:
+        weight: 21
+        enabled: false
+      form_placer:
+        weight: 22
+        enabled: false
+      horizontal_rule:
+        weight: 23
+        enabled: false
+      image:
+        weight: 24
+        enabled: false
+      layout_section:
+        weight: 25
+        enabled: false
+      link_file_item:
+        weight: 27
+        enabled: false
+      links_files:
+        weight: 26
+        enabled: false
+      map:
+        weight: 28
+        enabled: false
+      portal:
+        weight: 29
+        enabled: false
+      portals:
+        weight: 30
+        enabled: false
+      text:
+        weight: 31
+        enabled: true
+      video:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

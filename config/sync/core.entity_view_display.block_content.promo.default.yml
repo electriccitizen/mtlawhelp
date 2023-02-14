@@ -1,0 +1,26 @@
+uuid: 0660f0e6-81b8-41a3-b3bd-95080d15d6f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.promo
+    - field.field.block_content.promo.field_promos
+  module:
+    - entity_reference_revisions
+id: block_content.promo.default
+targetEntityType: block_content
+bundle: promo
+mode: default
+content:
+  field_promos:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
