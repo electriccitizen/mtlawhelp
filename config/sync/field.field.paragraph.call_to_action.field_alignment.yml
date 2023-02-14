@@ -1,0 +1,23 @@
+uuid: 067c91f3-ebb0-4db2-9e31-d46d0983782b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.call_to_action
+  module:
+    - options
+id: paragraph.call_to_action.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: call_to_action
+label: 'Image Alignment'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

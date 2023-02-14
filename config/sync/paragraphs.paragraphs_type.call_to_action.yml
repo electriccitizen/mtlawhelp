@@ -1,0 +1,10 @@
+uuid: d4aaff37-8e6f-474a-ab6d-29c02434a88d
+langcode: en
+status: true
+dependencies: {  }
+id: call_to_action
+label: 'Call to Action'
+icon_uuid: null
+icon_default: null
+description: 'Add a call to action with image and text.'
+behavior_plugins: {  }

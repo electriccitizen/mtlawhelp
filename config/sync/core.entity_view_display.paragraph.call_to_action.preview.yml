@@ -1,0 +1,44 @@
+uuid: 783e3c06-d91d-4b04-bfee-e1ff96efc17b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.call_to_action.field_alignment
+    - field.field.paragraph.call_to_action.field_image
+    - field.field.paragraph.call_to_action.field_link
+    - field.field.paragraph.call_to_action.field_plain_text
+    - field.field.paragraph.call_to_action.field_widget_title
+    - paragraphs.paragraphs_type.call_to_action
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.call_to_action.preview
+targetEntityType: paragraph
+bundle: call_to_action
+mode: preview
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: large
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_plain_text:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_alignment: true
+  field_link: true
+  field_widget_title: true
+  search_api_excerpt: true
