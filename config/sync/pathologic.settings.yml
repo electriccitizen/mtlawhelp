@@ -6,4 +6,4 @@ scheme_whitelist:
   - files
   - internal
 protocol_style: full
-local_paths: "http://newupstream.docksal/\r\nhttp://dev-newupstream.pantheonsite.io/"
+local_paths: "http://mtlawhelp.docksal.site/\r\nhttps://dev-mtlawhelp.pantheonsite.io/\r\nhttps://test-mtlawhelp.pantheonsite.io/\r\nhttps://live-mtlawhelp.pantheonsite.io/\r\nhttps://montanalawhelp.org/"
