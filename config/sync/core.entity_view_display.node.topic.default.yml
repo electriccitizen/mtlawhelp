@@ -92,6 +92,7 @@ third_party_settings:
         - Help
         - 'Inline blocks'
         - 'Lists (Views)'
+        - Menus
         - 'Responsive Preview'
         - 'Site Search'
         - 'Social Share'

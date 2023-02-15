@@ -14,6 +14,7 @@ dependencies:
     - conditional_fields
     - field_group
     - metatag
+    - path
     - text
 third_party_settings:
   field_group:
@@ -25,7 +26,7 @@ third_party_settings:
       label: Classification
       region: content
       parent_name: ''
-      weight: 6
+      weight: 1
       format_type: details
       format_settings:
         classes: ''
@@ -48,7 +49,25 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        17c0618a-4ac8-484c-abfb-41cf2feb0500:
+          entity_type: node
+          bundle: topic
+          dependee: field_topic_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: subtopic
+            effect: show
+            effect_options: {  }
+            selector: ''
   field_legal_topic:
     type: citizen_legal_topic_field
     weight: 10
@@ -92,7 +111,7 @@ content:
             selector: ''
   field_metatags:
     type: metatag_firehose
-    weight: 3
+    weight: 6
     region: content
     settings:
       sidebar: true
@@ -138,14 +157,20 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 1
+    weight: 3
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 4
+    weight: 7
     region: content
     settings:
       display_label: true
@@ -159,18 +184,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  url_redirects:
-    weight: 12
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
-  path: true
   promote: true
   sticky: true
   uid: true
+  url_redirects: true
