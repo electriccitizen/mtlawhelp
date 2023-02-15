@@ -16,19 +16,22 @@ class CitizenLegalTopicController extends ControllerBase {
   /**
    * Builds the response.
    */
-  public function legalTermAutocomplete(Request $request) {
+  public function legalTermAutocomplete(Request $request, $parent_topic) {
+//    dpm($parent_topic);
+    dpm($request);
     $tempStore = \Drupal::service('tempstore.private')->get('legal_topic');
     $parent = $tempStore->get('parent') ?? 0;
     $node = Node::load($parent);
     $parent_term = $node ? $node->get('field_legal_topic')->getValue()[0]['citizen_legal_topic_target_id'] : 0;
     $terms = [];
-      $tree = $this->entityTypeManager()->getStorage('taxonomy_term')->loadTree('legal_topics', $parent_term, 1);
-      foreach ($tree as $term) {
-        $terms[] = [
-          'value' => $term->tid,
-          'label' => $term->name,
-        ];
-      }
+    $tree = $this->entityTypeManager()->getStorage('taxonomy_term')->loadTree('legal_topics', $parent_term, 1);
+    foreach ($tree as $term) {
+      $terms[] = [
+        'value' => $term->tid,
+        'label' => $term->name,
+      ];
+    }
+$tempStore->delete('legal_topic');
     return new JsonResponse($terms);
   }
 

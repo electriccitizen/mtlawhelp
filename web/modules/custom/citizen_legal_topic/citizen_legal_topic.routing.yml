@@ -3,9 +3,9 @@ citizen_legal_topic.subtopic.autocomplete:
   defaults:
     _controller: '\Drupal\citizen_legal_topic\Controller\CitizenLegalTopicController::legalTermAutocomplete'
     _format: json
-  options:
-    parameters:
-      parent_tid: b
+#  options:
+#    parameters:
+#      parent_topic: 0
   requirements:
     _permission: 'access content'
 

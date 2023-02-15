@@ -29,14 +29,23 @@ class LegalTopicWidget extends WidgetBase {
       '#default_value' => isset($items[$delta]->citizen_legal_topic_target_id) ? $items[$delta]->citizen_legal_topic_target_id : NULL,
       '#autocomplete_route_name' => 'citizen_legal_topic.subtopic.autocomplete',
       '#autocomplete_route_parameters' => ['parent_topic' => 0],
-      '#autocomplete_route_options' => ['parent_tid' => 'banana'],
+//      '#autocomplete_url_options' => [
+//        'query' => ['parent_topic' => [$form['field_parent_topic']]],
+//      ],
     ];
-
+    if ($ptid = $form_state->getValue('field_parent_topic', false)) {
+      $element['citizen_legal_topic_target_id'] = [
+        '#type' => 'textfield',
+        '#default_value' => isset($items[$delta]->citizen_legal_topic_target_id) ? $items[$delta]->citizen_legal_topic_target_id : NULL,
+        '#autocomplete_route_name' => 'citizen_legal_topic.subtopic.autocomplete',
+        '#autocomplete_route_parameters' => ['parent_topic' => $ptid],
+      ];
+    }
     $element['#theme_wrappers'] = ['container', 'form_element'];
     $element['#attributes']['class'][] = 'container-inline';
     $element['#attributes']['class'][] = 'citizen-legal-topic-field-elements';
     $element['#attached']['library'][] = 'citizen_legal_topic/citizen_legal_topic_field';
-
+    dpm($form_state->getBuildInfo()['callback_object']);
     return $element;
   }
 

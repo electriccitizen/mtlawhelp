@@ -4,3 +4,10 @@
  * @file
  * Primary module hooks for Citizen Legal Topic module.
  */
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function citizen_legal_topic_form_node_topic_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+//  dpm($form_state->getFormObject());
+}
