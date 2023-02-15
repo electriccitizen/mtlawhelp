@@ -1,0 +1,39 @@
+/* ==============
+   CALL TO ACTION
+================= */
+
+@use '../../../00-base/base' as *;
+
+.paragraph--type--call-to-action{
+
+	.cta-wrapper{
+		@include safeFlex(row,wrap,start,center);
+		@include bleed(padding,4rem);
+		@include tab{
+			&.right{
+				.field-image{
+					@include safeFlexOrder(2);
+				}
+			}
+			.field-image{
+				width: 63.13%;
+			}
+			.cta-text-wrapper{
+				width: 36.87%;
+			}
+		}//end tab
+	}//end cta-wrapper
+	.field-image{
+		@include onlySmall{
+			margin-bottom: $spaceXs;
+		}
+	}
+	.cta-text-wrapper{
+		position: relative;
+		padding-bottom: 40px;
+	}
+	.field-widget-title{
+		@include heading3;
+		margin-bottom: $spaceXs;
+	}
+}//end call-to-action widget
