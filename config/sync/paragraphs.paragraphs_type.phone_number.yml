@@ -1,0 +1,10 @@
+uuid: d74c5a2b-e8ba-43e1-a558-7cdcc01a8b48
+langcode: en
+status: true
+dependencies: {  }
+id: phone_number
+label: 'Phone Number'
+icon_uuid: null
+icon_default: null
+description: 'Add a phone number and type'
+behavior_plugins: {  }
