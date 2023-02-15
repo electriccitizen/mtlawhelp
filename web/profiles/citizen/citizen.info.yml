@@ -30,7 +30,6 @@ dependencies:
   - editor
   - embed
   - entity
-  - entity_embed
   - entity_reference_revisions
   - entity_usage
   - field

@@ -1,5 +1,5 @@
 hotlink: false
-origin: 'https://live-mtlawhelp.pantheonsite.io'
+origin: 'https://dev-mtlawhelp.pantheonsite.io'
 origin_dir: sites/default/files
 use_imagecache_root: false
 verify: false

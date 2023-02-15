@@ -74,7 +74,9 @@ third_party_settings:
       allowed_layouts:
         - layout_onecol
       denylisted_blocks: {  }
-      allowlisted_blocks: {  }
+      allowlisted_blocks:
+        System:
+          - system_breadcrumb_block
       restricted_categories:
         - '@entity'
         - 'Chaos Tools'
