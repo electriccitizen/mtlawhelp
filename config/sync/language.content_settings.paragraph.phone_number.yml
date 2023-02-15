@@ -1,9 +1,9 @@
-uuid: 84068226-b46c-4617-90e2-977efa65a726
+uuid: a623952b-1789-4124-afcf-ec91763fd437
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.promo
+    - paragraphs.paragraphs_type.phone_number
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: block_content.promo
-target_entity_type_id: block_content
-target_bundle: promo
+id: paragraph.phone_number
+target_entity_type_id: paragraph
+target_bundle: phone_number
 default_langcode: site_default
-language_alterable: false
+language_alterable: true

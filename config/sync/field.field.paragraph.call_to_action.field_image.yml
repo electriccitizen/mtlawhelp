@@ -13,7 +13,7 @@ bundle: call_to_action
 label: Image
 description: '<strong>Optimal image size:</strong> 1200px wide'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

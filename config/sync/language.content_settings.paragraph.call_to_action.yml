@@ -1,18 +1,18 @@
-uuid: 84068226-b46c-4617-90e2-977efa65a726
+uuid: 5d139e6e-cd19-45a6-984e-d9dff9dc6c49
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.promo
+    - paragraphs.paragraphs_type.call_to_action
   module:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: true
+    enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: block_content.promo
-target_entity_type_id: block_content
-target_bundle: promo
+id: paragraph.call_to_action
+target_entity_type_id: paragraph
+target_bundle: call_to_action
 default_langcode: site_default
 language_alterable: false

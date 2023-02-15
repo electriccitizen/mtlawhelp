@@ -14,6 +14,7 @@ dependencies:
     - paragraphs.paragraphs_type.layout_section
     - paragraphs.paragraphs_type.links_files
     - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.phone_number
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.video
   module:
@@ -44,6 +45,7 @@ settings:
       text: text
       video: video
       call_to_action: call_to_action
+      phone_number: phone_number
       layout_section: layout_section
     negate: 0
     target_bundles_drag_drop:
@@ -85,6 +87,9 @@ settings:
         enabled: true
       map:
         weight: -26
+        enabled: true
+      phone_number:
+        weight: 19
         enabled: true
       portal:
         weight: 33

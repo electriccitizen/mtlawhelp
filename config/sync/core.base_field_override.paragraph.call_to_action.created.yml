@@ -1,19 +1,18 @@
-uuid: d42e4dce-29d4-4ce4-8ebc-dd41f0bf101b
+uuid: 3d8ed4c9-1540-4ee6-8b1e-0aaa58cd9fcb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_widget_title
     - paragraphs.paragraphs_type.call_to_action
-id: paragraph.call_to_action.field_widget_title
-field_name: field_widget_title
+id: paragraph.call_to_action.created
+field_name: created
 entity_type: paragraph
 bundle: call_to_action
-label: 'CTA Title'
-description: ''
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: created
