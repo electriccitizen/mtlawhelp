@@ -1,0 +1,30 @@
+uuid: ab96ee26-98d7-4b7f-bbc5-6c2a7cf4e397
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:promo:24b1b34d-96ea-4c7d-af43-91337d1a642c'
+  module:
+    - block_content
+    - system
+  theme:
+    - citizen_dart
+id: promos
+theme: citizen_dart
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:24b1b34d-96ea-4c7d-af43-91337d1a642c'
+settings:
+  id: 'block_content:24b1b34d-96ea-4c7d-af43-91337d1a642c'
+  label: Promos
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /promo-example
