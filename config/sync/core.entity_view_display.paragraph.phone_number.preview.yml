@@ -9,7 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.phone_number
   module:
     - layout_builder
-    - telephone
 third_party_settings:
   layout_builder:
     enabled: false
@@ -20,10 +19,10 @@ bundle: phone_number
 mode: preview
 content:
   field_number:
-    type: telephone_link
+    type: string
     label: hidden
     settings:
-      title: ''
+      link_to_entity: false
     third_party_settings: {  }
     weight: 0
     region: content
