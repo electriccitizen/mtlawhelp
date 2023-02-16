@@ -9,12 +9,12 @@
 		max-width: $contentStop;
 		margin: auto;
 		& > div{
-			padding: 0 $spaceXs;
+			padding: 0 $spaceXxs;
 			&:first-of-type{
-				margin-left: -$spaceXs;
+				margin-left: -$spaceXxs;
 			}
 			&:last-of-type{
-				margin-right: -$spaceXs;
+				margin-right: -$spaceXxs;
 			}
 		}
 	}
