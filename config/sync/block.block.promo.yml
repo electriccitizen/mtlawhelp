@@ -1,0 +1,30 @@
+uuid: 18083f18-fbfd-4004-b5a0-1faaa8e19401
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:promo:f7f7a719-40e0-40bf-803f-b0ed033f3989'
+  module:
+    - block_content
+    - system
+  theme:
+    - citizen_dart
+id: promo
+theme: citizen_dart
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:f7f7a719-40e0-40bf-803f-b0ed033f3989'
+settings:
+  id: 'block_content:f7f7a719-40e0-40bf-803f-b0ed033f3989'
+  label: Promo
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /promo-example
