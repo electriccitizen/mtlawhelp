@@ -6,12 +6,17 @@ dependencies:
     - field.storage.node.body
     - node.type.topic
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - basic_html
 id: node.topic.body
 field_name: body
 entity_type: node
 bundle: topic
-label: Body
+label: 'Getting Started'
 description: ''
 required: false
 translatable: true

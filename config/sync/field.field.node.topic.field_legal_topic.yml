@@ -11,9 +11,9 @@ id: node.topic.field_legal_topic
 field_name: field_legal_topic
 entity_type: node
 bundle: topic
-label: 'Legal Topic'
+label: Topic
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
