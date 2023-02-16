@@ -5,16 +5,28 @@
 
 .block-promo{
 	.field-promos{
-		@include safeFlex(row,no-wrap,center,start);
+		@include safeFlex(column,no-wrap,center,start);
 		max-width: $contentStop;
 		margin: auto;
+		@include tab{
+			@include safeFlex(row,no-wrap,center,start);
+		}
 		& > div{
-			padding: 0 $spaceXxs;
+			padding-bottom: $spaceXs;
+			max-width: $textMax;
+			@include tab{
+				padding-left: $spaceXxs;
+				padding-right: $spaceXxs;
+			}
 			&:first-of-type{
-				margin-left: -$spaceXxs;
+				@include tab{
+					margin-left: -$spaceXxs;
+				}
 			}
 			&:last-of-type{
-				margin-right: -$spaceXxs;
+				@include tab{
+					margin-right: -$spaceXxs;
+				}
 			}
 		}
 	}
