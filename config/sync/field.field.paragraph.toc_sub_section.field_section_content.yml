@@ -1,0 +1,86 @@
+uuid: b4463bd4-2e81-413d-a6f8-e5d3379b35ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_content
+    - paragraphs.paragraphs_type.toc_sub_section
+  module:
+    - entity_reference_revisions
+id: paragraph.toc_sub_section.field_section_content
+field_name: field_section_content
+entity_type: paragraph
+bundle: toc_sub_section
+label: 'Sub-section Content'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: 22
+        enabled: false
+      accordions:
+        weight: 21
+        enabled: false
+      block_placer:
+        weight: 23
+        enabled: false
+      call_to_action:
+        weight: 24
+        enabled: false
+      content_placer:
+        weight: 25
+        enabled: false
+      custom_embed:
+        weight: 26
+        enabled: false
+      form_placer:
+        weight: 27
+        enabled: false
+      horizontal_rule:
+        weight: 28
+        enabled: false
+      image:
+        weight: 29
+        enabled: false
+      layout_section:
+        weight: 30
+        enabled: false
+      link_file_item:
+        weight: 32
+        enabled: false
+      links_files:
+        weight: 31
+        enabled: false
+      map:
+        weight: 33
+        enabled: false
+      phone_number:
+        weight: 34
+        enabled: false
+      portal:
+        weight: 35
+        enabled: false
+      portals:
+        weight: 36
+        enabled: false
+      text:
+        weight: 37
+        enabled: false
+      toc_section:
+        weight: 38
+        enabled: false
+      toc_sub_section:
+        weight: 39
+        enabled: false
+      video:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,19 @@
+uuid: 312e7c4d-cb80-4d99-8ce4-00f4769997e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_section_title
+    - paragraphs.paragraphs_type.toc_sub_section
+id: paragraph.toc_sub_section.field_sub_section_title
+field_name: field_sub_section_title
+entity_type: paragraph
+bundle: toc_sub_section
+label: 'Sub-section Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
