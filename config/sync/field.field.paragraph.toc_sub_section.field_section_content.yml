@@ -4,7 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_section_content
+    - paragraphs.paragraphs_type.accordions
+    - paragraphs.paragraphs_type.horizontal_rule
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.links_files
+    - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.toc_sub_section
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 id: paragraph.toc_sub_section.field_section_content
@@ -20,7 +26,13 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: null
+    target_bundles:
+      accordions: accordions
+      horizontal_rule: horizontal_rule
+      image: image
+      links_files: links_files
+      text: text
+      video: video
     negate: 0
     target_bundles_drag_drop:
       accordion_item:
@@ -28,7 +40,7 @@ settings:
         enabled: false
       accordions:
         weight: 21
-        enabled: false
+        enabled: true
       block_placer:
         weight: 23
         enabled: false
@@ -46,10 +58,10 @@ settings:
         enabled: false
       horizontal_rule:
         weight: 28
-        enabled: false
+        enabled: true
       image:
         weight: 29
-        enabled: false
+        enabled: true
       layout_section:
         weight: 30
         enabled: false
@@ -58,7 +70,7 @@ settings:
         enabled: false
       links_files:
         weight: 31
-        enabled: false
+        enabled: true
       map:
         weight: 33
         enabled: false
@@ -73,7 +85,7 @@ settings:
         enabled: false
       text:
         weight: 37
-        enabled: false
+        enabled: true
       toc_section:
         weight: 38
         enabled: false
@@ -82,5 +94,5 @@ settings:
         enabled: false
       video:
         weight: 40
-        enabled: false
+        enabled: true
 field_type: entity_reference_revisions
