@@ -133,3 +133,9 @@
 .lpb-component-list .lpb-component-list__group > .lpb-component-list__group--content > .type-call_to_action > a:before{
   background-image: url('../icons/paragraphs/call-to-action.svg');
 }
+.lpb-component-list .lpb-component-list__group > .lpb-component-list__group--content > .type-toc_section > a:before{
+  background-image: url('../icons/paragraphs/toc.svg');
+}
+.lpb-component-list .lpb-component-list__group > .lpb-component-list__group--content > .type-toc_sub_section > a:before{
+  background-image: url('../icons/paragraphs/toc.svg');
+}

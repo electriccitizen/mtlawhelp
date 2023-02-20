@@ -14,7 +14,6 @@ dependencies:
     - paragraphs.paragraphs_type.layout_section
     - paragraphs.paragraphs_type.links_files
     - paragraphs.paragraphs_type.map
-    - paragraphs.paragraphs_type.phone_number
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.toc_section
     - paragraphs.paragraphs_type.video
@@ -46,7 +45,6 @@ settings:
       text: text
       video: video
       call_to_action: call_to_action
-      phone_number: phone_number
       layout_section: layout_section
       toc_section: toc_section
     negate: 0
@@ -92,7 +90,7 @@ settings:
         enabled: true
       phone_number:
         weight: 19
-        enabled: true
+        enabled: false
       portal:
         weight: 33
         enabled: false
