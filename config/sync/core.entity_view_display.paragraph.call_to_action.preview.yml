@@ -9,9 +9,12 @@ dependencies:
     - field.field.paragraph.call_to_action.field_link
     - field.field.paragraph.call_to_action.field_plain_text
     - field.field.paragraph.call_to_action.field_widget_title
+    - image.style.paragraph_preview
     - paragraphs.paragraphs_type.call_to_action
   module:
     - layout_builder
+    - lazy
+    - media
 third_party_settings:
   layout_builder:
     enabled: false
@@ -22,23 +25,30 @@ bundle: call_to_action
 mode: preview
 content:
   field_image:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: hidden
     settings:
-      view_mode: large
-      link: false
-    third_party_settings: {  }
+      image_link: ''
+      image_style: paragraph_preview
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      lazy:
+        lazy_image: '0'
+        placeholder_style: ''
+        data_uri: false
     weight: 0
     region: content
-  field_plain_text:
-    type: basic_string
+  field_widget_title:
+    type: string
     label: hidden
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
     weight: 1
     region: content
 hidden:
   field_alignment: true
   field_link: true
-  field_widget_title: true
+  field_plain_text: true
   search_api_excerpt: true

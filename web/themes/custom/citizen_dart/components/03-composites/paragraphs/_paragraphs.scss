@@ -6,6 +6,7 @@
 ------------------- */
 @forward 'accordions/accordions';
 @forward 'block-placer/block-placer';
+@forward 'call-to-action/call-to-action';
 @forward 'content-placer/content-placer';
 @forward 'form-placer/form-placer';
 @forward 'horizontal-rule/horizontal-rule';
@@ -13,6 +14,7 @@
 @forward 'links-files/links-files';
 @forward 'layout-section/layout-section';
 @forward 'map/map';
+@forward 'phone-number/phone-number';
 @forward 'portals/portals';
 @forward 'text/text';
 @forward 'video/video';
@@ -55,4 +57,3 @@
 		}//end background
 	}//end layout section
 }//end widget
-

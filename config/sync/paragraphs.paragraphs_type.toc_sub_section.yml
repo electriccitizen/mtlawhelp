@@ -1,0 +1,10 @@
+uuid: 3b16c27c-3f88-4d5a-95b3-9de29d541585
+langcode: en
+status: true
+dependencies: {  }
+id: toc_sub_section
+label: Sub-section
+icon_uuid: null
+icon_default: null
+description: 'Add a sub-section of content to a TOC section.'
+behavior_plugins: {  }

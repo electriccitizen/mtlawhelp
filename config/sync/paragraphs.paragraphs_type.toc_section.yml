@@ -1,0 +1,10 @@
+uuid: 5e68f8ff-706c-48d5-8ea3-c46ce0949e6a
+langcode: en
+status: true
+dependencies: {  }
+id: toc_section
+label: 'TOC Section'
+icon_uuid: null
+icon_default: null
+description: 'Add a section of content that automatically adds a table of contents to the top of the paragraphs field.'
+behavior_plugins: {  }

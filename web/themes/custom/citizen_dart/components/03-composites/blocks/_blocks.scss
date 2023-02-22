@@ -5,6 +5,7 @@
 /* ADD SUB BLOCKS
 ------------------- */
 @forward 'branding/branding';
+@forward 'promo/promo';
 @forward 'search/search';
 @forward 'social-links/social-links';
 @forward 'social-share/social-share';
@@ -14,7 +15,7 @@
 /* MISC BLOCKS
 -------------- */
 .block-footer-menu{
-	
+
 	ul:not(.contextual-links){
 		@include listReset;
 		li{

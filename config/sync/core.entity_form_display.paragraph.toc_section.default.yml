@@ -1,0 +1,50 @@
+uuid: f1778d24-9366-434b-b99d-88ac2f7fc2bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.toc_section.field_section_content
+    - field.field.paragraph.toc_section.field_toc_section_title
+    - paragraphs.paragraphs_type.toc_section
+  module:
+    - paragraphs
+id: paragraph.toc_section.default
+targetEntityType: paragraph
+bundle: toc_section
+mode: default
+content:
+  field_section_content:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: '0'
+    third_party_settings: {  }
+  field_toc_section_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

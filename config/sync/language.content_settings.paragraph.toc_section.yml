@@ -1,9 +1,9 @@
-uuid: 84068226-b46c-4617-90e2-977efa65a726
+uuid: 618fca31-5bd7-41cb-baa0-17a88fcfed91
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.promo
+    - paragraphs.paragraphs_type.toc_section
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '1'
-id: block_content.promo
-target_entity_type_id: block_content
-target_bundle: promo
+id: paragraph.toc_section
+target_entity_type_id: paragraph
+target_bundle: toc_section
 default_langcode: site_default
 language_alterable: false

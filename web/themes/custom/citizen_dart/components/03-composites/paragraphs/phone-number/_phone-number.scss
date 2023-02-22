@@ -1,0 +1,11 @@
+/* ==============
+   TEXT WIDGET
+================= */
+
+@use '../../../00-base/base' as *;
+
+.paragraph--type--phone-number{
+	.widget-wrapper{
+		@include safeFlex(row,wrap,start,center);
+	}
+}//end phone-number widget

@@ -1,0 +1,33 @@
+/* =================
+   PROMO BLOCK
+=================== */
+@use '../../../00-base/base' as *;
+
+.block-promo{
+	.field-promos{
+		@include safeFlex(column,no-wrap,center,start);
+		max-width: $contentStop;
+		margin: auto;
+		@include tab{
+			@include safeFlex(row,no-wrap,center,start);
+		}
+		& > div{
+			padding-bottom: $spaceXs;
+			max-width: $textMax;
+			@include tab{
+				padding-left: $spaceXxs;
+				padding-right: $spaceXxs;
+			}
+			&:first-of-type{
+				@include tab{
+					margin-left: -$spaceXxs;
+				}
+			}
+			&:last-of-type{
+				@include tab{
+					margin-right: -$spaceXxs;
+				}
+			}
+		}
+	}
+}

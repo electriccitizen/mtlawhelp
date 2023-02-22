@@ -1,0 +1,31 @@
+uuid: a9b53f0c-c53c-4d97-bce2-fdf59f8ab027
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.toc_section.field_section_content
+    - field.field.paragraph.toc_section.field_toc_section_title
+    - paragraphs.paragraphs_type.toc_section
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.toc_section.preview
+targetEntityType: paragraph
+bundle: toc_section
+mode: preview
+content:
+  field_toc_section_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_section_content: true
+  search_api_excerpt: true

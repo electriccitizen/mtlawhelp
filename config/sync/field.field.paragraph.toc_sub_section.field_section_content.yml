@@ -1,34 +1,26 @@
-uuid: 878cfc4f-c499-400f-8d1b-11f5d1a099f0
+uuid: b4463bd4-2e81-413d-a6f8-e5d3379b35ab
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_paragraphs
-    - node.type.page
+    - field.storage.paragraph.field_section_content
     - paragraphs.paragraphs_type.accordions
-    - paragraphs.paragraphs_type.call_to_action
-    - paragraphs.paragraphs_type.custom_embed
-    - paragraphs.paragraphs_type.form_placer
     - paragraphs.paragraphs_type.horizontal_rule
     - paragraphs.paragraphs_type.image
-    - paragraphs.paragraphs_type.layout_section
     - paragraphs.paragraphs_type.links_files
-    - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.text
-    - paragraphs.paragraphs_type.toc_section
+    - paragraphs.paragraphs_type.toc_sub_section
     - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: broc61_fLfIm5l-w8i7AG0Psh4iaZkmN6IOhARbDe9g
-id: node.page.field_paragraphs
-field_name: field_paragraphs
-entity_type: node
-bundle: page
-label: 'Add Sections'
+id: paragraph.toc_sub_section.field_section_content
+field_name: field_section_content
+entity_type: paragraph
+bundle: toc_sub_section
+label: 'Sub-section Content'
 description: ''
-required: false
-translatable: true
+required: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -36,77 +28,71 @@ settings:
   handler_settings:
     target_bundles:
       accordions: accordions
-      custom_embed: custom_embed
-      form_placer: form_placer
       horizontal_rule: horizontal_rule
       image: image
       links_files: links_files
-      map: map
       text: text
       video: video
-      call_to_action: call_to_action
-      layout_section: layout_section
-      toc_section: toc_section
     negate: 0
     target_bundles_drag_drop:
       accordion_item:
-        weight: -38
+        weight: 22
         enabled: false
       accordions:
-        weight: -39
+        weight: 21
         enabled: true
       block_placer:
-        weight: -36
+        weight: 23
         enabled: false
       call_to_action:
-        weight: 18
-        enabled: true
+        weight: 24
+        enabled: false
       content_placer:
-        weight: 21
+        weight: 25
         enabled: false
       custom_embed:
-        weight: -37
-        enabled: true
+        weight: 26
+        enabled: false
       form_placer:
-        weight: -33
-        enabled: true
+        weight: 27
+        enabled: false
       horizontal_rule:
-        weight: -30
+        weight: 28
         enabled: true
       image:
-        weight: -29
-        enabled: true
-      layout_section:
         weight: 29
         enabled: true
+      layout_section:
+        weight: 30
+        enabled: false
       link_file_item:
         weight: 32
         enabled: false
       links_files:
-        weight: -27
+        weight: 31
         enabled: true
       map:
-        weight: -26
-        enabled: true
-      phone_number:
-        weight: 19
-        enabled: false
-      portal:
         weight: 33
         enabled: false
-      portals:
+      phone_number:
         weight: 34
         enabled: false
+      portal:
+        weight: 35
+        enabled: false
+      portals:
+        weight: 36
+        enabled: false
       text:
-        weight: -23
+        weight: 37
         enabled: true
       toc_section:
         weight: 38
-        enabled: true
+        enabled: false
       toc_sub_section:
         weight: 39
         enabled: false
       video:
-        weight: -22
+        weight: 40
         enabled: true
 field_type: entity_reference_revisions

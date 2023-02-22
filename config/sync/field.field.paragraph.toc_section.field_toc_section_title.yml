@@ -1,0 +1,19 @@
+uuid: 5483e719-4fba-406c-a3a6-3f13471eacbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_toc_section_title
+    - paragraphs.paragraphs_type.toc_section
+id: paragraph.toc_section.field_toc_section_title
+field_name: field_toc_section_title
+entity_type: paragraph
+bundle: toc_section
+label: 'Section Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

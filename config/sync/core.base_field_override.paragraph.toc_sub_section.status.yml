@@ -1,0 +1,22 @@
+uuid: e0b19a4d-cd37-4f0b-9782-7f8acb617488
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.toc_sub_section
+id: paragraph.toc_sub_section.status
+field_name: status
+entity_type: paragraph
+bundle: toc_sub_section
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

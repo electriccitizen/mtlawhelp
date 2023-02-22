@@ -1,0 +1,31 @@
+uuid: cb62e281-f7c1-4237-af61-f307a27a97b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.phone_number.field_number
+    - field.field.paragraph.phone_number.field_phone_type
+    - paragraphs.paragraphs_type.phone_number
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.phone_number.preview
+targetEntityType: paragraph
+bundle: phone_number
+mode: preview
+content:
+  field_number:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_phone_type: true
+  search_api_excerpt: true
