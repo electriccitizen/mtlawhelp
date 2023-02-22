@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.topic.field_topic_type
     - node.type.topic
   module:
-    - citizen_legal_topic
     - conditional_fields
     - field_group
     - metatag
@@ -69,13 +68,17 @@ content:
             effect_options: {  }
             selector: ''
   field_legal_topic:
-    type: citizen_legal_topic_field
-    weight: 10
+    type: entity_reference_autocomplete
+    weight: 26
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings:
       conditional_fields:
-        b1e296d4-bced-4de4-b415-53dcce37933d:
+        b895610e-697e-4906-9d43-0ea6295e190a:
           entity_type: node
           bundle: topic
           dependee: field_parent_topic
@@ -92,7 +95,7 @@ content:
             effect: show
             effect_options: {  }
             selector: ''
-        654a28ec-986f-4d96-b1df-cce4272661de:
+        77b624b8-23af-4dca-9904-486dfce760f4:
           entity_type: node
           bundle: topic
           dependee: field_topic_type
@@ -148,6 +151,23 @@ content:
                 speed: '400'
               slide:
                 speed: '400'
+            selector: ''
+        c56fb0bd-18e8-4531-9799-72ee45aad758:
+          entity_type: node
+          bundle: topic
+          dependee: field_topic_type
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: subtopic
+            effect: show
+            effect_options: {  }
             selector: ''
   field_topic_type:
     type: options_select

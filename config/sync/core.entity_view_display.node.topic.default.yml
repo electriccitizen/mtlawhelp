@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.topic.field_topic_type
     - node.type.topic
   module:
-    - citizen_legal_topic
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
@@ -113,9 +112,10 @@ content:
     weight: 101
     region: content
   field_legal_topic:
-    type: citizen_legal_topic_field_default
+    type: entity_reference_label
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
     weight: 105
     region: content

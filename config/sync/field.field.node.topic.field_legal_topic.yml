@@ -1,21 +1,29 @@
-uuid: de19a9f4-323f-4310-b5d0-1100f351a8dd
+uuid: c662228a-c84e-4b4a-9742-55730e888106
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_legal_topic
     - node.type.topic
-  module:
-    - citizen_legal_topic
+    - taxonomy.vocabulary.legal_topics
 id: node.topic.field_legal_topic
 field_name: field_legal_topic
 entity_type: node
 bundle: topic
 label: Topic
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: citizen_legal_topic_field
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      legal_topics: legal_topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
