@@ -1,9 +1,0 @@
-
-# Default value.
-field.value.citizen_legal_topic_field:
-  type: mapping
-  label: Default value
-  mapping:
-    citizen_legal_topic_target_id:
-      type: integer
-      label: citizen_legal_topic_target_id

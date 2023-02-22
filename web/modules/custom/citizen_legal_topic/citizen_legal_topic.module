@@ -5,9 +5,14 @@
  * Primary module hooks for Citizen Legal Topic module.
  */
 
+use Drupal\Core\Form\FormStateInterface;
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function citizen_legal_topic_form_node_topic_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-//  dpm($form_state->getFormObject());
+function citizen_legal_topic_form_node_topic_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Modify the entity_autocomplete selection handler for each field.
+  $form['field_parent_topic']['widget'][0]['target_id']['#selection_handler'] = 'legal_topic_parent_selection';
+  $form['field_legal_topic']['widget'][0]['target_id']['#selection_handler'] = 'legal_topic_selection';
+  // Attach the JavaScript file to the create/edit form.
+  $form['#attached']['library'][]  = 'citizen_legal_topic/citizen_legal_topic_field';
 }
