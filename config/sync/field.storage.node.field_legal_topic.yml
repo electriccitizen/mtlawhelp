@@ -1,16 +1,17 @@
-uuid: 79b8cbfa-1dc6-4ca2-8a3b-b30cc349ad70
+uuid: cc8a42a9-6d35-4d23-b0a0-854150b149f8
 langcode: en
 status: true
 dependencies:
   module:
-    - citizen_legal_topic
     - node
+    - taxonomy
 id: node.field_legal_topic
 field_name: field_legal_topic
 entity_type: node
-type: citizen_legal_topic_field
-settings: {  }
-module: citizen_legal_topic
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -1,8 +1,6 @@
+# This JavaScript file will make the AJAX call to set the parent_topic value in the temp_store.
 citizen_legal_topic_field:
-
   js:
     js/citizen_legal_topic.js: {}
   dependencies:
     - core/drupal.ajax
-
-
