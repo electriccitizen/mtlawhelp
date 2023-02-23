@@ -112,6 +112,23 @@ content:
             effect: show
             effect_options: {  }
             selector: ''
+        b62c4fb2-8fc5-4356-9132-237a73d2b4ad:
+          entity_type: node
+          bundle: topic
+          dependee: field_topic_type
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 3
+            value: ''
+            values: "parent\r\nsubtopic"
+            value_form:
+              -
+                value: parent
+            effect: show
+            effect_options: {  }
+            selector: ''
   field_metatags:
     type: metatag_firehose
     weight: 6
@@ -151,23 +168,6 @@ content:
                 speed: '400'
               slide:
                 speed: '400'
-            selector: ''
-        c56fb0bd-18e8-4531-9799-72ee45aad758:
-          entity_type: node
-          bundle: topic
-          dependee: field_topic_type
-          settings:
-            state: required
-            condition: value
-            grouping: AND
-            values_set: 1
-            value: ''
-            values: {  }
-            value_form:
-              -
-                value: subtopic
-            effect: show
-            effect_options: {  }
             selector: ''
   field_topic_type:
     type: options_select
