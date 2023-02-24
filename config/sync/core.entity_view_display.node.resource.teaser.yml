@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.resource.body
+    - field.field.node.resource.field_information
     - field.field.node.resource.field_metatags
     - node.type.resource
   module:
@@ -29,6 +30,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_information: true
   field_metatags: true
   langcode: true
   search_api_excerpt: true

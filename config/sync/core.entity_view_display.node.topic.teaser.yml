@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.topic.body
+    - field.field.node.topic.field_information
     - field.field.node.topic.field_legal_topic
     - field.field.node.topic.field_metatags
     - field.field.node.topic.field_parent_topic
@@ -32,6 +33,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_information: true
   field_legal_topic: true
   field_metatags: true
   field_parent_topic: true

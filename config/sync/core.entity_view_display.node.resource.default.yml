@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.resource.body
+    - field.field.node.resource.field_information
     - field.field.node.resource.field_metatags
     - node.type.resource
   module:
+    - entity_reference_revisions
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
@@ -41,6 +43,25 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             weight: 0
+            additional: {  }
+          102c18ca-e0ae-4a9a-8752-47fff29e8e22:
+            uuid: 102c18ca-e0ae-4a9a-8752-47fff29e8e22
+            region: content
+            configuration:
+              id: 'field_block:node:resource:field_information'
+              label: 'Resource Information'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 1
             additional: {  }
         third_party_settings: {  }
       -
@@ -106,6 +127,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_information:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
     region: content
   field_metatags:
     type: metatag_empty_formatter
