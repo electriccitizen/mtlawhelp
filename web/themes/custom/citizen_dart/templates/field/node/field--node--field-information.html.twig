@@ -50,7 +50,7 @@
     {% if tocCount > 1 %}
       {{ attach_library('citizen_dart/widgets') }}
       <div class="table-of-contents">
-        <h2 class="block-title toc-title"><a href="#" class="toc-menu-toggle">Table of Contents<span class="section-menu-icon"></span></a></h2>
+        <h2 class="block-title toc-title">Table of Contents<span class="section-menu-icon"></span></h2>
         <div id="toc-wrapper">
           {% for tocLink in items %}
             {% if tocLink.content['#paragraph'].field_toc_section_title.0 %}
