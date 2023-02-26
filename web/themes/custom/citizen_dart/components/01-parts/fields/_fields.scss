@@ -45,4 +45,11 @@
 .field-information{
 	max-width: $contentStop;
 	margin: auto;
+	.toc-title{
+		max-width: none;
+		text-align: left;
+	}
+	.toc-sub-sections{
+		margin-left: $spaceXs;
+	}
 }//end field platforms
