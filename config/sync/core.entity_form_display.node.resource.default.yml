@@ -36,13 +36,21 @@ third_party_settings:
       region: content
       parent_name: ''
       weight: 1
-      format_type: fieldset
+      format_type: tab
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
+        formatter: closed
         description: ''
-        required_fields: false
+        required_fields: true
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: bounceslide
+        speed: fast
 id: node.resource.default
 targetEntityType: node
 bundle: resource
