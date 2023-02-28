@@ -1,68 +1,59 @@
-uuid: a5f9175d-f1db-47bf-8012-5e6ee7315fa0
+uuid: 95523f25-d850-4979-a6d7-6792cf618e36
 langcode: en
 status: true
 dependencies:
   config:
-    - image.style.banner_big_desk
-    - image.style.banner_desk
-    - image.style.banner_middesk
-    - image.style.banner_mobile
-    - image.style.banner_mobile_1_5x
-    - image.style.banner_mobile_2x
-    - image.style.banner_tablet
-    - image.style.banner_tablet_1_5x
-    - image.style.banner_tablet_2x
+    - image.style.1140x722
+    - image.style.448x284
+    - image.style.448x284_1_5x
+    - image.style.448x284_2x
+    - image.style.720x456
+    - image.style.720x456_1_5x
+    - image.style.720x456_2x
   theme:
     - citizen_dart
-_core:
-  default_config_hash: KyQe_l0tlauOOmgJ3PLBwH4-QwSREOFIzqFs9QgQOHw
-id: banner
-label: Banner
+id: 448x284
+label: 448x284
 image_style_mappings:
   -
     image_mapping_type: image_style
-    image_mapping: banner_big_desk
-    breakpoint_id: citizen_dart.largedesk
-    multiplier: 1x
-  -
-    image_mapping_type: image_style
-    image_mapping: banner_middesk
+    image_mapping: 1140x722
     breakpoint_id: citizen_dart.middesk
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: banner_desk
+    image_mapping: 720x456
     breakpoint_id: citizen_dart.desk
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: banner_tablet_1_5x
+    image_mapping: 720x456_1_5x
     breakpoint_id: citizen_dart.tab
     multiplier: 1.5x
   -
     image_mapping_type: image_style
-    image_mapping: banner_tablet
+    image_mapping: 720x456
     breakpoint_id: citizen_dart.tab
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: banner_tablet_2x
+    image_mapping: 720x456_2x
     breakpoint_id: citizen_dart.tab
     multiplier: 2x
   -
     image_mapping_type: image_style
-    image_mapping: banner_mobile_1_5x
+    image_mapping: 448x284_1_5x
     breakpoint_id: citizen_dart.mobile
     multiplier: 1.5x
   -
     image_mapping_type: image_style
-    image_mapping: banner_mobile
+    image_mapping: 448x284
     breakpoint_id: citizen_dart.mobile
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: banner_mobile_2x
+    image_mapping: 448x284_2x
     breakpoint_id: citizen_dart.mobile
     multiplier: 2x
 breakpoint_group: citizen_dart
-fallback_image_style: banner_mobile
+fallback_image_style: 448x284

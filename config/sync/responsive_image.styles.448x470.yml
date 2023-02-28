@@ -1,0 +1,53 @@
+uuid: e3962d8d-bb8e-429d-9f6e-73b350f15651
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.448x470
+    - image.style.448x470_1_5x
+    - image.style.448x470_2x
+    - image.style.720x752
+    - image.style.720x752_1_5x
+    - image.style.720x752_2x
+  theme:
+    - citizen_dart
+id: 448x470
+label: 448x470
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: 720x752
+    breakpoint_id: citizen_dart.desk
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 720x752_1_5x
+    breakpoint_id: citizen_dart.tab
+    multiplier: 1.5x
+  -
+    image_mapping_type: image_style
+    image_mapping: 720x752
+    breakpoint_id: citizen_dart.tab
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 720x752_2x
+    breakpoint_id: citizen_dart.tab
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: 448x470_1_5x
+    breakpoint_id: citizen_dart.mobile
+    multiplier: 1.5x
+  -
+    image_mapping_type: image_style
+    image_mapping: 448x470
+    breakpoint_id: citizen_dart.mobile
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 448x470_2x
+    breakpoint_id: citizen_dart.mobile
+    multiplier: 2x
+breakpoint_group: citizen_dart
+fallback_image_style: 448x470

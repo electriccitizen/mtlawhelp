@@ -1,0 +1,49 @@
+uuid: 8279e0d0-bf3b-499b-a2c9-db2deb5d5ecf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.448x284
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_is_form
+    - field.field.media.image.field_media_image
+    - lazy.settings
+    - media.type.image
+    - responsive_image.styles.448x284
+  module:
+    - layout_builder
+    - lazy
+    - responsive_image
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: F4l6lf5TjGDG3G-vVhEnbel7zfHUU2oNDiNwmlUgABc
+id: media.image.448x284
+targetEntityType: media
+bundle: image
+mode: 448x284
+content:
+  field_media_image:
+    type: lazy_responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: 448x284
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+        placeholder_style: 448x284
+        data_uri: false
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  field_is_form: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
