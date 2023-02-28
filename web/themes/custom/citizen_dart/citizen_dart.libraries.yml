@@ -73,13 +73,12 @@ table:
   js:
     components/01-parts/tables/tables.js: {}
     components-addons/basictable/jquery.basictable.min.js: { minified: true }
+toc-section:
+  version: 1.0
+  js:
+    components/03-composites/paragraphs/toc-section/toc-section.js: {}
 views:
   version: 1.0
   js:
     components/03-composites/views/views.js: {}
-widgets:
-  version: 1.0
-  js:
-    components/02-chunks/navigation/widget-anchors/widget-anchors.js: {}
-  dependencies:
-  - core/underscore
+

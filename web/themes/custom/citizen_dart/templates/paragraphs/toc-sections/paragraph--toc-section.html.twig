@@ -43,7 +43,10 @@
 
 {% block widgetContent %}
 	{% if content.field_toc_section_title.0 %}
-		<a name="{{ content.field_toc_section_title.0['#context'].value|clean_class }}" id="{{ content.field_toc_section_title.0['#context'].value|clean_class }}"></a>
+		{% if paragraph.id.0.value %}
+  		{% set anchorID = paragraph.id.0.value %}
+  	{% endif %}
+		<a name="{{ content.field_toc_section_title.0['#context'].value|clean_class }}-{{ anchorID }}" id="{{ content.field_toc_section_title.0['#context'].value|clean_class }}-{{ anchorID }}"></a>
 		<h2 class="section-title">{{ content.field_toc_section_title.0['#context'].value }}</h2>
 	{% endif %}
 	{{- content|without('field_toc_section_title') -}}
