@@ -43,23 +43,22 @@
   <div{{ attributes.addClass(classes) }}>
     {% set tocCount = 0 %}
     {% for toc in items %}
-      {% if toc.content['#paragraph'].field_toc_section_title.0.value %}
+      {% if toc.content['#paragraph'].field_sub_section_title.0.value %}
         {% set tocCount = tocCount + 1 %}
       {% endif %}
     {% endfor %}
     {% if tocCount > 1 %}
-      {{ attach_library('citizen_dart/toc-section') }}
-      <div class="table-of-contents">
-        <h2 class="block-title toc-title">{% trans %}On This Page{% endtrans %}</h2>
-        <div id="toc-wrapper">
+      <div class="section-table-of-contents">
+        <div class="toc-section-title">{% trans %}In This Section{% endtrans %}</div>
+        <div class="section-toc-wrapper">
           {% for tocLink in items %}
           	{% if tocLink.content['#paragraph'].id.0.value %}
           		{% set anchorID = tocLink.content['#paragraph'].id.0.value %}
           	{% endif %}
-            {% if tocLink.content['#paragraph'].field_toc_section_title.0 %}
+            {% if tocLink.content['#paragraph'].field_sub_section_title.0 %}
               <div class="toc-item">
-                <div class="toc-link">
-                  <a href="#{{ tocLink.content['#paragraph'].field_toc_section_title.0.value|clean_class }}-{{ anchorID }}" class="toc-section-link">{{ tocLink.content['#paragraph'].field_toc_section_title.0.value }}</a>
+                <div class="toc-link{% if subCount > 0 %} toc-parent{% endif %}">
+                  <a href="#{{ tocLink.content['#paragraph'].field_sub_section_title.0.value|clean_class }}-{{ anchorID }}" class="toc-section-link">{{ tocLink.content['#paragraph'].field_sub_section_title.0.value }}</a>
                 </div>
               </div>
             {% endif %}
@@ -67,7 +66,7 @@
         </div>{# endtoc wrapper #}
       </div>{# endtoc #}
     {% endif %}{# end check if toc count #}
-    <div class="toc-sections-wrapper">
+    <div class="sub-sections-wrapper">
       {% block fieldMultiNoItems %}
         {%- for item in items -%}
           <div{{ item.attributes }}>

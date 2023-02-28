@@ -43,7 +43,10 @@
 
 {% block widgetContent %}
 	{% if content.field_sub_section_title.0 %}
-		<a name="{{ content.field_sub_section_title.0['#context'].value|clean_class }}" id="{{ content.field_sub_section_title.0['#context'].value|clean_class }}"></a>
+		{% if paragraph.id.0.value %}
+  		{% set anchorID = paragraph.id.0.value %}
+  	{% endif %}
+		<a name="{{ content.field_sub_section_title.0['#context'].value|clean_class }}-{{ anchorID }}" id="{{ content.field_sub_section_title.0['#context'].value|clean_class }}-{{ anchorID }}"></a>
 		<h3 class="widget-title">{{ content.field_sub_section_title.0['#context'].value }}</h3>
 	{% endif %}
 	{{- content|without('field_sub_section_title') -}}

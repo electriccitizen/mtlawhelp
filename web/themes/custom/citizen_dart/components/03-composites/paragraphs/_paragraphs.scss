@@ -17,6 +17,7 @@
 @forward 'phone-number/phone-number';
 @forward 'portals/portals';
 @forward 'text/text';
+@forward 'toc-section/toc-section';
 @forward 'video/video';
 
 @use '../../00-base/base' as *;

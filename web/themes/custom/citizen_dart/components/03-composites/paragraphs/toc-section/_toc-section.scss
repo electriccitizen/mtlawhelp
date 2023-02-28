@@ -1,0 +1,25 @@
+/* ===============
+   TOC SECTION WIDGET
+================= */
+
+@use '../../../00-base/base' as *;
+
+.table-of-contents{
+	margin-bottom: $elementSpace;
+	.toc-link{
+		margin-bottom: $spaceXxs;
+	}
+}
+.section-table-of-contents{
+	margin-bottom: $elementSpace;
+	.toc-section-title{
+		@include heading5;
+		margin-bottom: $spaceXs;
+	}
+}
+
+.field-section-content{
+	& > div{
+		margin-bottom: $elementSpace;
+	}
+}
