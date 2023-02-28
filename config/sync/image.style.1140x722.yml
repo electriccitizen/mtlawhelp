@@ -1,0 +1,23 @@
+uuid: 30a41ad1-2261-4e42-9fe9-fe06074d2312
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 1140x722
+label: 1140x722
+effects:
+  8a5e681c-75d8-409b-9bbe-3239d3dac6bc:
+    uuid: 8a5e681c-75d8-409b-9bbe-3239d3dac6bc
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1140
+      height: 722
+      crop_type: focal_point
+  6d0b2569-2fe3-4687-b017-ec707bb62450:
+    uuid: 6d0b2569-2fe3-4687-b017-ec707bb62450
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

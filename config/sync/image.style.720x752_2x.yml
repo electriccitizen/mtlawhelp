@@ -1,0 +1,30 @@
+uuid: ee77e6a2-6727-4c52-b0e0-6b232983a643
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: 720x752_2x
+label: '720x752 2x'
+effects:
+  b16b942e-f758-40f9-9f86-b83bdfc00a61:
+    uuid: b16b942e-f758-40f9-9f86-b83bdfc00a61
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 1504
+      crop_type: focal_point
+  6c51e887-afe3-4a88-974c-6f8875ab1df6:
+    uuid: 6c51e887-afe3-4a88-974c-6f8875ab1df6
+    id: image_style_quality
+    weight: 2
+    data:
+      quality: 30
+  ed41b022-d97f-470f-a2c5-43acc66b3492:
+    uuid: ed41b022-d97f-470f-a2c5-43acc66b3492
+    id: image_convert
+    weight: 3
+    data:
+      extension: webp
