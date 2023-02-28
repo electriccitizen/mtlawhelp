@@ -10,6 +10,7 @@ dependencies:
     - image.style.720x456
     - image.style.720x456_1_5x
     - image.style.720x456_2x
+    - image.style.720x456_non_webp
   theme:
     - citizen_dart
 id: 448x284
@@ -56,4 +57,4 @@ image_style_mappings:
     breakpoint_id: citizen_dart.mobile
     multiplier: 2x
 breakpoint_group: citizen_dart
-fallback_image_style: 448x284
+fallback_image_style: 720x456_non_webp
