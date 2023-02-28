@@ -4,10 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.topic.body
+    - field.field.node.topic.field_description
     - field.field.node.topic.field_information
+    - field.field.node.topic.field_keywords
+    - field.field.node.topic.field_layout
     - field.field.node.topic.field_legal_topic
     - field.field.node.topic.field_metatags
     - field.field.node.topic.field_parent_topic
+    - field.field.node.topic.field_related
     - field.field.node.topic.field_topic_type
     - node.type.topic
   module:
@@ -93,6 +97,68 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 4
             additional: {  }
+          cb470fee-d74a-4510-b546-b1ea570a13f6:
+            uuid: cb470fee-d74a-4510-b546-b1ea570a13f6
+            region: content
+            configuration:
+              id: 'field_block:node:topic:field_layout'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          8e9f9b13-4e66-424e-b04d-f827866db524:
+            uuid: 8e9f9b13-4e66-424e-b04d-f827866db524
+            region: content
+            configuration:
+              id: 'field_block:node:topic:field_description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          a5e74024-2c75-4bde-b7bc-8c5ec15d3c1c:
+            uuid: a5e74024-2c75-4bde-b7bc-8c5ec15d3c1c
+            region: content
+            configuration:
+              id: 'field_block:node:topic:field_related'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          061f31cf-014a-4bca-9710-67176b73ae86:
+            uuid: 061f31cf-014a-4bca-9710-67176b73ae86
+            region: content
+            configuration:
+              id: 'field_block:node:topic:field_keywords'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories: {  }
@@ -131,6 +197,28 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_keywords:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_layout:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
   field_legal_topic:
     type: entity_reference_label
     label: above
@@ -153,6 +241,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_related:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
     region: content
   field_topic_type:
     type: list_default

@@ -36,14 +36,15 @@ third_party_settings:
       region: content
       parent_name: ''
       weight: 1
-      format_type: tab
+      format_type: details
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        formatter: closed
+        open: false
         description: ''
         required_fields: true
+        formatter: closed
         element: div
         show_label: false
         label_element: h3

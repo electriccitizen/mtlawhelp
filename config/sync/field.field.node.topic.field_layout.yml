@@ -1,0 +1,23 @@
+uuid: 5f8502db-3f53-4d52-b821-3ddcb3da7a65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_layout
+    - node.type.topic
+  module:
+    - options
+id: node.topic.field_layout
+field_name: field_layout
+entity_type: node
+bundle: topic
+label: Layout
+description: "\"Minimal subtopic are subtopics that have few resources and may have mainly just topic information sections.</br></br>\r\nRobust subtopics will automatically group resources together by their resource category.\""
+required: true
+translatable: false
+default_value:
+  -
+    value: minimal
+default_value_callback: ''
+settings: {  }
+field_type: list_string
