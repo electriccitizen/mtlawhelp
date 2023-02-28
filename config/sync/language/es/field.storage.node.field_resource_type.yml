@@ -1,0 +1,10 @@
+settings:
+  allowed_values:
+    -
+      label: Artículo
+    -
+      label: Documento
+    -
+      label: 'Enlace externo'
+    -
+      label: Forma

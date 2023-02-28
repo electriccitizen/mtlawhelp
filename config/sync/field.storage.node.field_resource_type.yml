@@ -1,0 +1,36 @@
+uuid: afc01887-0e6c-4fef-937c-50a079232b9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_resource_type
+field_name: field_resource_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: article
+      label: Article
+    -
+      value: document
+      label: Document
+    -
+      value: external_link
+      label: 'External Link'
+    -
+      value: form
+      label: Form
+    -
+      value: video
+      label: Video
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,2 @@
+label: 'Enlace externo'
+description: 'Si el tipo de recurso es un formulario, use el módulo personalizado JS para agregar este texto de ayuda encima de los campos de enlace y archivo en el formulario de nodo: ''No agregue un enlace externo al formulario y un archivo. Utilice sólo uno u otro''.'
