@@ -40,5 +40,5 @@
 {% extends 'field.html.twig' %}
 
 {% block fieldSingleNo %}
-	<p><span>Last review and update: </span>{{- item.content -}}</p>
+	<a href="{{ element.0['#title'] }}"><button>View External Resource</button></a>
 {% endblock %}
