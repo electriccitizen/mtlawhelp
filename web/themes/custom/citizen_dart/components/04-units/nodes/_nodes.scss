@@ -1,10 +1,11 @@
 /* ===============
-   NODES 
+   NODES
 =================== */
 
 /* NODES INDEX
 ------------------- */
 @forward 'basic-page/basic-page';
+@forward 'resource/resource';
 @forward 'support-book/support-book';
 @use '../../00-base/base' as *;
 @use 'node-mixins' as *;
@@ -59,4 +60,3 @@
 .node-section{
 	position: relative;
 }
-

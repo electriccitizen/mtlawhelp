@@ -1,0 +1,12 @@
+/* ============
+   BASIC PAGE
+================ */
+
+@use '../../../00-base/base' as *;
+
+.node-resource{
+	.node-section{
+		max-width: $textMax;
+		margin: auto;
+	}
+}//end reource
