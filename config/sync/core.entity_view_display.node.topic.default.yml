@@ -78,6 +78,43 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
+          8e9f9b13-4e66-424e-b04d-f827866db524:
+            uuid: 8e9f9b13-4e66-424e-b04d-f827866db524
+            region: content
+            configuration:
+              id: 'field_block:node:topic:field_description'
+              label: Description
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          a5e74024-2c75-4bde-b7bc-8c5ec15d3c1c:
+            uuid: a5e74024-2c75-4bde-b7bc-8c5ec15d3c1c
+            region: content
+            configuration:
+              id: 'field_block:node:topic:field_related'
+              label: 'Related Topics'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
           b6041a8a-a44f-4d94-8ea9-a034f8747b43:
             uuid: b6041a8a-a44f-4d94-8ea9-a034f8747b43
             region: content
@@ -94,68 +131,6 @@ third_party_settings:
                 label: hidden
                 settings:
                   view_mode: default
-                third_party_settings: {  }
-            weight: 4
-            additional: {  }
-          cb470fee-d74a-4510-b546-b1ea570a13f6:
-            uuid: cb470fee-d74a-4510-b546-b1ea570a13f6
-            region: content
-            configuration:
-              id: 'field_block:node:topic:field_layout'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: list_default
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 5
-            additional: {  }
-          8e9f9b13-4e66-424e-b04d-f827866db524:
-            uuid: 8e9f9b13-4e66-424e-b04d-f827866db524
-            region: content
-            configuration:
-              id: 'field_block:node:topic:field_description'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: basic_string
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 6
-            additional: {  }
-          a5e74024-2c75-4bde-b7bc-8c5ec15d3c1c:
-            uuid: a5e74024-2c75-4bde-b7bc-8c5ec15d3c1c
-            region: content
-            configuration:
-              id: 'field_block:node:topic:field_related'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 7
-            additional: {  }
-          061f31cf-014a-4bca-9710-67176b73ae86:
-            uuid: 061f31cf-014a-4bca-9710-67176b73ae86
-            region: content
-            configuration:
-              id: 'field_block:node:topic:field_keywords'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: string
-                label: above
-                settings:
-                  link_to_entity: false
                 third_party_settings: {  }
             weight: 8
             additional: {  }
