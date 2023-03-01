@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.resource.field_videos
     - node.type.resource
   module:
+    - conditional_fields
     - datetime
     - field_group
     - link
@@ -79,7 +80,44 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        4ee65ae3-ddf4-46c1-a94f-1d4871b65c70:
+          entity_type: node
+          bundle: resource
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 3
+            value: ''
+            values: "document\r\nform"
+            value_form: {  }
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+        cdada4cf-debc-4d14-9cbf-d94ab88cc4a9:
+          entity_type: node
+          bundle: resource
+          dependee: field_resource_type
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: document
+            effect: show
+            effect_options: {  }
+            selector: ''
   field_information:
     type: paragraphs
     weight: 10
@@ -130,7 +168,46 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        555e1dd4-4db2-4aa8-b5bb-1c7d2181de7b:
+          entity_type: node
+          bundle: resource
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 3
+            value: ''
+            values: "external_link\r\nform"
+            value_form:
+              -
+                value: external_link
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+        6b57b496-c736-4200-92a4-f02028f42eef:
+          entity_type: node
+          bundle: resource
+          dependee: field_resource_type
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: external_link
+            effect: show
+            effect_options: {  }
+            selector: ''
   field_metatags:
     type: metatag_firehose
     weight: 17
@@ -167,7 +244,29 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        63814b8e-dc10-4695-87e2-29f75660e0d1:
+          entity_type: node
+          bundle: resource
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: video
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
   langcode:
     type: language_select
     weight: 14
