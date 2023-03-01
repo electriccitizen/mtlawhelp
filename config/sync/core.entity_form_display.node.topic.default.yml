@@ -176,6 +176,27 @@ content:
             effect: show
             effect_options: {  }
             selector: ''
+        cf6a32cf-b2cc-48cf-b441-19919d2b3870:
+          entity_type: node
+          bundle: topic
+          dependee: field_topic_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: "parent\r\nsubtopic"
+            value_form:
+              -
+                value: parent
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
   field_metatags:
     type: metatag_firehose
     weight: 11
@@ -215,6 +236,21 @@ content:
                 speed: '400'
               slide:
                 speed: '400'
+            selector: ''
+        d33dd0ea-1cd0-42c2-8ad2-ac92a94d715d:
+          entity_type: node
+          bundle: topic
+          dependee: field_topic_type
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form: {  }
+            effect: show
+            effect_options: {  }
             selector: ''
   field_related:
     type: entity_reference_autocomplete
