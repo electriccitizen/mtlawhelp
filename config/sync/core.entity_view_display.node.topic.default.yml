@@ -96,6 +96,13 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 9
             additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
           a5e74024-2c75-4bde-b7bc-8c5ec15d3c1c:
             uuid: a5e74024-2c75-4bde-b7bc-8c5ec15d3c1c
             region: content
@@ -113,7 +120,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 10
+            weight: 2
             additional: {  }
           b6041a8a-a44f-4d94-8ea9-a034f8747b43:
             uuid: b6041a8a-a44f-4d94-8ea9-a034f8747b43
@@ -132,7 +139,7 @@ third_party_settings:
                 settings:
                   view_mode: default
                 third_party_settings: {  }
-            weight: 8
+            weight: 1
             additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
