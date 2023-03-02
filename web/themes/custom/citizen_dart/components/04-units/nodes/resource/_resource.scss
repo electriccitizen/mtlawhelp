@@ -9,4 +9,16 @@
 		max-width: $textMax;
 		margin: auto;
 	}
+	.block-field-related{
+		.field-description{
+			margin-bottom: $spaceXxs;
+		}
+		.author{
+			@include safeFlex(row,wrap,start,start);
+			.author-icon{
+				width: 24px;
+				margin-right: $spaceXxs;
+			}
+		}
+	}
 }//end reource
