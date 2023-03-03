@@ -7,6 +7,7 @@
 @forward 'basic-page/basic-page';
 @forward 'resource/resource';
 @forward 'support-book/support-book';
+@forward 'topic/topic';
 @use '../../00-base/base' as *;
 @use 'node-mixins' as *;
 

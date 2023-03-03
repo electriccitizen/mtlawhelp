@@ -1,0 +1,10 @@
+/* ============
+   TOPIC
+================ */
+
+@use '../../../00-base/base' as *;
+@use '../resource/resource' as *;
+
+.node-topic{
+	@extend .node-resource;
+}//end topic
