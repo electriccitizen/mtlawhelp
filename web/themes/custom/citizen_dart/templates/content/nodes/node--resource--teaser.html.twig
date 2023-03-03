@@ -97,7 +97,7 @@
     {%- elseif resource_type == 'document' -%}
       {%- trans -%}<a href="{{- url -}}" rel="bookmark">{{- label.0['#context'].value -}}</a>{%- endtrans -%}
     {%- elseif resource_type == 'form' -%}
-      {%- trans -%}<a href="{{- url -}}" rel="bookmark">{{- label.0['#context'].value -}}</a>{%- endtrans -%}
+      {%- trans -%}<a href="{{- content.field_link.0['#title'] -}}" rel="bookmark">{{- label.0['#context'].value -}}</a>{%- endtrans -%}
     {%- elseif resource_type == 'article' or resource_type == 'video' -%}
       {%- trans -%}<a href="{{- url -}}" rel="bookmark">{{- label.0['#context'].value -}}</a>{%- endtrans -%}
     {% endif %}
