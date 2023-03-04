@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_related
+    - node.type.resource
     - node.type.topic
 id: node.topic.field_related
 field_name: field_related
@@ -19,10 +20,10 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      topic: topic
+      resource: resource
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: resource
+    auto_create_bundle: ''
 field_type: entity_reference
