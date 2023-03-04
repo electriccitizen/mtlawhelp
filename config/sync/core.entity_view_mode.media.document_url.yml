@@ -1,0 +1,10 @@
+uuid: 0e791fd8-3f05-469a-b15d-0058edbe122e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.document_url
+label: 'Document URL'
+targetEntityType: media
+cache: true

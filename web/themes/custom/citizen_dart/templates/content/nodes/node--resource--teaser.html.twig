@@ -95,6 +95,7 @@
     {%- if resource_type == 'external_link' -%}
       {%- trans -%}<a href="{{- content.field_link.0['#title'] -}}" rel="bookmark">{{- label.0['#context'].value -}}</a>{%- endtrans -%}
     {%- elseif resource_type == 'document' -%}
+      {{ content.field_file }}
       {%- trans -%}<a href="{{- url -}}" rel="bookmark">{{- label.0['#context'].value -}}</a>{%- endtrans -%}
     {%- elseif resource_type == 'form' -%}
       {%- trans -%}<a href="{{- content.field_link.0['#title'] -}}" rel="bookmark">{{- label.0['#context'].value -}}</a>{%- endtrans -%}
