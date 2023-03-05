@@ -33,14 +33,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_description:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_file:
     type: entity_reference_entity_view
@@ -49,7 +49,7 @@ content:
       view_mode: document_url
       link: false
     third_party_settings: {  }
-    weight: 5
+    weight: 4
     region: content
   field_link:
     type: link
@@ -61,19 +61,14 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
   field_resource_type:
     type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
 hidden:
   field_information: true
@@ -85,4 +80,5 @@ hidden:
   field_resource_category: true
   field_videos: true
   langcode: true
+  links: true
   search_api_excerpt: true

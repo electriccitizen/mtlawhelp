@@ -115,10 +115,10 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: entity_reference_label
+                type: entity_reference_entity_view
                 label: hidden
                 settings:
-                  link: true
+                  view_mode: teaser
                 third_party_settings: {  }
             weight: 2
             additional: {  }
