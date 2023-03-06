@@ -23,8 +23,8 @@ $adminTransGrey : rgba(92,96,98,.92);
 
 /* TEXT
 ---------------------- */
-$baseText          : $darkGrey;
-$link              : $red;
+$baseText          : $lightBlack;
+$link              : $brightGreen;
 $activeLink        : $black;
 $hoverLink         : $midGrey;
 $breadLink         : $link;
@@ -33,7 +33,7 @@ $breadCurrent      : $darkGrey;
 
 /* BUTTONS
 ---------------------- */
-$buttonBack        : $link;
+$buttonBack        : $green;
 $buttonBackHover   : $grey;
 $buttonBackActive  : darken($grey, 5%);
 $buttonText        : $white;
@@ -56,15 +56,15 @@ $cautionTextHover  : $black;
 --------------------- */
 $siteBack                  : $white;
 $unpub                     : $adminPink;
-$headerBack                : $offWhite;
-$prefooterBack             : $darkGrey;
-$prefooterText             : $offWhite;
-$prefooterLink             : $adminGold;
-$prefooterLinkHover        : $adminWhiteGold;
-$footerBack                : $black;
-$footerText                : $offWhite;
-$footerLink                : $adminGold;
-$footerLinkHover           : $adminWhiteGold;
+$headerBack                : $white;
+$prefooterBack             : $blue;
+$prefooterText             : $white;
+$prefooterLink             : $white;
+$prefooterLinkHover        : $hoverLink;
+$footerBack                : $darkBlue;
+$footerText                : $white;
+$footerLink                : $white;
+$footerLinkHover           : $hoverLink;
 $borderRule                : $black;
 $modalBack                 : $adminTransGrey;
 $modalContent              : $baseText;
@@ -78,22 +78,22 @@ $modalGalButtonHover       : $link;
 $modalGalButtonBackHover   : transparent;
 $modalGalButtonShadow      : $transBlack;
 $modalGalButtonShadowHover : $transBlack;
-$hamburger                 : $black;
+$hamburger                 : $green;
 $hamburgerActive           : $black;
-$searchIcon                : $black;
-$searchIconHover           : $link;
-$searchDropBack            : rgba(35,35,35,0.97);
-$searchDropText            : $white;
+$searchIcon                : $darkGreen;
+$searchIconHover           : $black;
+$searchDropBack            : $lightGreen;
+$searchDropText            : $lightBlack;
 $searchDropPlace           : $white;
 $searchDropPlaceFocus      : $white;
 $searchDropInputBorder     : $white;
 $searchDropInputFocus      : $white;
-$searchDropSearchIcon      : $white;
-$searchDropSearchIconHover : $link;
-$searchClose               : $black;
-$searchCloseHover          : $white;
-$searchCloseBack           : $white;
-$searchCloseBackHover      : $black;
+$searchDropSearchIcon      : $darkGreen;
+$searchDropSearchIconHover : $black;
+$searchClose               : $green;
+$searchCloseHover          : $black;
+$searchCloseBack           : $lightGreen;
+$searchCloseBackHover      : $lightGreen;
 
 
 /* FORMS
@@ -145,32 +145,6 @@ $evenRowBack         : $siteBack;
 $evenRowText         : $baseText;
 $oddRowBack          : $lightGrey;
 $oddRowText          : $baseText;
-
-
-/* SUPERFISH
----------------------- */
-//desktop
-$sfTopLink            : $black;
-$sfTopLinkHover       : $black;
-$sfTopBackHover       : $lightGrey;
-$sfTopActive          : $link;
-$sfTopActiveHover     : $link;
-$sfChildLink          : $link;
-$sfChildLinkHover     : $hoverLink;
-$sfChildActive        : $black;
-$sfChildActiveHover   : $hoverLink;
-$sfDropdown           : $lightGrey;
-
-//mobile
-$sfMobileDrop            : $white;
-$sfMobileDropBorder      : $black;
-$sfMobileItemBorder      : $borderRule;
-$sfMobileTop             : $link;
-$sfMobileTopBack         : $white;
-$sfMobileTopExpanded     : $hoverLink;
-$sfMobileTopBackExpanded : $lightGrey;
-$sfMobileChild           : $link;
-$sfMobileChildActive     : $white;
 
 
 /* MENU BLOCK (Sidebar)
@@ -244,4 +218,3 @@ $messageErrorBorder   : $adminFuchsia;
 /* EMBEDDED DOC ICONS
 ------------------- */
 $fileIcon: $midGrey;
-
