@@ -19,11 +19,35 @@
 	url(../fonts/MaterialIconsOutlined-Regular.otf) format('opentype');;
 }
 
+@font-face {
+  font-family: 'Mona Sans';
+	font-weight: 300;
+  src:
+    url(../fonts/Mona_Sans/Mona-Sans.woff2) format('woff2 supports variations'),
+    url(../fonts/Mona_Sans/Mona-Sans.woff2) format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+	font-weight: 500;
+  src:
+    url(../fonts/Mona_Sans/Mona-Sans.woff2) format('woff2 supports variations'),
+    url(../fonts/Mona_Sans/Mona-Sans.woff2) format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+	font-weight: 700;
+  src:
+    url(../fonts/Mona_Sans/Mona-Sans.woff2) format('woff2 supports variations'),
+    url(../fonts/Mona_Sans/Mona-Sans.woff2) format('woff2-variations');
+}
+
 /*  FAMILIES
 -------------------- */
-$header       : "Open Sans", Helvetica, Arial, sans-serif;
-$displayHeader: "Open Sans", Helvetica, Arial, sans-serif;
-$bodyFont     : "Open Sans", Helvetica, Arial, sans-serif;
+$header       : "Mona Sans", Helvetica, Arial, sans-serif;
+$displayHeader: "Mona Sans", Helvetica, Arial, sans-serif;
+$bodyFont     : "Mona Sans", Helvetica, Arial, sans-serif;
 $serif        : Georgia, "Times New Roman", Times, serif;
 
 /*  WEIGHTS
