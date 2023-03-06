@@ -11,6 +11,7 @@ $tab: 800px;
 $desk: 984px;
 $contentStop: 1200px;
 $largeScreen: 1600px;
+$wideScreen: 2000px;
 $textMax: 800px;
 $onlyTab: $tab $desk - 1px;
 $onlySmall: max-width $tab - 1px;
@@ -69,6 +70,12 @@ $sectionGutter: 40px;
 
 @mixin largeScreen {
 	@media screen and (min-width: $largeScreen) {
+		@content;
+	}
+}
+
+@mixin wideScreen {
+	@media screen and (min-width: $wideScreen) {
 		@content;
 	}
 }

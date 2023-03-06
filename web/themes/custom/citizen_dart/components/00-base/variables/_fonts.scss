@@ -28,38 +28,42 @@ $serif        : Georgia, "Times New Roman", Times, serif;
 
 /*  WEIGHTS
 -------------------- */
-$light: 300;
-$regular: 400;
+$regular: 500;
 $heavy:  700;
-$x-heavy: 900;
 
 /*  SIZES
 -------------------- */
-$baseSize: 2.25rem;
+$baseSizeLg: 3.5rem; /* 28px */
+$baseSizeMd: 3.5rem; /* 24px */
+$baseSize: 2.5rem; /* 20px */
+$baseSizeSm: 2rem; /* 16px */
 $formLabelSize: 2.5rem;
-$formLabelWeight: 700;
+$formLabelWeight: $heavy;
 $button: 2rem;
 $socialIcons: 4rem;
 
 //h1 sizes
-$h1Sm: 4rem;
-$h1Mid: 5.5rem;
-$h1Lg: 7rem;
+$h1Sm: 5.5rem; /* 44px */
+$h1Md: 6.75rem; /* 54px */
+$h1Lg: 8rem; /* 64px */
+$h1Xl: 9.5rem; /* 76px */
 
 //h2 sizes
-$h2Sm: 3rem;
-$h2Md: 3.5rem;
-$h2Lg: 4rem;
+$h2Sm: 4.5rem; /* 36px */
+$h2Md: 5.25rem; /* 42px */
+$h2Lg: 6rem; /* 48px */
+$h2Xl: 7rem; /* 56px */
 
 //h3 sizes
-$h3Sm: 3rem;
-$h3Mid: 3.5rem;
+$h3Sm: 2.75rem; /* 22px */
+$h3Md: 3.5rem; /* 28px */
+$h3Lg: 4rem; /* 32px */
 
 //h4 sizes
-$h4Sm: 2.75rem;
+$h4Sm: 2.5rem;
 
 //h5 sizes
-$h5Sm: 2.5rem;
+$h5Sm: 2.25rem; /* 18px */
 
 //h6 sizes
 $h6Sm: 2rem;
@@ -79,10 +83,13 @@ $h6Sm: 2rem;
 	font-family: $displayHeader;
 	font-size: $h1Sm;
 	@include tab{
-		font-size: $h1Mid;
+		font-size: $h1Md;
 	}
 	@include contentStop{
 		font-size: $h1Lg;
+	}
+	@include wideScreen{
+		font-size: $h1Xl;
 	}
 }
 
@@ -95,13 +102,19 @@ $h6Sm: 2rem;
 	@include contentStop{
 		font-size: $h2Lg;
 	}
+	@include wideScreen{
+		font-size: $h2Xl;
+	}
 }
 
 @mixin heading3{
 	@include headerGlobals;
 	font-size: $h3Sm;
 	@include tab{
-		font-size: $h3Mid;
+		font-size: $h3Md;
+	}
+	@include wideScreen{
+		font-size: $h3Lg;
 	}
 }
 
