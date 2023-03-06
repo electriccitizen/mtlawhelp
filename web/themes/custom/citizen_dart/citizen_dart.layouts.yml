@@ -11,11 +11,11 @@ two_column_sidebar_left:
       label: First
     content:
       label: Content
-two_column_quad_split:
-  label: Two Column Quad Split
+two_column_quad_split_left:
+  label: Two Column Quad Split Left
   category: Citizen Dart Layouts
   path: templates/layout
-  template: layout--twocol-quad-split
+  template: layout--twocol-quad-split-left
   default_region: first
   icon_map:
     - [first, third, third, third]
@@ -29,6 +29,27 @@ two_column_quad_split:
       label: Third
     content:
       label: Content
+two_column_quad_split_right:
+  label: Two Column Quad Split Right
+  category: Citizen Dart Layouts
+  path: templates/layout
+  template: layout--twocol-quad-split-right
+  default_region: third
+  icon_map:
+    - [first, first, second, second]
+    - [third, third, forth, forth]
+    - [fifth, fifth, fifth, fifth]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    forth:
+      label: Forth
+    fifth:
+      label: Fifth
 two_column_sidebar_right:
   label: Two Column Sidebar Right
   category: Citizen Dart Layouts
