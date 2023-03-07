@@ -191,20 +191,20 @@ $resultsText                : $baseText;
 
 /* ACCORDIONS
 ------------------- */
-$accordHeader             : $baseText;
+$accordHeader             : $white;
 $accordHeaderHover        : $white;
-$accordHeaderBorder       : $darkGrey;
-$accordHeaderBorderHover  : $darkGrey;
-$accordHeaderBack         : $siteBack;
-$accordHeaderBackHover    : $darkGrey;
+$accordHeaderBorder       : $white;
+$accordHeaderBorderHover  : $white;
+$accordHeaderBack         : $blue;
+$accordHeaderBackHover    : $darkBlue;
 $accordContentBack        : $siteBack;
 $accordContentBorder      : transparent;
 $accordActive             : $white;
 $accordActiveHover        : $white;
-$accordActiveBorder       : $black;
-$accordActiveBorderHover  : $darkGrey;
+$accordActiveBorder       : $white;
+$accordActiveBorderHover  : $white;
 $accordActiveBack         : $black;
-$accordActiveBackHover    : $darkGrey;
+$accordActiveBackHover    : $darkBlue;
 
 /* MESSAGES
 ------------------ */
