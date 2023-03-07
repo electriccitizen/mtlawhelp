@@ -12,23 +12,23 @@ dependencies:
   module:
     - layout_builder
     - layout_builder_restrictions
-    - layout_discovery
-    - system
     - user
+  theme:
+    - citizen_dart
 third_party_settings:
   layout_builder:
     enabled: true
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: two_column_quad_split_right
         layout_settings:
           label: ''
           context_mapping: {  }
         components:
-          fc258be8-1dca-4d9e-a464-39978757d09a:
-            uuid: fc258be8-1dca-4d9e-a464-39978757d09a
-            region: content
+          eccd40f2-b789-48af-b9b0-b8e9e94b5a6a:
+            uuid: eccd40f2-b789-48af-b9b0-b8e9e94b5a6a
+            region: first
             configuration:
               id: 'field_block:node:page:field_image'
               label: 'Featured Image'
@@ -43,11 +43,11 @@ third_party_settings:
                 settings:
                   view_mode: banner
                 third_party_settings: {  }
-            weight: 1
+            weight: 0
             additional: {  }
-          614fae1f-1237-4074-b89a-13d7ad7a3238:
-            uuid: 614fae1f-1237-4074-b89a-13d7ad7a3238
-            region: content
+          fb2050b2-40b4-477b-90dd-c7b48c5124af:
+            uuid: fb2050b2-40b4-477b-90dd-c7b48c5124af
+            region: third
             configuration:
               id: 'field_block:node:page:title'
               label: Title
@@ -62,22 +62,11 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            weight: 3
+            weight: 0
             additional: {  }
-          87ff3b06-0381-47f3-b30d-0b8168ef1dd5:
-            uuid: 87ff3b06-0381-47f3-b30d-0b8168ef1dd5
-            region: content
-            configuration:
-              id: system_breadcrumb_block
-              label: Breadcrumbs
-              label_display: '0'
-              provider: system
-              context_mapping: {  }
-            weight: 2
-            additional: {  }
-          b7b7e9c4-781b-42a6-be8f-ccf4b34e3d04:
-            uuid: b7b7e9c4-781b-42a6-be8f-ccf4b34e3d04
-            region: content
+          717bfc2f-12f8-4eaa-a809-e55ee0d72a47:
+            uuid: 717bfc2f-12f8-4eaa-a809-e55ee0d72a47
+            region: third
             configuration:
               id: 'field_block:node:page:body'
               label: Body
@@ -91,14 +80,14 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 4
+            weight: 1
             additional: {  }
-          604d500d-e75b-408b-a64a-406868772fe3:
-            uuid: 604d500d-e75b-408b-a64a-406868772fe3
-            region: content
+          d5ca89b8-2f74-4ec1-8b68-ce65aabb5c14:
+            uuid: d5ca89b8-2f74-4ec1-8b68-ce65aabb5c14
+            region: fifth
             configuration:
               id: 'field_block:node:page:field_paragraphs'
-              label: Widgets
+              label: 'Add Sections'
               label_display: '0'
               provider: layout_builder
               context_mapping:
@@ -110,7 +99,7 @@ third_party_settings:
                 settings:
                   view_mode: default
                 third_party_settings: {  }
-            weight: 5
+            weight: 0
             additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
@@ -119,6 +108,7 @@ third_party_settings:
       allowed_layouts:
         - layout_onecol
         - two_column_sidebar_left
+        - two_column_quad_split_right
       denylisted_blocks: {  }
       allowlisted_blocks:
         Menus:
