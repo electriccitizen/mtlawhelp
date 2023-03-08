@@ -63,9 +63,9 @@
 	}
 	.layout__region--first{
 		width: 100%;
-		// @include onlyMobile{
-		// 	@include safeFlexOrder(2);
-		// }
+		@include onlyMobile{
+			@include safeFlexOrder(2);
+		}
 		@include desk{
 			float: right;
 			width: 50%;
@@ -130,7 +130,9 @@
 	max-width: $contentStop;
 	@include auto;
 	@include clearFix;
-	@include safeFlex(row,wrap,start,start);
+	@include onlyMobile{
+		@include safeFlex(row,wrap,start,start);
+	}
 	.field-long-text,.text-long,.text-with-summary{
 		&:after{
 			content: none;
@@ -143,10 +145,9 @@
 			@include safeFlexOrder(1);
 		}
 		@include desk{
-			@include safeFlexOrder(2);
 			width: 50%;
-			padding-left: calc($sectionGutter / 2);
-			text-align: right;
+			padding-left: $sectionGutter;
+			float: right;
 		}
 	}//end layout region first
 	.layout__region--second{
@@ -155,10 +156,9 @@
 			@include safeFlexOrder(5);
 		}
 		@include desk{
-			@include safeFlexOrder(4);
 			width: 50%;
-			padding-left: calc($sectionGutter / 2);
-			text-align: right;
+			padding-left: $sectionGutter;
+			float: right;
 		}
 	}//end layout region second
 	.layout__region--third{
@@ -167,9 +167,7 @@
 			@include safeFlexOrder(2);
 		}
 		@include desk{
-			@include safeFlexOrder(1);
 			width: 50%;
-			padding-right: calc($sectionGutter / 2);
 		}
 	}//end layout region third
 	.layout__region--forth{
@@ -178,13 +176,10 @@
 			@include safeFlexOrder(3);
 		}
 		@include desk{
-			@include safeFlexOrder(3);
 			width: 50%;
-			padding-right: calc($sectionGutter / 2);
 		}
 	}//end layout region forth
 	.layout__region--fifth{
-		@include safeFlexOrder(5);
 		width: 100%;
 		@include onlyMobile{
 			@include safeFlexOrder(4);
