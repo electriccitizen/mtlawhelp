@@ -142,78 +142,56 @@
 	}
 	.layout__region--first{
 		width: 100%;
-		// @include onlyMobile{
-		// 	@include safeFlexOrder(2);
-		// }
+		@include onlyMobile{
+			@include safeFlexOrder(1);
+		}
 		@include desk{
-			order: 2;
-			// float: right;
+			@include safeFlexOrder(2);
 			width: 50%;
-			// margin-left: 50%;
 			padding-left: calc($sectionGutter / 2);
+			text-align: right;
 		}
 	}//end layout region first
 	.layout__region--second{
 		width: 100%;
-		// @include onlyMobile{
-		// 	@include safeFlexOrder(4);
-		// 	& + .layout__region--third {
-		// 		margin-bottom: 0 !important;
-		// 	}
-		// }
+		@include onlyMobile{
+			@include safeFlexOrder(5);
+		}
 		@include desk{
-			// float: right;
-			// clear: right;
-			order: 4;
+			@include safeFlexOrder(4);
 			width: 50%;
-			// margin-left: 50%;
 			padding-left: calc($sectionGutter / 2);
+			text-align: right;
 		}
 	}//end layout region second
 	.layout__region--third{
 		width: 100%;
-		// @include onlyMobile{
-		// 	@include safeFlexOrder(1);
-		// 	&:only-child {
-		// 		margin-bottom: $siteBottomSpace !important;
-		// 	}
-		// }
+		@include onlyMobile{
+			@include safeFlexOrder(2);
+		}
 		@include desk{
-			order: 1;
+			@include safeFlexOrder(1);
 			width: 50%;
 			padding-right: calc($sectionGutter / 2);
-			// margin-right: 50%;
-			// padding-left: $sectionGutter;
-			// &:only-child{
-			// 	width: 100%;
-			// 	max-width: $textMax;
-			// 	@include auto;
-			// 	padding-left: 0;
-			// }
 		}
 	}//end layout region third
 	.layout__region--forth{
 		width: 100%;
-		// @include onlyMobile{
-		// 	@include safeFlexOrder(3);
-		// }
+		@include onlyMobile{
+			@include safeFlexOrder(3);
+		}
 		@include desk{
-			order: 3;
+			@include safeFlexOrder(3);
 			width: 50%;
 			padding-right: calc($sectionGutter / 2);
-			// margin-left: 50%;
-			// padding-left: $sectionGutter;
-			// &:first-child{
-			// 	width: 100%;
-			// 	max-width: $textMax;
-			// 	@include auto;
-			// 	padding-left: 0;
-			// }
 		}
 	}//end layout region forth
 	.layout__region--fifth{
-		order: 5;
+		@include safeFlexOrder(5);
 		width: 100%;
+		@include onlyMobile{
+			@include safeFlexOrder(4);
+		}
 	}//end layout region fifth
 }//end layout-twocol-even-quad-split-left
 
