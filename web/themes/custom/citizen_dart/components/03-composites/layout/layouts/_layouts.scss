@@ -131,9 +131,6 @@
 	@include auto;
 	@include clearFix;
 	@include safeFlex(row,wrap,start,start);
-	// @include onlyMobile{
-	// 	@include safeFlex(column,nowrap,start,start);
-	// }
 	.field-long-text,.text-long,.text-with-summary{
 		&:after{
 			content: none;
@@ -193,7 +190,7 @@
 			@include safeFlexOrder(4);
 		}
 	}//end layout region fifth
-}//end layout-twocol-even-quad-split-left
+}//end layout-twocol-even-quad-split
 
 /* TWO COLUMN SIDEBAR RIGHT */
 .layout--twocol-sideright{
