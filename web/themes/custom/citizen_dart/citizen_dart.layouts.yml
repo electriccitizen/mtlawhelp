@@ -29,15 +29,15 @@ two_column_quad_split_left:
       label: Third
     content:
       label: Content
-two_column_quad_split_right:
-  label: Two Column Quad Split Right
+two_column_even_quad_split:
+  label: Two Column Even Quad Split
   category: Citizen Dart Layouts
   path: templates/layout
-  template: layout--twocol-quad-split-right
+  template: layout--twocol-even-quad-split
   default_region: third
   icon_map:
-    - [first, first, second, second]
-    - [third, third, forth, forth]
+    - [third, third, first, first]
+    - [forth, forth, second, second]
     - [fifth, fifth, fifth, fifth]
   regions:
     first:

@@ -13,7 +13,7 @@
 {%
   set classes = [
     'layout',
-    'layout--twocol-quad-split-right',
+    'layout--twocol-even-quad-split',
     'clearfix'
   ]
 %}
@@ -35,12 +35,12 @@
       </div>
     {% endif %}
     {% if content.forth %}
-      <div {{ region_attributes.content.addClass('layout__region', 'layout__region--forth') }}>
+      <div {{ region_attributes.forth.addClass('layout__region', 'layout__region--forth') }}>
         {{ content.forth }}
       </div>
     {% endif %}
     {% if content.fifth %}
-      <div {{ region_attributes.content.addClass('layout__region', 'layout__region--fifth') }}>
+      <div {{ region_attributes.fifth.addClass('layout__region', 'layout__region--fifth') }}>
         {{ content.fifth }}
       </div>
     {% endif %}
