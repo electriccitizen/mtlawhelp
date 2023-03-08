@@ -9,7 +9,7 @@ dependencies:
 id: languageswitchercontent
 theme: citizen_dart
 region: header
-weight: -3
+weight: -2
 provider: null
 plugin: 'language_block:language_content'
 settings:
