@@ -14,10 +14,16 @@
 			margin-bottom: $spaceXxs;
 		}
 		.author{
-			@include safeFlex(row,wrap,start,start);
+			@include safeFlex(row,wrap,start,center);
 			.author-icon{
 				width: 24px;
 				margin-right: $spaceXxs;
+			}
+			.field-author{
+				p{
+					margin-bottom: 0;
+					margin-left: $spaceXs;
+				}
 			}
 		}
 	}
