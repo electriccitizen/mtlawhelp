@@ -52,10 +52,11 @@
 	}
 	//search toggler
 	.t-search{
-		position: absolute;
-		top: 18px;
-		right: 10px;
+		@include onlyMobile{
+			display: none;
+		}
 		@include desk{
+			position: absolute;
 			top: -28px;
 			right: -243px;
 			&:hover,&:focus{
@@ -89,5 +90,4 @@
 		width: 100%;
 		padding-left: 280px;
 	}//end desk
-
 }//end main nav

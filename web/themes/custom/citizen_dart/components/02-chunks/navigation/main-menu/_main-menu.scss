@@ -4,7 +4,18 @@
 @use '../../../00-base/base' as *;
 
 #block-main-menu{
+	.main-menu-toggle{
+		position: absolute;
+		top: 0;
+		right: 0;
+		@include desk{
+			display: none;
+		}
+	}
 	& > ul{
+		@include onlyMobile{
+			display: none;
+		}
 		@include listReset;
 		@include safeFlex(row,wrap,end,null);
 		line-height: 1;
