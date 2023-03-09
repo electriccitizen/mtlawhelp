@@ -18,7 +18,7 @@ dependencies:
 third_party_settings:
   layout_builder:
     enabled: true
-    allow_custom: false
+    allow_custom: true
     sections:
       -
         layout_id: two_column_even_quad_split
@@ -118,7 +118,6 @@ third_party_settings:
       restricted_categories:
         - '@entity'
         - 'Chaos Tools'
-        - 'Custom block types'
         - Devel
         - Forms
         - Geolocation
