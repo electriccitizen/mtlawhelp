@@ -8,6 +8,7 @@
 		@include listReset;
 		@include safeFlex(row,wrap,end,null);
 		line-height: 1;
+		margin-right: $spaceXs;
 		.menu-item{
 			a{
 				color: $black;
