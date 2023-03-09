@@ -6,9 +6,11 @@
 
 .site-header {
 	background: $headerBack;
-	padding: 20px $siteMarginMobile;
+	padding: 20px $siteMarginMobile 0;
 	& > div{
 		max-width: $contentStop;
+		border-bottom: 1px solid $grey;
+		padding-bottom: 20px;
 		@include auto;
 		position: relative;
 		@include safeFlex(row,wrap,null,center);
@@ -62,7 +64,7 @@
 
 /* MAIN NAVIGATION BLOCK
 ------------------------ */
-.block-superfishmain{
+.block--system-menu{
 	@include onlyMobile{
 		&.contextual-region{
 			position: static;
@@ -85,4 +87,3 @@
 	}//end desk
 
 }//end main nav
-

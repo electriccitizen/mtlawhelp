@@ -1,0 +1,26 @@
+/* =================
+	 MAIN MENU
+===================== */
+@use '../../../00-base/base' as *;
+
+#block-main-menu{
+	& > ul{
+		@include listReset;
+		@include safeFlex(row,wrap,end,null);
+		line-height: 1;
+		.menu-item{
+			a{
+				color: $black;
+				font-weight: bold;
+				padding: 2.5rem 1.5rem !important;
+				font-size: 2.5rem;
+				display: block;
+				position: relative;
+				&:hover,&:focus{
+					// background: $sfTopBackHover;
+					// color: $sfTopLinkHover;
+				}
+			}
+		}
+	}
+}
