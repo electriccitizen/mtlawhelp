@@ -168,7 +168,7 @@
 }
 
 @mixin warningButton{
-	@include outlineButton;
+	@include submitButton;
 	background: $resetBack;
 	color: $resetText;
 	border-color: $resetBack;
