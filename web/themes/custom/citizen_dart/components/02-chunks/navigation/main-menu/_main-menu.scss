@@ -4,23 +4,53 @@
 @use '../../../00-base/base' as *;
 
 #block-main-menu{
+	@include onlyMobile{
+		&.toggled{
+			@include edgeToEdge;
+			position: absolute;
+			top: -20px;
+			width: 100vw;
+			height: 100vh;
+			z-index: 999;
+		}
+	}
 	.main-menu-toggle{
 		position: absolute;
 		top: 0;
 		right: 0;
+		&.toggled{
+			display: none;
+		}
 		@include desk{
 			display: none;
 		}
 	}
 	& > ul{
-		@include onlyMobile{
-			display: none;
-		}
 		@include listReset;
 		@include safeFlex(row,wrap,end,null);
 		line-height: 1;
-		margin-right: $spaceXs;
+		@include onlyMobile{
+			&.toggled{
+				display: block;
+				background-color: $lightGreen;
+				height: 100%;
+			}
+			display: none;
+		}
+		@include desk{
+			margin-right: $spaceXs;
+		}
 		.menu-item{
+			@include onlyMobile{
+				&:not(:last-of-type){
+					a{
+						border-bottom: 1px solid $black;
+					}
+				}
+				a{
+					margin: 0 $spaceSm;
+				}
+			}
 			a{
 				color: $black;
 				font-weight: bold;

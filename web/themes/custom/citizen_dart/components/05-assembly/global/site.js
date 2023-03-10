@@ -1,10 +1,10 @@
 (function($, Drupal) {
 
-/* LAYOUT 
+/* LAYOUT
 ------------------ */
 Drupal.behaviors.removeEmptyRegions = {
   attach: function (context, settings) {
-    $(".layout > .layout__region:not(.layout-builder__region)", context).once('removeEmpty').each(function(){  
+    $(".layout > .layout__region:not(.layout-builder__region)", context).once('removeEmpty').each(function(){
       if(!$(this).children().length){
         $(this).remove();
       }
@@ -42,6 +42,22 @@ Drupal.behaviors.blockLink = {
   attach: function (context, settings) {
     $('.role-site_manager:not(.role-administrator) a[href="/admin/structure/block"]', context).once('changeBlockUIPath').each(function(){
       $(this).attr('href','/admin/structure/block/block-content').text('Custom Blocks');
+    });
+  }
+};
+
+/* MAIN MENU TOGGLE
+----------------------- */
+Drupal.behaviors.mainMenuToggle = {
+  attach: function (context, settings) {
+    $('.main-menu-toggle', context).once('toggleMainMenu').each(function(){
+      $(this).click(function(e){
+        e.preventDefault();
+        $('#block-main-menu').addClass('toggled');
+        $('#block-main-menu > ul').addClass('toggled');
+        $('.main-menu-toggle').addClass('toggled');
+        $('body').addClass('toggled');
+      });
     });
   }
 };
