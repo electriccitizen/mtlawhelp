@@ -377,7 +377,32 @@
 	}
 }
 
+@include keyframes(slideIn){
+	from{
+		left: -100%;
+	}
+	100%{
+		left: 0;
+	}
+}
+
+@include keyframes(slideOut){
+	from{
+		left: 0;
+	}
+	100%{
+		left: -100%;
+	}
+}
+
 .fadeIn {
 	@include animation('fadeIn 1.5s 1');
 }
 
+.slideIn {
+	@include animation('slideIn .5s 1');
+}
+
+.slideOut {
+	@include animation('slideOut .5s 1');
+}
