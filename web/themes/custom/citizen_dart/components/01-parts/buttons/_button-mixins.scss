@@ -125,7 +125,7 @@
 				background-color: $buttonBackActive;
 			}
 		}//end a
-	}//end wysiwyg 
+	}//end wysiwyg
 }
 
 @mixin submitButton{
@@ -168,7 +168,7 @@
 }
 
 @mixin warningButton{
-	@include submitButton;
+	@include outlineButton;
 	background: $resetBack;
 	color: $resetText;
 	border-color: $resetBack;

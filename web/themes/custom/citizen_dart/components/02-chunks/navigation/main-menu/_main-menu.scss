@@ -2,6 +2,7 @@
 	 MAIN MENU
 ===================== */
 @use '../../../00-base/base' as *;
+@use '../../../01-parts/buttons/button-mixins' as *;
 
 #block-main-menu{
 	@include onlyMobile{
@@ -9,7 +10,7 @@
 			@include edgeToEdge;
 			position: absolute;
 			top: -20px;
-			width: 100vw;
+			width: 100%;
 			height: 100vh;
 			z-index: 999;
 		}
@@ -58,6 +59,13 @@
 				font-size: $formLabelSize;
 				display: block;
 				position: relative;
+			}
+		}
+		.button.menu-close{
+			display: none;
+			margin: auto;
+			@include onlyMobile{
+				display: block;
 			}
 		}
 	}

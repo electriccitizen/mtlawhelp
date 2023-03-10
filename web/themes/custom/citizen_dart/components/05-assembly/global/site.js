@@ -57,6 +57,12 @@ Drupal.behaviors.mainMenuToggle = {
         $('#block-main-menu > ul').addClass('toggled');
         $('.main-menu-toggle').addClass('toggled');
         $('body').addClass('toggled');
+        $('<button class="button menu-close">Quick Exit</button>')
+          .appendTo('#block-main-menu > ul')
+          .click(function(){
+            $('.toggled').removeClass('toggled');
+            $('.button.menu-close').remove();
+        });
       });
     });
   }
