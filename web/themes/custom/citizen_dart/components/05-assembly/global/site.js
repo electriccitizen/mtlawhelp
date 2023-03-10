@@ -57,17 +57,20 @@ Drupal.behaviors.mainMenuToggle = {
         $('#block-main-menu > ul').addClass('toggled');
         $('.main-menu-toggle').addClass('toggled');
         $('body').addClass('toggled');
+        $('#site-search-form').clone().addClass('toggled mobile-search-form').appendTo('#block-main-menu > ul');
         $('<a href="#" class="menu-close"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m12.65 36.45-1.1-1.1L22.9 24 11.55 12.65l1.1-1.1L24 22.9l11.35-11.35 1.1 1.1L25.1 24l11.35 11.35-1.1 1.1L24 25.1Z"/></svg></a>')
           .prependTo('#block-main-menu > ul')
           .click(function(){
             $('.toggled').removeClass('toggled');
             $('.menu-close').remove();
+            $('.mobile-search-form').remove();
           });
         $('<button class="button menu-close">Quick Exit</button>')
           .appendTo('#block-main-menu > ul')
           .click(function(){
             $('.toggled').removeClass('toggled');
             $('.menu-close').remove();
+            $('.mobile-search-form').remove();
         });
       });
     });

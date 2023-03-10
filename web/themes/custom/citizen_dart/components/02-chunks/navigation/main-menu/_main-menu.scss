@@ -68,12 +68,15 @@
 	    top: 0;
 	    right: 0;
 		}
-		.menu-close{
+		.menu-close,.mobile-search-form{
 			display: none;
 			margin: auto;
 			@include onlyMobile{
 				display: block;
 			}
+		}
+		.mobile-search-form{
+			padding-top: 0;
 		}
 	}
 }
