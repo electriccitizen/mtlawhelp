@@ -63,7 +63,7 @@
 //close search
 .t-search-close{
 	position: absolute;
-	top: -20px;
+	top: -159px;
 	right: 0;
 	height: 48px;
 	width: 48px;
@@ -93,7 +93,7 @@
 	position: absolute;
 	display: none;
 	z-index: 500;
-	top: -20px;
+	top: -159px;
 	left: -$siteMarginMobile;
 	width: calc(100% + $siteMarginMobile*2);
 	@include contentStop{
@@ -132,7 +132,7 @@
 			border-bottom-color: $searchDropInputBorder;
 			border-radius: 0;
 			@extend %searchBlockPlaceholder;
-			//prevent yellow chrome autofill inset                                                   
+			//prevent yellow chrome autofill inset
 			&:-webkit-autofill{
 				-webkit-box-shadow: 0 0 0 1000px $searchDropInputFocus inset;
 			}
@@ -198,4 +198,3 @@
 		}//end i
 	}//end form-actions
 }//end search block form
-

@@ -28,7 +28,6 @@
 	@include desk{
 		width: 240px;
 	}
-
 	a{
 		img{
 			max-width: 160px;
@@ -37,6 +36,9 @@
 				max-width: 100%;
 			}
 		}
+	}
+	.logo-text{
+		font-size: $baseSizeSm;
 	}
 }//end branding block
 
@@ -87,7 +89,5 @@
 		position: absolute;
 		right: 0;
 		bottom: -20px;
-		width: 100%;
-		padding-left: 280px;
 	}//end desk
 }//end main nav
