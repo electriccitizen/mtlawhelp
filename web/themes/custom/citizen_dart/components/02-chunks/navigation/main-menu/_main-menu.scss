@@ -10,9 +10,12 @@
 			@include edgeToEdge;
 			position: absolute;
 			top: -20px;
-			width: 100%;
+			width: 100vw;
 			height: 100vh;
 			z-index: 999;
+			.logged-in & {
+				width: calc(100vw - 65px);
+			}
 		}
 	}
 	.main-menu-toggle{
@@ -69,6 +72,20 @@
 			position: absolute;
 	    top: 0;
 	    right: 0;
+		}
+		button.menu-close{
+			background-color: $blue;
+			border-color: $blue;
+			max-width: 100%;
+			width: 310px;
+			height: 85px;
+			border-radius: 8px;
+			margin: 0 $spaceSm;
+			&:hover,&:focus{
+				background-color: $midGrey;
+				border-color: $midGrey;
+				color: $white;
+			}
 		}
 		.menu-close,.mobile-search-form{
 			display: none;

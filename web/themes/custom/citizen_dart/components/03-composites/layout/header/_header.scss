@@ -10,10 +10,13 @@
 	& > div{
 		max-width: $contentStop;
 		border-bottom: 1px solid $grey;
-		padding-bottom: 20px;
+		padding-bottom: 60px;
 		@include auto;
 		position: relative;
 		@include safeFlex(row,wrap,justify,end);
+		@include mainMenu{
+			padding-bottom: 20px;
+		}
 	}
 }//end layout container
 
@@ -67,11 +70,14 @@
 		}
 		@include desk{
 			position: absolute;
-			top: 93px;
+			top: 133px;
 			right: 0;
 			&:hover,&:focus{
 				text-decoration: none;
 			}
+		}
+		@include mainMenu{
+			top: 93px;
 		}
 	}
 }//end search block
