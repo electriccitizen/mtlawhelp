@@ -17,8 +17,8 @@
 	}
 	.main-menu-toggle{
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: -80px;
+		right: -55px;
 		&.toggled{
 			display: none;
 		}
@@ -35,6 +35,7 @@
 				display: block;
 				background-color: $lightGreen;
 				height: 100%;
+				width: 100%;
 				padding-top: $spaceXl;
 				position: absolute;
 			}
