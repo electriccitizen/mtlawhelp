@@ -37,12 +37,11 @@
 				height: 100%;
 				padding-top: $spaceXl;
 				position: absolute;
-				// left: -100%;
 			}
 			display: none;
 		}
 		@include desk{
-			margin-right: $spaceXs;
+			margin-right: $spaceSm;
 		}
 		.menu-item{
 			@include onlyMobile{

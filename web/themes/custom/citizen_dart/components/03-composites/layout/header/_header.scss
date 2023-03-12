@@ -6,14 +6,14 @@
 
 .site-header {
 	background: $headerBack;
-	padding: 20px $siteMarginMobile 0;
+	padding: 20px $siteMarginMobile;
 	& > div{
 		max-width: $contentStop;
 		border-bottom: 1px solid $grey;
 		padding-bottom: 20px;
 		@include auto;
 		position: relative;
-		@include safeFlex(row,wrap,null,center);
+		@include safeFlex(row,wrap,justify,end);
 	}
 }//end layout container
 
@@ -26,19 +26,24 @@
 	position: relative;
 	z-index: 10;
 	@include desk{
-		width: 240px;
+		width: 385px;
 	}
 	a{
 		img{
 			max-width: 160px;
 			margin-right: 4px;
+			margin-bottom: $spaceXs;
 			@include desk{
-				max-width: 100%;
+				max-width: 305px;
 			}
 		}
 	}
 	.logo-text{
+		@include safeFlex(row,wrap,start,start);
 		font-size: $baseSizeSm;
+		a{
+			margin-left: 3px;
+		}
 	}
 }//end branding block
 
@@ -51,6 +56,9 @@
 	text-align: right;
 	@include desk{
 		width: calc(100% - 240px);
+		&.contextual-region{
+			position: static;
+		}
 	}
 	//search toggler
 	.t-search{
@@ -59,8 +67,8 @@
 		}
 		@include desk{
 			position: absolute;
-			top: -28px;
-			right: -243px;
+			top: 93px;
+			right: 0;
 			&:hover,&:focus{
 				text-decoration: none;
 			}
@@ -73,9 +81,6 @@
 ------------------------ */
 .block--system-menu{
 	@include onlyMobile{
-		&.contextual-region{
-			position: static;
-		}
 		#superfish-main-toggle{
 			position: absolute;
 			height: 32px;
@@ -88,6 +93,9 @@
 	@include desk{
 		position: absolute;
 		right: 0;
-		bottom: -20px;
+		bottom: 0;
+		&.contextual-region{
+			position: absolute;
+		}
 	}//end desk
 }//end main nav
