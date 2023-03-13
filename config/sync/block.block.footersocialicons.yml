@@ -1,0 +1,25 @@
+uuid: cb3ab0ac-bf27-4a28-b676-9f7a923d36c5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_media_links:3b7f8fc6-5442-4113-a923-269377f9503e'
+  module:
+    - block_content
+  theme:
+    - citizen_dart
+id: footersocialicons
+theme: citizen_dart
+region: prefooter
+weight: -4
+provider: null
+plugin: 'block_content:3b7f8fc6-5442-4113-a923-269377f9503e'
+settings:
+  id: 'block_content:3b7f8fc6-5442-4113-a923-269377f9503e'
+  label: 'Footer Social Icons'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

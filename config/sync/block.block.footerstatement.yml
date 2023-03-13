@@ -1,0 +1,25 @@
+uuid: ca646b3a-c5f3-42f8-962c-abaa352a9cef
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:49ce5506-6942-45fc-9102-22f7c2eb4747'
+  module:
+    - block_content
+  theme:
+    - citizen_dart
+id: footerstatement
+theme: citizen_dart
+region: prefooter
+weight: -6
+provider: null
+plugin: 'block_content:49ce5506-6942-45fc-9102-22f7c2eb4747'
+settings:
+  id: 'block_content:49ce5506-6942-45fc-9102-22f7c2eb4747'
+  label: 'Footer Statement'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
