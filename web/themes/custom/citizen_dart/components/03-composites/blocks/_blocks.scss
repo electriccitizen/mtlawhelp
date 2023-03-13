@@ -39,10 +39,10 @@
 }//end footer-menu
 
 //COPYRIGHT
-.block-4{
+.block-copyright{
 	.copyright{
 		text-align: center;
-		font-size: 2rem;
+		font-size: $baseSizeMd;
 		@include tab{
 			text-align: left;
 		}
