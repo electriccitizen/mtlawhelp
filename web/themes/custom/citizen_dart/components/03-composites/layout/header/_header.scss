@@ -10,10 +10,13 @@
 	& > div{
 		max-width: $contentStop;
 		border-bottom: 1px solid $grey;
-		padding-bottom: 60px;
+		padding-bottom: 20px;
 		@include auto;
 		position: relative;
 		@include safeFlex(row,wrap,justify,end);
+		@include desk{
+			padding-bottom: 60px;
+		}
 		@include mainMenu{
 			padding-bottom: 20px;
 		}
@@ -31,9 +34,12 @@
 	@include desk{
 		width: 385px;
 	}
+	// @include onlyMobile{
+	// 	width: 100%;
+	// }
 	a{
 		img{
-			max-width: 160px;
+			max-width: 275px;
 			margin-right: 4px;
 			margin-bottom: $spaceXs;
 			@include desk{
