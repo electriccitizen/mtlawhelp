@@ -1,0 +1,5 @@
+label: 'Temas de recursos de bricolaje'
+description: 'Listas de temas en la biblioteca DIY.'
+display:
+  default:
+    display_title: 'por defecto'
