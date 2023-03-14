@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /promo-example
+    pages: /do-it-yourself-resources

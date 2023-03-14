@@ -136,6 +136,9 @@
 	}@else if  $justify == 'justify'{
 		justify-content: space-between;
 		-ms-flex-pack: justify;
+	}@else if  $justify == 'around'{
+		justify-content: space-around;
+		-ms-flex-pack: space-around;
 	}
 	@if $align == 'start'{
 		align-items: flex-start;

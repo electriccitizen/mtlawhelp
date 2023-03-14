@@ -32,6 +32,7 @@
 @mixin button{
 	background-color: $buttonBack;
 	border: 1px solid $buttonBack;
+	border-radius: $spaceXxs;
 	color: $buttonText;
 	line-height: 1.15;
 	padding: $buttonPadding;
@@ -44,6 +45,7 @@
 	font-weight: $heavy;
 	font-size: $button;
 	margin-bottom: $spaceMd;
+	cursor: pointer;
 	&:hover,&:focus {
 		color: $buttonTextHover;
 		background-color: $buttonBackHover;
@@ -58,8 +60,6 @@
 		border-color: $buttonBackActive;
 	}
 	.text-with-summary &,.text-long &{
-		padding: 0;
-		background: none;
 		a{
 			background-color: $buttonBack;
 			padding: $buttonPadding;
