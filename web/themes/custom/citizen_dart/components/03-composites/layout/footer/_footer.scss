@@ -17,7 +17,7 @@
 		@include auto;
 		position: relative;
 		@include tab{
-			padding: 40px $siteMarginMobile 50px;
+			padding: 40px $siteMarginMobile 65px;
 			min-height: 0;
 		}
 
@@ -28,9 +28,9 @@
 				@include bleed(padding,40px);
 			}
 			& > *{
-				&:not(:last-child){
-					margin-bottom: $spaceMd;
-				}
+				// &:not(:last-child){
+				// 	margin-bottom: $spaceMd;
+				// }
 				h2.block-title{
 					margin-bottom: 1.5rem;
 					@include tab{
@@ -49,6 +49,9 @@
 				@include desk{
 					margin-bottom: $spaceSm;
 				}
+				@include onlyMobile{
+					margin-bottom: $spaceLg;
+				}
 				.image{
 			    max-width: 303px !important;
 					@include desk{
@@ -58,12 +61,13 @@
 			}
 			//footer statement
 			.block-footer-statement{
-				@include desk{
-					margin-bottom: $spaceLg;
-				}
+				margin-bottom: $spaceLg;
 			}
 			//footer-link
 			.block-footer-link{
+				@include onlyMobile{
+					margin-bottom: $spaceLg;
+				}
 				.field{
 					a{
 						color: $prefooterLink;
@@ -76,6 +80,7 @@
 			}
 			//social-media
 			.block-social-media-links{
+				margin-bottom: $spaceLg;
 				@include desk{
 					margin-top: $spaceLg;
 				}
