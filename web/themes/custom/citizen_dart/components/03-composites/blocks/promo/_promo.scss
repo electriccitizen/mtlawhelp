@@ -5,9 +5,17 @@
 
 .block-promo{
 	background-color: $lightBlue;
-	padding-top: 125px;
-	padding-bottom: 150px;
+	padding-top: 100px;
+	padding-bottom: 125px;
 	@include bleed(padding,$spaceLg);
+	@include onlySmall{
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	@include desk{
+		padding-top: 125px;
+		padding-bottom: 150px;
+	}
 	.field-promos{
 		@include safeFlex(column,no-wrap,center,start);
 		max-width: $contentStop;
@@ -19,10 +27,13 @@
 			padding-bottom: $spaceXs;
 			max-width: $textMax;
 			@include tab{
-				padding-left: $spaceXxs;
-				padding-right: $spaceXxs;
+				padding-left: $spaceXs;
+				padding-right: $spaceXs;
 			}
 			&:first-of-type{
+				@include onlySmall {
+					margin-bottom: $spaceLg;
+				}
 				@include tab{
 					margin-left: -$spaceXxs;
 				}
