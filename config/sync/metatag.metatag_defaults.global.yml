@@ -13,13 +13,21 @@ tags:
   content_language: en
   generator: 'Drupal 9 (http://drupal.org)'
   geo_region: US-MN
+  image_src: /themes/custom/citizen_dart/images/logo.png
   og_country_name: US
+  og_description: '[node:field_summary]'
+  og_image: /themes/custom/citizen_dart/images/logo.png
+  og_image_alt: 'Montana Law Help Logo'
   og_site_name: '[site:name]'
   og_title: '[current-page:title]'
   og_type: Article
   og_url: '[current-page:url:absolute]'
   shortlink: '[current-page:url:unaliased]'
   title: '[current-page:title] | [site:name]'
+  twitter_cards_description: '[node:field_summary]'
+  twitter_cards_image: /themes/custom/citizen_dart/images/logo.png
+  twitter_cards_image_alt: 'Montana Law Help Logo'
   twitter_cards_page_url: '[current-page:url:absolute]'
+  twitter_cards_site_id: '@MLSA'
   twitter_cards_title: '[current-page:title]'
   twitter_cards_type: summary

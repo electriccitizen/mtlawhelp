@@ -1,0 +1,8 @@
+uuid: fd1d5dc9-b695-4d0d-8650-5bf90992fdb3
+langcode: en
+status: true
+dependencies: {  }
+id: node__support_book
+label: 'Content: Support Book'
+tags:
+  robots: 'noindex, nofollow, noarchive, nosnippet, noodp, noydir, noimageindex, notranslate'
