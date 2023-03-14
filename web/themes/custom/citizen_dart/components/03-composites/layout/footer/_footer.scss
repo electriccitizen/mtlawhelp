@@ -23,7 +23,7 @@
 
 		//limit footer content to max-width and set flex parenting
 		& > div{
-			@include safeFlex(row,wrap,start,start);
+			@include safeFlex(row,wrap,justify,start);
 			@include tab{
 				@include bleed(padding,40px);
 			}
@@ -38,22 +38,46 @@
 					}
 				}
 			}
-			//footer menu
-			.block-footer-menu{
-				width: 100%;
-				@include tab{
-					width: 33.33%;
+			.prefooter-left{
+				width: 825px;
+			}
+			.prefooter-right{
+
+			}
+			//footer-logo
+			.block-footer-logo{
+				@include desk{
+					margin-bottom: $spaceSm;
+				}
+				.image{
+			    max-width: 303px !important;
+					@include desk{
+						margin: 0;
+					}
+				}
+			}
+			//footer statement
+			.block-footer-statement{
+				@include desk{
+					margin-bottom: $spaceLg;
+				}
+			}
+			//footer-link
+			.block-footer-link{
+				.field{
+					a{
+						color: $prefooterLink;
+						text-decoration: underline;
+						&:hover,&:focus{
+							color: $prefooterLinkHover;
+						}
+					}
 				}
 			}
 			//social-media
 			.block-social-media-links{
-				width: 100%;
-				@include tab{
-					max-width: 320px;
-					@include safeFlexOrder(2);
-					.platform-links{
-						@include safeFlex(row,wrap,start,start);
-					}
+				@include desk{
+					margin-top: $spaceLg;
 				}
 				.platform-links{
 					li{
@@ -69,28 +93,10 @@
 					}
 				}
 			}
-			//copyright
-			.block-copyright{
-				@include onlySmall{
-					width: 100%;
-				}
-			}
-			//footer-logo
-			.block-footer-logo{
-				.image{
-			    max-width: 303px !important;
-				}
-			}
-			//footer-link
-			.block-footer-link{
-				.field{
-					a{
-						color: $prefooterLink;
-						text-decoration: underline;
-						&:hover,&:focus{
-							color: $prefooterLinkHover;
-						}
-					}
+			//footer menu
+			.block-footer-menu{
+				@include desk{
+					margin-top: $spaceLg;
 				}
 			}
 		}//end prefooter-inner > div
