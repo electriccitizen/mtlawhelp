@@ -28,9 +28,6 @@
 				@include bleed(padding,40px);
 			}
 			& > *{
-				// &:not(:last-child){
-				// 	margin-bottom: $spaceMd;
-				// }
 				h2.block-title{
 					margin-bottom: 1.5rem;
 					@include tab{

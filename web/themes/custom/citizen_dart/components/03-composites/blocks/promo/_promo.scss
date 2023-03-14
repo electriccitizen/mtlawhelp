@@ -30,10 +30,12 @@
 				padding-left: $spaceXs;
 				padding-right: $spaceXs;
 			}
-			&:first-of-type{
+			&:not(:last-of-type){
 				@include onlySmall {
 					margin-bottom: $spaceLg;
 				}
+			}
+			&:first-of-type{
 				@include tab{
 					margin-left: -$spaceXxs;
 				}
